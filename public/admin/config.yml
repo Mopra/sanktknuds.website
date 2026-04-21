@@ -1,0 +1,123 @@
+# Decap CMS configuration (disabled until /admin/index.html is added)
+# See: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+locale: da
+
+collections:
+  - name: pages
+    label: Pages
+    folder: content/pages
+    format: yaml-frontmatter
+    extension: md
+    create: false
+    slug: "{{fields.slug}}.{{fields.locale}}"
+    identifier_field: slug
+    fields:
+      - { label: Slug, name: slug, widget: string }
+      - { label: Locale, name: locale, widget: select, options: ["da", "en"] }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Eyebrow, name: eyebrow, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: menu
+    label: Menu sections
+    folder: content/menu
+    format: yaml-frontmatter
+    extension: md
+    create: true
+    slug: "{{fields.slug}}.{{fields.locale}}"
+    identifier_field: slug
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "e.g. 01-food (controls order)" }
+      - { label: Locale, name: locale, widget: select, options: ["da", "en"] }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - label: Items
+        name: items
+        widget: list
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Price (DKK), name: price, widget: number, required: false, value_type: int }
+          - { label: Tags, name: tags, widget: list, required: false, default: [] }
+
+  - name: settings
+    label: Site settings
+    files:
+      - name: site
+        label: Site info
+        file: content/settings/site.md
+        format: yaml-frontmatter
+        extension: md
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Founded year, name: foundedYear, widget: number, value_type: int }
+          - label: Address
+            name: address
+            widget: object
+            fields:
+              - { label: Street address, name: streetAddress, widget: string }
+              - { label: Locality, name: locality, widget: string }
+              - { label: Postal code, name: postalCode, widget: string }
+              - { label: Country (ISO), name: country, widget: string }
+              - { label: Region, name: region, widget: string, required: false }
+          - label: Geo
+            name: geo
+            widget: object
+            required: false
+            fields:
+              - { label: Latitude, name: latitude, widget: number }
+              - { label: Longitude, name: longitude, widget: number }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - label: Social
+            name: social
+            widget: object
+            fields:
+              - { label: Instagram URL, name: instagram, widget: string, required: false }
+              - { label: Facebook URL, name: facebook, widget: string, required: false }
+          - label: Tagline
+            name: tagline
+            widget: object
+            fields:
+              - { label: Danish, name: da, widget: string }
+              - { label: English, name: en, widget: string }
+          - label: In the glass now
+            name: currentPour
+            widget: object
+            required: false
+            fields:
+              - { label: Danish, name: da, widget: string }
+              - { label: English, name: en, widget: string }
+
+      - name: hours
+        label: Opening hours
+        file: content/settings/hours.md
+        format: yaml-frontmatter
+        extension: md
+        fields:
+          - label: Schedule
+            name: schedule
+            widget: list
+            fields:
+              - label: Days
+                name: days
+                widget: list
+                default: []
+              - { label: Opens, name: opens, widget: string }
+              - { label: Closes, name: closes, widget: string }
+          - label: Notes
+            name: notes
+            widget: object
+            required: false
+            fields:
+              - { label: Danish, name: da, widget: string }
+              - { label: English, name: en, widget: string }

@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "story": "Story",
+    "visit": "Visit",
+    "events": "Events",
+    "book": "Reserve"
+  },
+  "booking": {
+    "cta": "Reserve a table",
+    "toast": "Booking coming soon",
+    "toastDescription": "Online reservations open shortly. Please reach out in the meantime."
+  },
+  "footer": {
+    "visit": "Visit",
+    "hours": "Hours",
+    "sitemap": "Sitemap"
+  },
+  "days": {
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun"
+  },
+  "values": {
+    "history": "History",
+    "quality": "Quality",
+    "craft": "Craft",
+    "closeness": "Closeness",
+    "goodTimes": "Good hours"
+  },
+  "currentPour": {
+    "label": "In the glass now"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The link seems to have gone. Try the homepage.",
+    "home": "Back home"
+  }
+}

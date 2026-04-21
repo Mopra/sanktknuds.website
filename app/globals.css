@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors — OKLCH, warm dark-first */
+  --color-ink: oklch(18% 0.02 60);
+  --color-ink-soft: oklch(22% 0.022 60);
+  --color-parchment: oklch(96% 0.02 80);
+  --color-parchment-dim: oklch(86% 0.018 80);
+  --color-ember: oklch(72% 0.12 60);
+  --color-brass: oklch(65% 0.08 75);
+  --color-moss: oklch(38% 0.06 150);
+  --color-stone: oklch(58% 0.012 80);
+
+  /* Fonts — wired via next/font CSS variables */
+  --font-display: var(--font-display), "Fraunces", Georgia, serif;
+  --font-sans: var(--font-sans), "Geist", system-ui, sans-serif;
+  --font-mono: var(--font-mono), "Geist Mono", ui-monospace, monospace;
+
+  /* Radius / misc */
+  --radius-none: 0;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background: var(--color-ember);
+    color: var(--color-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Minimal editorial prose — inline styling for repo-rendered markdown */
+.prose {
+  color: color-mix(in oklch, var(--color-parchment) 92%, transparent);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 65ch;
+}
+.prose > * + * {
+  margin-top: 1.25em;
+}
+.prose p {
+  margin-block: 0;
+}
+.prose a {
+  color: var(--color-ember);
+  border-bottom: 1px solid color-mix(in oklch, var(--color-ember) 40%, transparent);
+  text-decoration: none;
+  transition: border-color 120ms ease;
+}
+.prose a:hover {
+  border-bottom-color: var(--color-ember);
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  margin-top: 2em;
+}
+.prose blockquote {
+  border-left: 2px solid var(--color-ember);
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: color-mix(in oklch, var(--color-parchment) 85%, transparent);
+}
+.prose strong {
+  color: var(--color-parchment);
+  font-weight: 600;
+}
+.prose-invert {
+  /* single-theme — no inverted variant for v1 */
+}

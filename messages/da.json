@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "menu": "Menukort",
+    "story": "Historie",
+    "visit": "Besøg",
+    "events": "Selskaber",
+    "book": "Book bord"
+  },
+  "booking": {
+    "cta": "Book bord",
+    "toast": "Booking kommer snart",
+    "toastDescription": "Vores bordreservation går i luften inden længe. Kontakt os indtil da."
+  },
+  "footer": {
+    "visit": "Besøg",
+    "hours": "Åbningstider",
+    "sitemap": "Oversigt"
+  },
+  "days": {
+    "mon": "Man",
+    "tue": "Tir",
+    "wed": "Ons",
+    "thu": "Tor",
+    "fri": "Fre",
+    "sat": "Lør",
+    "sun": "Søn"
+  },
+  "values": {
+    "history": "Historie",
+    "quality": "Kvalitet",
+    "craft": "Håndværk",
+    "closeness": "Nærhed",
+    "goodTimes": "Gode stunder"
+  },
+  "currentPour": {
+    "label": "I glasset nu"
+  },
+  "notFound": {
+    "title": "Siden findes ikke",
+    "description": "Linket er vist blevet væk. Prøv forsiden.",
+    "home": "Til forsiden"
+  }
+}
