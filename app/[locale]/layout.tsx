@@ -7,6 +7,7 @@ import type { ReactNode } from 'react';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { PreLaunchOverlay } from '@/components/layout/PreLaunchOverlay';
 import { buildRestaurantSchema } from '@/lib/seo';
 import { site } from '#content';
 import '../globals.css';
@@ -48,18 +49,34 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const schema = buildRestaurantSchema(site, locale);
 
+  const preLaunch = site.preLaunch ?? false;
+
   return (
-    <html lang={locale} className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}>
-      <body className="bg-ink text-parchment font-sans antialiased">
+    <html
+      lang={locale}
+      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}
+    >
+      <body
+        className={`bg-ink text-parchment font-sans antialiased ${preLaunch ? 'overflow-hidden' : ''}`}
+      >
         <NextIntlClientProvider messages={messages}>
-          <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-parchment focus:px-3 focus:py-2 focus:text-ink">
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:rounded focus:bg-parchment focus:px-3 focus:py-2 focus:text-ink"
+          >
             Skip to content
           </a>
-          <Header />
-          <main id="main" className="min-h-[60vh]">
-            {children}
-          </main>
-          <Footer />
+          <div
+            aria-hidden={preLaunch ? 'true' : undefined}
+            className={preLaunch ? 'pointer-events-none select-none' : undefined}
+          >
+            <Header />
+            <main id="main" className="min-h-[60vh]">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          {preLaunch ? <PreLaunchOverlay /> : null}
           <Toaster theme="dark" position="bottom-center" />
         </NextIntlClientProvider>
         <script

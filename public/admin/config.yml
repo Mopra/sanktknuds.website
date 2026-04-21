@@ -97,6 +97,18 @@ collections:
             fields:
               - { label: Danish, name: da, widget: string }
               - { label: English, name: en, widget: string }
+          - label: Pre-launch mode
+            name: preLaunch
+            widget: boolean
+            default: false
+            hint: "When on, the site shows only the opening announcement overlay."
+          - label: Opening month
+            name: openingMonth
+            widget: object
+            required: false
+            fields:
+              - { label: Danish, name: da, widget: string, hint: "e.g. Juni 2026" }
+              - { label: English, name: en, widget: string, hint: "e.g. June 2026" }
 
       - name: hours
         label: Opening hours

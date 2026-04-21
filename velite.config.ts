@@ -81,6 +81,13 @@ const site = defineCollection({
         en: s.string(),
       })
       .optional(),
+    preLaunch: s.boolean().default(false),
+    openingMonth: s
+      .object({
+        da: s.string(),
+        en: s.string(),
+      })
+      .optional(),
   }),
 });
 

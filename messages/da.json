@@ -35,6 +35,11 @@
   "currentPour": {
     "label": "I glasset nu"
   },
+  "preLaunch": {
+    "preamble": "Vi åbner",
+    "standby": "Indtil da — følg med på Instagram.",
+    "follow": "Følg os"
+  },
   "notFound": {
     "title": "Siden findes ikke",
     "description": "Linket er vist blevet væk. Prøv forsiden.",

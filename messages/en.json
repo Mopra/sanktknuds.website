@@ -35,6 +35,11 @@
   "currentPour": {
     "label": "In the glass now"
   },
+  "preLaunch": {
+    "preamble": "Opening",
+    "standby": "Until then — follow along on Instagram.",
+    "follow": "Follow along"
+  },
   "notFound": {
     "title": "Page not found",
     "description": "The link seems to have gone. Try the homepage.",
