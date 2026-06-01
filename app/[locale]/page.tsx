@@ -18,16 +18,15 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <div className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-ink p-4 sm:p-8">
-      <div className="relative">
-        <Image
+    <div className="relative isolate flex min-h-[100svh] items-center justify-center overflow-hidden bg-ink p-4 sm:p-8">
+      <div className="relative isolate">
+        <div
           aria-hidden="true"
-          src="/sankt-knuds-flyer.jpg"
-          alt=""
-          width={1200}
-          height={1600}
-          priority
-          className="pointer-events-none absolute inset-0 -z-10 h-full w-full scale-[1.45] rounded-2xl object-cover opacity-70 blur-3xl saturate-150"
+          className="pointer-events-none absolute inset-0 -z-10 scale-[1.45] rounded-2xl bg-cover bg-center opacity-70 saturate-150"
+          style={{
+            backgroundImage: 'url(/sankt-knuds-flyer.jpg)',
+            filter: 'blur(64px)',
+          }}
         />
         <Image
           src="/sankt-knuds-flyer.jpg"
