@@ -21,7 +21,7 @@ tagline:
 currentPour:
   da: Fadlagret mørk ale fra Djursland — kaffe, karamel, en anelse røg.
   en: Barrel-aged dark ale from Djursland — coffee, caramel, a breath of smoke.
-preLaunch: true
+preLaunch: false
 openingMonth:
   da: Juni 2026
   en: June 2026

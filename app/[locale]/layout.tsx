@@ -70,11 +70,12 @@ export default async function LocaleLayout({
             aria-hidden={preLaunch ? 'true' : undefined}
             className={preLaunch ? 'pointer-events-none select-none' : undefined}
           >
-            <Header />
+            {/* Header/Footer temporarily hidden while the flyer image stands in for the homepage. */}
+            {false && <Header />}
             <main id="main" className="min-h-[60vh]">
               {children}
             </main>
-            <Footer />
+            {false && <Footer />}
           </div>
           {preLaunch ? <PreLaunchOverlay /> : null}
           <Toaster theme="dark" position="bottom-center" />
