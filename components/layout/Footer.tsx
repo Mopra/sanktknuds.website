@@ -5,6 +5,7 @@ import { site } from '#content';
 import { FooterMarque } from './FooterMarque';
 import { CurrentPour } from '@/components/content/CurrentPour';
 import { HoursList } from '@/components/content/HoursList';
+import { SocialLinks } from '@/components/ui/SocialLinks';
 
 export async function Footer() {
   const locale = await getLocale();
@@ -22,6 +23,12 @@ export async function Footer() {
           <div>
             <h2 className="font-display text-2xl tracking-tight">Sankt Knuds</h2>
             <p className="mt-3 text-sm text-parchment/70">{site.tagline[locale as 'da' | 'en']}</p>
+            <SocialLinks
+              showLabel
+              className="mt-6"
+              linkClassName="font-mono text-xs uppercase tracking-[0.2em] text-parchment/70 hover:text-parchment"
+              iconClassName="h-4 w-4"
+            />
           </div>
 
           <div>
@@ -30,11 +37,16 @@ export async function Footer() {
             </h3>
             <address className="mt-4 not-italic text-sm leading-relaxed text-parchment/80">
               {site.address.streetAddress}
+              {site.address.addressDetail ? `, ${site.address.addressDetail}` : ''}
               <br />
               {site.address.postalCode} {site.address.locality}
               <br />
               <a href={`tel:${site.phone.replace(/\s/g, '')}`} className="hover:text-ember">
                 {site.phone}
+              </a>
+              <br />
+              <a href={`mailto:${site.email}`} className="hover:text-ember">
+                {site.email}
               </a>
             </address>
           </div>
@@ -83,7 +95,8 @@ export async function Footer() {
         <FooterMarque className="mt-20" />
 
         <p className="mt-12 font-mono text-[0.625rem] uppercase tracking-[0.3em] text-parchment/40">
-          © {year} Sankt Knuds Gastropub
+          © {year} {site.name}
+          {site.cvr ? ` · CVR ${site.cvr}` : ''}
         </p>
       </div>
     </footer>

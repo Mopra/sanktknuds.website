@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
-import { getPage, getMenuSections } from '@/lib/content';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { TastingGroups } from '@/components/content/TastingGroups';
+import { Figure } from '@/components/ui/Figure';
+import { Link } from '@/i18n/navigation';
+import { type Locale, routes } from '@/i18n/routing';
+import { getPage, getTasting } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
-import type { Locale } from '@/i18n/routing';
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -16,40 +19,52 @@ export default async function MenuPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const page = getPage('menu', locale);
-  const sections = getMenuSections(locale);
+  const tasting = getTasting('menu', locale);
+  const t = await getTranslations('wine');
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-24">
-      <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
+    <article className="mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32">
+      <div className="h-px w-16 bg-ember" />
+      <h1 className="mt-6 font-display text-5xl tracking-tight text-parchment md:text-6xl">
+        {page.title}
+      </h1>
       {page.description ? (
-        <p className="mt-6 text-lg text-parchment/80">{page.description}</p>
+        <p className="mt-6 max-w-2xl text-lg text-parchment/80">{page.description}</p>
       ) : null}
 
-      <div className="mt-16 space-y-20">
-        {sections.map((section) => (
-          <section key={section.slug}>
-            <h2 className="font-display text-3xl tracking-tight">{section.title}</h2>
-            {section.description ? (
-              <p className="mt-2 text-parchment/70">{section.description}</p>
-            ) : null}
-            <ul className="mt-8 divide-y divide-stone/20">
-              {section.items.map((item) => (
-                <li key={item.name} className="flex items-baseline justify-between gap-6 py-5">
-                  <div className="flex-1">
-                    <h3 className="font-display text-xl">{item.name}</h3>
-                    {item.description ? (
-                      <p className="mt-1 text-sm text-parchment/70">{item.description}</p>
-                    ) : null}
-                  </div>
-                  {item.price !== undefined ? (
-                    <span className="font-mono text-sm tabular-nums text-ember">{item.price}</span>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
+      <Link
+        href={routes.wine}
+        className="group mt-8 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-parchment"
+      >
+        {t('fromMenu')}
+        <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+          →
+        </span>
+      </Link>
+
+      <Figure
+        src="/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt={
+          locale === 'da'
+            ? 'Anretning serveret ved bordet med vin'
+            : 'A dish served at the table with wine'
+        }
+        aspect="aspect-[16/9]"
+        sizes="(min-width: 768px) 64rem, 100vw"
+        priority
+        className="mt-12"
+      />
+
+      {tasting ? (
+        <>
+          <TastingGroups groups={tasting.groups} className="mt-16" />
+          {tasting.note ? (
+            <p className="mt-8 border-t border-stone/15 pt-8 text-sm text-parchment/50">
+              {tasting.note}
+            </p>
+          ) : null}
+        </>
+      ) : null}
     </article>
   );
 }

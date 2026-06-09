@@ -1,15 +1,16 @@
+import type { Metadata, Viewport } from 'next';
 import { Fraunces, Geist, Geist_Mono } from 'next/font/google';
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Toaster } from 'sonner';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
-import { routing } from '@/i18n/routing';
-import { Header } from '@/components/layout/Header';
+import { Toaster } from 'sonner';
+import { hours, site } from '#content';
 import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
 import { PreLaunchOverlay } from '@/components/layout/PreLaunchOverlay';
+import { routing } from '@/i18n/routing';
 import { buildRestaurantSchema } from '@/lib/seo';
-import { site } from '#content';
 import '../globals.css';
 
 const fraunces = Fraunces({
@@ -31,6 +32,17 @@ const geistMono = Geist_Mono({
   display: 'swap',
 });
 
+export const metadata: Metadata = {
+  icons: {
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+  },
+  manifest: '/manifest.webmanifest',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#17120e',
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -47,22 +59,19 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
-  const schema = buildRestaurantSchema(site, locale);
+  const schema = buildRestaurantSchema(site, hours, locale);
 
   const preLaunch = site.preLaunch ?? false;
 
   return (
-    <html
-      lang={locale}
-      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}
-    >
+    <html lang={locale} className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}>
       <body
         className={`bg-ink text-parchment font-sans antialiased ${preLaunch ? 'overflow-hidden' : ''}`}
       >
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:rounded focus:bg-parchment focus:px-3 focus:py-2 focus:text-ink"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-parchment focus:px-3 focus:py-2 focus:text-ink"
           >
             Skip to content
           </a>
@@ -70,12 +79,11 @@ export default async function LocaleLayout({
             aria-hidden={preLaunch ? 'true' : undefined}
             className={preLaunch ? 'pointer-events-none select-none' : undefined}
           >
-            {/* Header/Footer temporarily hidden while the flyer image stands in for the homepage. */}
-            {false && <Header />}
+            <Header />
             <main id="main" className="min-h-[60vh]">
               {children}
             </main>
-            {false && <Footer />}
+            <Footer />
           </div>
           {preLaunch ? <PreLaunchOverlay /> : null}
           <Toaster theme="dark" position="bottom-center" />

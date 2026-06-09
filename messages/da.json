@@ -1,15 +1,14 @@
 {
   "nav": {
     "menu": "Menukort",
+    "wine": "Vinkort",
     "story": "Historie",
     "visit": "Besøg",
     "events": "Selskaber",
     "book": "Book bord"
   },
   "booking": {
-    "cta": "Book bord",
-    "toast": "Booking kommer snart",
-    "toastDescription": "Vores bordreservation går i luften inden længe. Kontakt os indtil da."
+    "cta": "Book bord"
   },
   "footer": {
     "visit": "Besøg",
@@ -34,6 +33,25 @@
   },
   "currentPour": {
     "label": "I glasset nu"
+  },
+  "tasting": {
+    "viewMenu": "Se menukortet"
+  },
+  "reception": {
+    "date": "Dato",
+    "time": "Tid",
+    "place": "Sted",
+    "directions": "Find vej"
+  },
+  "wine": {
+    "fromMenu": "Se hele vinkortet",
+    "download": "Hent vinkort (PDF)",
+    "currency": "kr",
+    "limitedNote": "Få flasker tilbage. Vi tager forbehold for udsolgte vine.",
+    "priceNote": "Hvor to priser vises, gælder de glas / flaske."
+  },
+  "masthead": {
+    "founded": "Grundlagt"
   },
   "preLaunch": {
     "preamble": "Vi åbner",

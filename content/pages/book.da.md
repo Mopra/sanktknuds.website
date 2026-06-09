@@ -2,7 +2,7 @@
 slug: book
 locale: da
 title: Book bord
-description: Reserver plads. Bordreservationer åbner snart.
+description: Reserver plads online, eller skriv eller ring til os.
 ---
 
-Systemet går i luften inden længe. I mellemtiden — skriv eller ring, så finder vi plads til jer.
+Book dit bord online herunder — eller skriv eller ring, så finder vi plads til jer.

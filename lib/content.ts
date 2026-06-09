@@ -1,8 +1,12 @@
-import { pages, menuSections } from '#content';
+import { menuSections, pages, receptions, tastings, wineCard } from '#content';
 import type { Locale } from '@/i18n/routing';
 
 export type ContentPage = (typeof pages)[number];
 export type ContentMenuSection = (typeof menuSections)[number];
+export type ContentTasting = (typeof tastings)[number];
+export type ContentReception = (typeof receptions)[number];
+export type WineCard = typeof wineCard;
+export type WineSection = WineCard['sections'][number];
 
 export function getPage(slug: string, locale: Locale): ContentPage {
   const page = pages.find((p) => p.slug === slug && p.locale === locale);
@@ -16,4 +20,16 @@ export function getMenuSections(locale: Locale): ContentMenuSection[] {
   return menuSections
     .filter((s) => s.locale === locale)
     .sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
+export function getTasting(slug: string, locale: Locale): ContentTasting | undefined {
+  return tastings.find((t) => t.slug === slug && t.locale === locale);
+}
+
+export function getReception(slug: string, locale: Locale): ContentReception | undefined {
+  return receptions.find((r) => r.slug === slug && r.locale === locale);
+}
+
+export function getWineSections(): WineSection[] {
+  return wineCard.sections;
 }

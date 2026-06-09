@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors — OKLCH, warm dark-first */
-  --color-ink: oklch(18% 0.02 60);
-  --color-ink-soft: oklch(22% 0.022 60);
-  --color-parchment: oklch(96% 0.02 80);
-  --color-parchment-dim: oklch(86% 0.018 80);
-  --color-ember: oklch(72% 0.12 60);
-  --color-brass: oklch(65% 0.08 75);
+  /* Colors — OKLCH, warm dark-first, high-contrast */
+  --color-ink: oklch(13% 0.016 55);
+  --color-ink-soft: oklch(17% 0.018 55);
+  --color-parchment: oklch(98% 0.012 85);
+  --color-parchment-dim: oklch(84% 0.015 82);
+  --color-ember: oklch(71% 0.145 55);
+  --color-brass: oklch(66% 0.09 75);
   --color-moss: oklch(38% 0.06 150);
-  --color-stone: oklch(58% 0.012 80);
+  --color-stone: oklch(56% 0.012 80);
 
   /* Fonts — wired via next/font CSS variables */
   --font-display: var(--font-display), "Fraunces", Georgia, serif;
@@ -23,6 +23,8 @@
 @layer base {
   :root {
     color-scheme: dark;
+    /* Height of the sticky header (masthead + nav). Drives the full-screen hero. */
+    --header-h: 6.5rem;
   }
 
   html {
@@ -40,6 +42,13 @@
     color: var(--color-ink);
   }
 
+  /* Tailwind v4 Preflight drops the default button pointer — restore it */
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -49,6 +58,20 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200%);
+    opacity: 0;
   }
 }
 

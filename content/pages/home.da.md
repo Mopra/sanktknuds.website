@@ -1,7 +1,8 @@
 ---
 slug: home
 locale: da
-title: Sankt Knuds Gastropub
+title: Sankt Knuds Brasseri & Bar
+seoTitle: Brasseri & Bar i Aarhus C | Sankt Knuds
 description: Håndværk, historie og gode stunder — midt i Aarhus, på Ryesgade 29.
 eyebrow: Aarhus · Ryesgade 29
 ---

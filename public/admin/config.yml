@@ -49,6 +49,99 @@ collections:
           - { label: Price (DKK), name: price, widget: number, required: false, value_type: int }
           - { label: Tags, name: tags, widget: list, required: false, default: [] }
 
+  - name: tastings
+    label: Menu teaser
+    folder: content/tastings
+    format: yaml-frontmatter
+    extension: md
+    create: true
+    slug: "{{fields.slug}}.{{fields.locale}}"
+    identifier_field: slug
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "e.g. menu" }
+      - { label: Locale, name: locale, widget: select, options: ["da", "en"] }
+      - { label: Eyebrow, name: eyebrow, widget: string, required: false }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Note, name: note, widget: text, required: false }
+      - label: Groups
+        name: groups
+        widget: list
+        fields:
+          - { label: Name, name: name, widget: string }
+          - label: Items
+            name: items
+            widget: list
+            field: { label: Preparation, name: preparation, widget: string }
+
+  - name: reception
+    label: Opening reception
+    folder: content/reception
+    format: yaml-frontmatter
+    extension: md
+    create: true
+    slug: "{{fields.slug}}.{{fields.locale}}"
+    identifier_field: slug
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "keep as 'reception'" }
+      - { label: Locale, name: locale, widget: select, options: ["da", "en"] }
+      - { label: Eyebrow, name: eyebrow, widget: string, required: false }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Date label, name: dateLabel, widget: string, hint: "e.g. Lørdag den 20. juni 2026" }
+      - { label: Time label, name: timeLabel, widget: string, hint: "e.g. Kl. 11.00 – 15.00" }
+      - { label: Start (ISO), name: startDate, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", hint: "for search engines" }
+      - { label: End (ISO), name: endDate, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", hint: "for search engines" }
+      - { label: Closing line, name: closing, widget: string, required: false, hint: "e.g. Vi ses den 20. juni!" }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: wine
+    label: Wine list
+    files:
+      - name: card
+        label: Wine card
+        file: content/wine/card.md
+        format: yaml-frontmatter
+        extension: md
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string, hint: "e.g. red, white (controls order)" }
+              - label: Label
+                name: label
+                widget: object
+                fields:
+                  - { label: Danish, name: da, widget: string }
+                  - { label: English, name: en, widget: string }
+              - label: Note
+                name: note
+                widget: object
+                required: false
+                fields:
+                  - { label: Danish, name: da, widget: string }
+                  - { label: English, name: en, widget: string }
+              - label: Groups
+                name: groups
+                widget: list
+                fields:
+                  - label: Region / heading
+                    name: label
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Danish, name: da, widget: string }
+                      - { label: English, name: en, widget: string }
+                  - label: Wines
+                    name: wines
+                    widget: list
+                    fields:
+                      - { label: Name, name: name, widget: string }
+                      - { label: Glass price (DKK), name: glass, widget: number, required: false, value_type: int }
+                      - { label: Bottle price (DKK), name: bottle, widget: number, required: false, value_type: int }
+                      - { label: Few bottles left, name: limited, widget: boolean, default: false }
+
   - name: settings
     label: Site settings
     files:
@@ -65,10 +158,12 @@ collections:
             widget: object
             fields:
               - { label: Street address, name: streetAddress, widget: string }
+              - { label: Floor / door, name: addressDetail, widget: string, required: false, hint: "e.g. st. th." }
               - { label: Locality, name: locality, widget: string }
               - { label: Postal code, name: postalCode, widget: string }
               - { label: Country (ISO), name: country, widget: string }
               - { label: Region, name: region, widget: string, required: false }
+          - { label: CVR, name: cvr, widget: string, required: false }
           - label: Geo
             name: geo
             widget: object
@@ -78,6 +173,7 @@ collections:
               - { label: Longitude, name: longitude, widget: number }
           - { label: Phone, name: phone, widget: string }
           - { label: Email, name: email, widget: string }
+          - { label: Booking URL, name: bookingUrl, widget: string }
           - label: Social
             name: social
             widget: object
@@ -116,16 +212,30 @@ collections:
         format: yaml-frontmatter
         extension: md
         fields:
-          - label: Schedule
-            name: schedule
+          - label: Services
+            name: services
             widget: list
             fields:
-              - label: Days
-                name: days
+              - label: Name
+                name: name
+                widget: object
+                fields:
+                  - { label: Danish, name: da, widget: string }
+                  - { label: English, name: en, widget: string }
+              - label: Schedule
+                name: schedule
                 widget: list
-                default: []
-              - { label: Opens, name: opens, widget: string }
-              - { label: Closes, name: closes, widget: string }
+                fields:
+                  - label: Days
+                    name: days
+                    widget: list
+                    default: []
+                  - label: Ranges
+                    name: ranges
+                    widget: list
+                    fields:
+                      - { label: Opens, name: opens, widget: string }
+                      - { label: Closes, name: closes, widget: string }
           - label: Notes
             name: notes
             widget: object

@@ -36,3 +36,6 @@ pnpm-debug.log*
 # os
 .DS_Store
 Thumbs.db
+
+# raw material (working assets, not for repo)
+Raw material/

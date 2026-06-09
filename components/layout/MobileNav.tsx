@@ -1,10 +1,11 @@
 'use client';
 
-import { Drawer } from 'vaul';
 import { useState } from 'react';
+import { Drawer } from 'vaul';
+import { BookingButton } from '@/components/ui/BookingButton';
+import { SocialLinks } from '@/components/ui/SocialLinks';
 import { Link } from '@/i18n/navigation';
 import type { AppPathname } from '@/i18n/routing';
-import { BookingButton } from '@/components/ui/BookingButton';
 
 type NavLink = { href: AppPathname; label: string };
 
@@ -15,7 +16,7 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
     <Drawer.Root open={open} onOpenChange={setOpen} direction="right">
       <Drawer.Trigger
         aria-label="Open menu"
-        className="flex h-10 w-10 items-center justify-center rounded border border-stone/30 md:hidden"
+        className="flex h-10 w-10 items-center justify-center border border-stone/30 text-parchment/80 transition-colors hover:text-parchment md:hidden"
       >
         <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" strokeWidth="1.25" />
@@ -32,7 +33,10 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-parchment/60">
               {locale.toUpperCase()}
             </span>
-            <Drawer.Close aria-label="Close menu" className="font-mono text-xs uppercase tracking-[0.2em]">
+            <Drawer.Close
+              aria-label="Close menu"
+              className="font-mono text-xs uppercase tracking-[0.2em]"
+            >
               ✕
             </Drawer.Close>
           </div>
@@ -50,6 +54,12 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
           </nav>
           <div className="border-t border-stone/15 p-6">
             <BookingButton size="lg" className="w-full" />
+            <SocialLinks
+              showLabel
+              className="mt-6 justify-center"
+              linkClassName="font-mono text-xs uppercase tracking-[0.2em] text-parchment/70 hover:text-parchment"
+              iconClassName="h-4 w-4"
+            />
           </div>
         </Drawer.Content>
       </Drawer.Portal>

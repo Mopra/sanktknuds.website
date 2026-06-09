@@ -1,15 +1,14 @@
 {
   "nav": {
     "menu": "Menu",
+    "wine": "Wine",
     "story": "Story",
     "visit": "Visit",
     "events": "Events",
     "book": "Reserve"
   },
   "booking": {
-    "cta": "Reserve a table",
-    "toast": "Booking coming soon",
-    "toastDescription": "Online reservations open shortly. Please reach out in the meantime."
+    "cta": "Reserve a table"
   },
   "footer": {
     "visit": "Visit",
@@ -34,6 +33,25 @@
   },
   "currentPour": {
     "label": "In the glass now"
+  },
+  "tasting": {
+    "viewMenu": "View the menu"
+  },
+  "reception": {
+    "date": "Date",
+    "time": "Time",
+    "place": "Place",
+    "directions": "Find your way"
+  },
+  "wine": {
+    "fromMenu": "See the full wine list",
+    "download": "Download wine list (PDF)",
+    "currency": "DKK",
+    "limitedNote": "A few bottles left — subject to availability.",
+    "priceNote": "Where two prices are shown, they are glass / bottle."
+  },
+  "masthead": {
+    "founded": "Established"
   },
   "preLaunch": {
     "preamble": "Opening",

@@ -1,8 +1,8 @@
 'use client';
 
-import { usePathname, useRouter } from '@/i18n/navigation';
 import { useParams } from 'next/navigation';
-import { routing, type Locale } from '@/i18n/routing';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { type Locale, routing } from '@/i18n/routing';
 import { cn } from '@/lib/cn';
 
 export function LocaleToggle() {
@@ -23,7 +23,7 @@ export function LocaleToggle() {
             }}
             aria-current={current === locale ? 'true' : undefined}
             className={cn(
-              'transition-colors',
+              'transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-ink',
               current === locale ? 'text-parchment' : 'text-parchment/40 hover:text-parchment/70',
             )}
           >
