@@ -12,7 +12,7 @@ export function LocaleToggle() {
   const current = (params.locale as Locale) ?? routing.defaultLocale;
 
   return (
-    <div className="flex items-center gap-2 font-mono text-[0.6875rem] uppercase tracking-[0.2em]">
+    <div className="flex items-center gap-2 text-[0.6875rem] uppercase tracking-[0.2em]">
       {routing.locales.map((locale, i) => (
         <span key={locale} className="flex items-center gap-2">
           <button
@@ -23,14 +23,14 @@ export function LocaleToggle() {
             }}
             aria-current={current === locale ? 'true' : undefined}
             className={cn(
-              'transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-ink',
-              current === locale ? 'text-parchment' : 'text-parchment/40 hover:text-parchment/70',
+              'transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bone',
+              current === locale ? 'text-ink' : 'text-ink/40 hover:text-ink/70',
             )}
           >
             {locale.toUpperCase()}
           </button>
           {i < routing.locales.length - 1 ? (
-            <span aria-hidden="true" className="text-stone/40">
+            <span aria-hidden="true" className="text-ink/25">
               /
             </span>
           ) : null}

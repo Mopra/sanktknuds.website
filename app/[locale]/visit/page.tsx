@@ -29,13 +29,13 @@ export default async function VisitPage({ params }: Props) {
   const mapEmbedUrl = `https://maps.google.com/maps?q=${query}&z=16&output=embed`;
 
   const directionsLink =
-    'inline-flex items-center justify-center border border-ember/50 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:border-ember hover:bg-ember hover:text-ink';
+    'inline-flex items-center justify-center border border-ember/50 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:border-ember hover:bg-ember hover:text-bone';
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-24">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? (
-        <p className="mt-6 text-lg text-parchment/80">{page.description}</p>
+        <p className="mt-6 text-lg text-ink/80">{page.description}</p>
       ) : null}
 
       <Figure
@@ -72,7 +72,7 @@ export default async function VisitPage({ params }: Props) {
             {site.cvr ? (
               <>
                 <br />
-                <span className="text-parchment/50">CVR {site.cvr}</span>
+                <span className="text-ink/50">CVR {site.cvr}</span>
               </>
             ) : null}
           </address>
@@ -115,7 +115,7 @@ export default async function VisitPage({ params }: Props) {
       />
 
       {/* Below-the-fold, lazy-loaded so the map never blocks the page's LCP. */}
-      <div className="mt-16 overflow-hidden border border-stone/15">
+      <div className="mt-16 overflow-hidden border border-ink/10">
         <iframe
           title={
             locale === 'da'

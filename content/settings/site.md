@@ -18,14 +18,13 @@ bookingUrl: https://sanktknuds.superbexperience.com/
 social:
   instagram: https://www.instagram.com/sankt.knuds/
   facebook: https://www.facebook.com/profile.php?id=61590480759865
+trustpilot:
+  url: https://dk.trustpilot.com/review/sanktknuds.dk
+  score: 4.9
 tagline:
-  da: Historie i væggene. Liv i glasset.
-  en: History in the walls. Life in the glass.
+  da: Sanktknuds er et sted at mødes
+  en: Sanktknuds is a place to meet
 currentPour:
   da: Fadlagret mørk ale fra Djursland — kaffe, karamel, en anelse røg.
   en: Barrel-aged dark ale from Djursland — coffee, caramel, a breath of smoke.
-preLaunch: false
-openingMonth:
-  da: Juni 2026
-  en: June 2026
 ---

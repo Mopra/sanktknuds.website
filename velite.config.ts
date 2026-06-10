@@ -123,6 +123,61 @@ const wineCard = defineCollection({
   }),
 });
 
+const cocktailCard = defineCollection({
+  name: 'CocktailCard',
+  pattern: 'cocktails/card.md',
+  single: true,
+  schema: s.object({
+    home: s.object({
+      eyebrow: localized.optional(),
+      title: localized,
+      description: localized.optional(),
+    }),
+    sections: s.array(
+      s.object({
+        id: s.string(),
+        label: localized,
+        note: localized.optional(),
+        cocktails: s.array(
+          s.object({
+            name: s.string(),
+            ingredients: localized.optional(),
+            notes: localized.optional(),
+          }),
+        ),
+      }),
+    ),
+  }),
+});
+
+const drinksCard = defineCollection({
+  name: 'DrinksCard',
+  pattern: 'drinks/card.md',
+  single: true,
+  schema: s.object({
+    chapters: s.array(
+      s.object({
+        id: s.string(),
+        label: localized,
+        note: localized.optional(),
+        sections: s.array(
+          s.object({
+            id: s.string(),
+            label: localized,
+            items: s.array(
+              s.object({
+                name: localized,
+                description: localized.optional(),
+                price: s.number().optional(),
+              }),
+            ),
+          }),
+        ),
+      }),
+    ),
+  }),
+});
+
 const site = defineCollection({
   name: 'Site',
   pattern: 'settings/site.md',
@@ -152,18 +207,21 @@ const site = defineCollection({
       instagram: s.string().url().optional(),
       facebook: s.string().url().optional(),
     }),
+    trustpilot: s
+      .object({
+        url: s.string().url(),
+        score: s.number(),
+        reviewCount: s.number().optional(),
+        // Trustpilot Business → Integrations → any widget snippet → data-businessunit-id.
+        // When set, the live official TrustBox badge renders instead of the custom stars.
+        businessUnitId: s.string().optional(),
+      })
+      .optional(),
     tagline: s.object({
       da: s.string(),
       en: s.string(),
     }),
     currentPour: s
-      .object({
-        da: s.string(),
-        en: s.string(),
-      })
-      .optional(),
-    preLaunch: s.boolean().default(false),
-    openingMonth: s
       .object({
         da: s.string(),
         en: s.string(),
@@ -214,5 +272,15 @@ export default defineConfig({
     name: '[name]-[hash:8].[ext]',
     clean: true,
   },
-  collections: { pages, menuSections, tastings, receptions, wineCard, site, hours },
+  collections: {
+    pages,
+    menuSections,
+    tastings,
+    receptions,
+    wineCard,
+    cocktailCard,
+    drinksCard,
+    site,
+    hours,
+  },
 });

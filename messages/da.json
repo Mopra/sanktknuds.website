@@ -2,6 +2,8 @@
   "nav": {
     "menu": "Menukort",
     "wine": "Vinkort",
+    "cocktails": "Cocktails",
+    "drinks": "Drikkevarer",
     "story": "Historie",
     "visit": "Besøg",
     "events": "Selskaber",
@@ -10,10 +12,15 @@
   "booking": {
     "cta": "Book bord"
   },
+  "trustpilot": {
+    "score": "TrustScore",
+    "rating": "Bedømt {score} ud af 5 på Trustpilot"
+  },
   "footer": {
     "visit": "Besøg",
     "hours": "Åbningstider",
-    "sitemap": "Oversigt"
+    "sitemap": "Oversigt",
+    "smiley": "Se vores smiley-rapport"
   },
   "days": {
     "mon": "Man",
@@ -50,13 +57,16 @@
     "limitedNote": "Få flasker tilbage. Vi tager forbehold for udsolgte vine.",
     "priceNote": "Hvor to priser vises, gælder de glas / flaske."
   },
+  "cocktails": {
+    "classicsNote": "Vi laver gerne klassiske cocktails, der ikke står på kortet, når det er muligt — spørg endelig personalet.",
+    "allergensNote": "Vores cocktails kan indeholde allergener som æg, mælk, nødder og sulfitter. Fortæl personalet om allergier eller hensyn, før du bestiller.",
+    "viewAll": "Se hele cocktailkortet"
+  },
+  "drinks": {
+    "currency": "kr"
+  },
   "masthead": {
     "founded": "Grundlagt"
-  },
-  "preLaunch": {
-    "preamble": "Vi åbner",
-    "standby": "Indtil da — følg med på Instagram.",
-    "follow": "Følg os"
   },
   "notFound": {
     "title": "Siden findes ikke",

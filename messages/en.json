@@ -2,6 +2,8 @@
   "nav": {
     "menu": "Menu",
     "wine": "Wine",
+    "cocktails": "Cocktails",
+    "drinks": "Drinks",
     "story": "Story",
     "visit": "Visit",
     "events": "Events",
@@ -10,10 +12,15 @@
   "booking": {
     "cta": "Reserve a table"
   },
+  "trustpilot": {
+    "score": "TrustScore",
+    "rating": "Rated {score} out of 5 on Trustpilot"
+  },
   "footer": {
     "visit": "Visit",
     "hours": "Hours",
-    "sitemap": "Sitemap"
+    "sitemap": "Sitemap",
+    "smiley": "See our food-safety rating"
   },
   "days": {
     "mon": "Mon",
@@ -50,13 +57,16 @@
     "limitedNote": "A few bottles left — subject to availability.",
     "priceNote": "Where two prices are shown, they are glass / bottle."
   },
+  "cocktails": {
+    "classicsNote": "We are happy to prepare classic cocktails not listed here whenever possible — just ask our team.",
+    "allergensNote": "Our cocktails may contain allergens such as egg, dairy, nuts and sulphites. Please tell our staff about any allergies or dietary needs before ordering.",
+    "viewAll": "See the full cocktail list"
+  },
+  "drinks": {
+    "currency": "DKK"
+  },
   "masthead": {
     "founded": "Established"
-  },
-  "preLaunch": {
-    "preamble": "Opening",
-    "standby": "Until then — follow along on Instagram.",
-    "follow": "Follow along"
   },
   "notFound": {
     "title": "Page not found",

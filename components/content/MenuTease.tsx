@@ -11,20 +11,17 @@ export function MenuTease({ locale }: { locale: Locale }) {
   if (!tasting) return null;
 
   return (
-    <section className="border-t border-stone/15 bg-ink-soft">
+    <section className="border-t border-ink/10 bg-bone">
       <div className="mx-auto max-w-6xl px-6 pt-24 md:px-10 md:pt-32 lg:px-16">
         <div className="max-w-2xl">
-          <div className="h-px w-16 bg-ember" />
           {tasting.eyebrow ? (
-            <p className="mt-5 font-mono text-xs uppercase tracking-[0.35em] text-ember/80">
-              {tasting.eyebrow}
-            </p>
+            <p className="text-xs uppercase tracking-[0.3em] text-stone">{tasting.eyebrow}</p>
           ) : null}
-          <h2 className="mt-5 font-display text-3xl leading-[1.05] tracking-tight text-parchment md:text-4xl lg:text-5xl">
+          <h2 className="mt-5 font-display text-3xl leading-[1.05] tracking-tight text-ink md:text-4xl lg:text-5xl">
             {tasting.title}
           </h2>
           {tasting.description ? (
-            <p className="mt-6 text-lg leading-relaxed text-parchment/70">{tasting.description}</p>
+            <p className="mt-6 text-lg leading-relaxed text-ink-soft">{tasting.description}</p>
           ) : null}
         </div>
       </div>
@@ -54,15 +51,11 @@ export function MenuTease({ locale }: { locale: Locale }) {
       <div className="mx-auto max-w-6xl px-6 pb-24 md:px-10 md:pb-32 lg:px-16">
         <TastingGroups groups={tasting.groups} className="mt-16 md:mt-24" />
 
-        <div className="mt-8 flex flex-col gap-6 border-t border-stone/15 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          {tasting.note ? (
-            <p className="max-w-md text-sm text-parchment/50">{tasting.note}</p>
-          ) : (
-            <span />
-          )}
+        <div className="mt-8 flex flex-col gap-6 border-t border-ink/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+          {tasting.note ? <p className="max-w-md text-sm text-ink/55">{tasting.note}</p> : <span />}
           <Link
             href={routes.menu}
-            className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-parchment"
+            className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ember transition-colors hover:text-ink"
           >
             {t('viewMenu')}
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">

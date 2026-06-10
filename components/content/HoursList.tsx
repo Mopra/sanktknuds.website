@@ -18,14 +18,14 @@ export function HoursList({ locale, className }: { locale: Locale; className?: s
     <div className={cn('font-mono text-sm', className)}>
       {hours.services.map((service) => (
         <section key={service.name.en} className="mt-6 first:mt-0">
-          <h3 className="text-xs uppercase tracking-[0.2em] text-ember/80">
+          <h3 className="text-xs uppercase tracking-[0.2em] text-stone">
             {service.name[locale]}
           </h3>
           <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
             {service.schedule.map((row) => (
               <div key={row.days.join('-')} className="contents">
-                <dt className="text-parchment/60">{dayRange(row.days as Day[], label)}</dt>
-                <dd className="tabular-nums text-parchment">
+                <dt className="text-ink/55">{dayRange(row.days as Day[], label)}</dt>
+                <dd className="tabular-nums text-ink">
                   {row.ranges.map((r) => `${r.opens} – ${r.closes}`).join(', ')}
                 </dd>
               </div>
@@ -34,7 +34,7 @@ export function HoursList({ locale, className }: { locale: Locale; className?: s
         </section>
       ))}
       {hours.notes?.[locale] ? (
-        <p className="mt-4 text-xs text-parchment/50">{hours.notes[locale]}</p>
+        <p className="mt-4 text-xs text-ink/50">{hours.notes[locale]}</p>
       ) : null}
     </div>
   );

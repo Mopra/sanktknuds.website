@@ -71,7 +71,7 @@ export function SocialLinks({
             rel="noopener noreferrer"
             aria-label={label}
             className={cn(
-              'inline-flex items-center gap-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-ink',
+              'inline-flex items-center gap-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bone',
               linkClassName,
             )}
           >

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Fraunces, Geist, Geist_Mono } from 'next/font/google';
+import Script from 'next/script';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
@@ -8,7 +9,6 @@ import { Toaster } from 'sonner';
 import { hours, site } from '#content';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
-import { PreLaunchOverlay } from '@/components/layout/PreLaunchOverlay';
 import { routing } from '@/i18n/routing';
 import { buildRestaurantSchema } from '@/lib/seo';
 import '../globals.css';
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#17120e',
+  themeColor: '#f5f1e8',
 };
 
 export function generateStaticParams() {
@@ -61,38 +61,41 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const schema = buildRestaurantSchema(site, hours, locale);
 
-  const preLaunch = site.preLaunch ?? false;
-
   return (
     <html lang={locale} className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}>
-      <body
-        className={`bg-ink text-parchment font-sans antialiased ${preLaunch ? 'overflow-hidden' : ''}`}
-      >
+      <body className="bg-bone text-ink font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-parchment focus:px-3 focus:py-2 focus:text-ink"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-ink focus:px-3 focus:py-2 focus:text-bone"
           >
             Skip to content
           </a>
-          <div
-            aria-hidden={preLaunch ? 'true' : undefined}
-            className={preLaunch ? 'pointer-events-none select-none' : undefined}
-          >
-            <Header />
-            <main id="main" className="min-h-[60vh]">
-              {children}
-            </main>
-            <Footer />
-          </div>
-          {preLaunch ? <PreLaunchOverlay /> : null}
-          <Toaster theme="dark" position="bottom-center" />
+          <Header />
+          <main id="main" className="min-h-[60vh]">
+            {children}
+          </main>
+          <Footer />
+          <Toaster theme="light" position="bottom-center" />
         </NextIntlClientProvider>
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD needs raw injection
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2PF8JYFR5R"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2PF8JYFR5R');
+          `}
+        </Script>
       </body>
     </html>
   );

@@ -21,43 +21,28 @@ export function ReceptionInvite({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <section className="relative overflow-hidden border-t border-ember/25 bg-ink-soft">
-      {/* Warm ember wash — marks this out as the announcement */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(60% 80% at 15% 0%, color-mix(in oklch, var(--color-ember) 12%, transparent), transparent 70%)',
-        }}
-      />
-
-      <div className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32 lg:px-16">
+    <section className="border-t border-ink/10 bg-bone-dim">
+      <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32 lg:px-16">
         <div className="max-w-2xl">
-          <div className="h-px w-16 bg-ember" />
           {reception.eyebrow ? (
-            <p className="mt-5 font-mono text-xs uppercase tracking-[0.35em] text-ember/80">
-              {reception.eyebrow}
-            </p>
+            <p className="text-xs uppercase tracking-[0.3em] text-ember">{reception.eyebrow}</p>
           ) : null}
-          <h2 className="mt-5 font-display text-3xl leading-[1.05] tracking-tight text-parchment md:text-4xl lg:text-5xl">
+          <h2 className="mt-5 font-display text-3xl leading-[1.05] tracking-tight text-ink md:text-4xl lg:text-5xl">
             {reception.title}
           </h2>
           {reception.description ? (
-            <p className="mt-6 text-lg leading-relaxed text-parchment/70">
-              {reception.description}
-            </p>
+            <p className="mt-6 text-lg leading-relaxed text-ink-soft">{reception.description}</p>
           ) : null}
         </div>
 
         {/* Key facts — hairline-separated, masthead-style */}
-        <dl className="mt-12 grid grid-cols-1 divide-y divide-stone/15 border-y border-stone/15 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        <dl className="mt-12 grid grid-cols-1 divide-y divide-ink/10 border-y border-ink/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {details.map((detail) => (
             <div key={detail.label} className="py-6 sm:px-8 sm:py-7 sm:first:pl-0 sm:last:pr-0">
-              <dt className="font-mono text-[0.7rem] uppercase tracking-[0.3em] text-stone">
+              <dt className="text-[0.7rem] uppercase tracking-[0.3em] text-stone">
                 {detail.label}
               </dt>
-              <dd className="mt-3 font-display text-xl tracking-tight text-parchment md:text-2xl">
+              <dd className="mt-3 font-display text-xl tracking-tight text-ink md:text-2xl">
                 {detail.value}
               </dd>
             </div>
@@ -66,14 +51,14 @@ export function ReceptionInvite({ locale }: { locale: Locale }) {
 
         {/* Invitation */}
         <div
-          className="prose prose-invert mt-12 max-w-2xl"
+          className="prose mt-12 max-w-2xl"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: trusted repo-sourced content
           dangerouslySetInnerHTML={{ __html: reception.body }}
         />
 
         <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           {reception.closing ? (
-            <p className="font-display text-2xl tracking-tight text-ember md:text-3xl">
+            <p className="font-display text-2xl italic tracking-tight text-ember md:text-3xl">
               {reception.closing}
             </p>
           ) : (
@@ -83,7 +68,7 @@ export function ReceptionInvite({ locale }: { locale: Locale }) {
             href={MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-parchment"
+            className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ember transition-colors hover:text-ink"
           >
             {t('directions')}
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">

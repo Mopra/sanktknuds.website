@@ -22,7 +22,7 @@ export default async function BookPage({ params }: Props) {
     <article className="mx-auto max-w-2xl px-6 py-24 text-center">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? (
-        <p className="mt-6 text-lg text-parchment/80">{page.description}</p>
+        <p className="mt-6 text-lg text-ink/80">{page.description}</p>
       ) : null}
       <div className="mt-12 flex justify-center">
         <BookingButton size="lg" />

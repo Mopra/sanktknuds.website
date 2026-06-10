@@ -14,6 +14,14 @@ export const routing = defineRouting({
       da: '/vinkort',
       en: '/wine',
     },
+    '/cocktails': {
+      da: '/cocktailkort',
+      en: '/cocktails',
+    },
+    '/drinks': {
+      da: '/drikkevarer',
+      en: '/drinks',
+    },
     '/story': {
       da: '/historie',
       en: '/story',
@@ -40,6 +48,8 @@ export const routes = {
   home: '/',
   menu: '/menu',
   wine: '/wine',
+  cocktails: '/cocktails',
+  drinks: '/drinks',
   story: '/story',
   visit: '/visit',
   book: '/book',

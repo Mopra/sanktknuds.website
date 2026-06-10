@@ -29,7 +29,7 @@ export function Figure({
   className,
 }: FigureProps) {
   return (
-    <div className={cn('relative overflow-hidden bg-ink-soft', aspect, className)}>
+    <div className={cn('relative overflow-hidden bg-bone-dim', aspect, className)}>
       <Image
         src={src}
         alt={alt}
