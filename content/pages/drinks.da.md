@@ -1,7 +1,7 @@
 ---
 slug: drinks
 locale: da
-title: Drikkevarer
+title: Øvrige drikke
 description: Vand, sodavand, fadøl, kaffe og avec — det daglige ved siden af maden og det gode til sidst.
 ---
 

@@ -21,6 +21,7 @@ export default async function MenuPage({ params }: Props) {
   const page = getPage('menu', locale);
   const tasting = getTasting('menu', locale);
   const t = await getTranslations('wine');
+  const tc = await getTranslations('cocktails');
 
   return (
     <article className="mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32">
@@ -56,15 +57,26 @@ export default async function MenuPage({ params }: Props) {
         </>
       ) : null}
 
-      <Link
-        href={routes.wine}
-        className="group mt-16 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-ink"
-      >
-        {t('fromMenu')}
-        <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
-          →
-        </span>
-      </Link>
+      <div className="mt-16 flex flex-col gap-4">
+        <Link
+          href={routes.wine}
+          className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-ink"
+        >
+          {t('fromMenu')}
+          <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
+        <Link
+          href={routes.cocktails}
+          className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-ink"
+        >
+          {tc('viewAll')}
+          <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
+      </div>
     </article>
   );
 }

@@ -6,7 +6,8 @@ import { CocktailBar } from '@/components/content/CocktailBar';
 import { MenuTease } from '@/components/content/MenuTease';
 import { ReceptionInvite } from '@/components/content/ReceptionInvite';
 import { BookingButton } from '@/components/ui/BookingButton';
-import { TrustpilotRating } from '@/components/ui/TrustpilotRating';
+// Temporarily hidden — restore when ready
+// import { TrustpilotRating } from '@/components/ui/TrustpilotRating';
 import type { Locale } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
@@ -44,7 +45,8 @@ export default async function HomePage({ params }: Props) {
           <div className="mt-12 flex flex-col gap-8 border-t border-ink/10 pt-8 sm:flex-row sm:items-end sm:justify-between md:mt-16">
             <p className="max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">{tagline}</p>
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8">
-              <TrustpilotRating />
+              {/* Temporarily hidden — restore when ready */}
+              {/* <TrustpilotRating /> */}
               <BookingButton size="lg" />
             </div>
           </div>

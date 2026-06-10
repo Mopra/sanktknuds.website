@@ -11,4 +11,4 @@ In the heart of Aarhus, where travellers once found rest and restraint, now stan
 
 We serve well-crafted beer, honest food and good hours — in surroundings where the weight of the past meets the pulse of the present. A place where you are allowed to stay a little longer.
 
-Sanktknuds is a place to meet
+Sankt Knuds is a place to meet

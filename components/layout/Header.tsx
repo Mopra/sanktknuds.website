@@ -25,10 +25,10 @@ export async function Header() {
     <>
       <Masthead />
       <header className="sticky top-0 z-40 border-b border-ink/10 bg-bone/85 backdrop-blur supports-[backdrop-filter]:bg-bone/75">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
+        <div className="flex w-full items-center justify-between gap-6 px-6 py-4 md:px-10">
           <Link
             href={routes.home}
-            className="font-display text-lg tracking-tight text-ink transition-colors hover:text-ember"
+            className="shrink-0 whitespace-nowrap font-display text-lg tracking-tight text-ink transition-colors hover:text-ember"
             aria-label="Sankt Knuds"
           >
             Sankt Knuds

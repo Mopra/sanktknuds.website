@@ -22,8 +22,8 @@ trustpilot:
   url: https://dk.trustpilot.com/review/sanktknuds.dk
   score: 4.9
 tagline:
-  da: Sanktknuds er et sted at mødes
-  en: Sanktknuds is a place to meet
+  da: Sankt Knuds er et sted at mødes
+  en: Sankt Knuds is a place to meet
 currentPour:
   da: Fadlagret mørk ale fra Djursland — kaffe, karamel, en anelse røg.
   en: Barrel-aged dark ale from Djursland — coffee, caramel, a breath of smoke.

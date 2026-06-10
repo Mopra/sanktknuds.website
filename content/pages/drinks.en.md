@@ -1,7 +1,7 @@
 ---
 slug: drinks
 locale: en
-title: Drinks
+title: Other drinks
 description: Water, soft drinks, draught beer, coffee and avec — the everyday alongside the food, and something good to finish.
 ---
 

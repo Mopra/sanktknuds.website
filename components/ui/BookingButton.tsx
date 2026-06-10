@@ -6,7 +6,7 @@ import { site } from '#content';
 import { cn } from '@/lib/cn';
 
 const button = tv({
-  base: 'inline-flex items-center justify-center text-xs uppercase tracking-[0.2em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bone disabled:opacity-60',
+  base: 'inline-flex items-center justify-center whitespace-nowrap text-xs uppercase tracking-[0.2em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bone disabled:opacity-60',
   variants: {
     variant: {
       primary: 'bg-ink text-bone hover:bg-ember hover:text-bone',

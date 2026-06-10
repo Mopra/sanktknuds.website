@@ -11,4 +11,4 @@ I hjertet af Aarhus, hvor rejsende engang fandt hvile og tilbageholdenhed, står
 
 Her byder vi på velbrygget øl, ærlig mad og gode stunder — i rammer hvor historien møder nutiden. Et sted hvor du må blive lidt længere.
 
-Sanktknuds er et sted at mødes
+Sankt Knuds er et sted at mødes

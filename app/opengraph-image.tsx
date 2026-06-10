@@ -65,7 +65,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ fontSize: 30, color: 'rgba(251, 247, 239, 0.72)' }}>
-          Sanktknuds er et sted at mødes
+          Sankt Knuds er et sted at mødes
         </div>
         <div style={{ fontSize: 24, letterSpacing: 4, color: STONE }}>sanktknuds.dk</div>
       </div>
