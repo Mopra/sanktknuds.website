@@ -1,6 +1,7 @@
 import { defineCollection, defineConfig, s } from 'velite';
 
 const localeEnum = s.enum(['da', 'en']);
+const localized = s.object({ da: s.string(), en: s.string() });
 
 const pages = defineCollection({
   name: 'Page',
@@ -22,28 +23,33 @@ const pages = defineCollection({
     })),
 });
 
-const menuSections = defineCollection({
-  name: 'MenuSection',
-  pattern: 'menu/*.md',
-  schema: s
-    .object({
-      slug: s.string(),
-      locale: localeEnum,
-      title: s.string(),
-      description: s.string().optional(),
-      items: s.array(
-        s.object({
-          name: s.string(),
-          description: s.string().optional(),
-          price: s.number().optional(),
-          tags: s.array(s.string()).optional(),
-        }),
-      ),
-    })
-    .transform((data) => ({
-      ...data,
-      id: `${data.slug}.${data.locale}`,
-    })),
+const foodCard = defineCollection({
+  name: 'FoodCard',
+  pattern: 'food/card.md',
+  single: true,
+  schema: s.object({
+    chapters: s.array(
+      s.object({
+        id: s.string(),
+        label: localized,
+        note: localized.optional(),
+        sections: s.array(
+          s.object({
+            id: s.string(),
+            label: localized.optional(),
+            note: localized.optional(),
+            items: s.array(
+              s.object({
+                name: localized,
+                description: localized.optional(),
+                price: s.number().optional(),
+              }),
+            ),
+          }),
+        ),
+      }),
+    ),
+  }),
 });
 
 const tastings = defineCollection({
@@ -92,8 +98,6 @@ const receptions = defineCollection({
       id: `${data.slug}.${data.locale}`,
     })),
 });
-
-const localized = s.object({ da: s.string(), en: s.string() });
 
 const wineCard = defineCollection({
   name: 'WineCard',
@@ -274,7 +278,7 @@ export default defineConfig({
   },
   collections: {
     pages,
-    menuSections,
+    foodCard,
     tastings,
     receptions,
     wineCard,

@@ -44,6 +44,13 @@
   "tasting": {
     "viewMenu": "View the menu"
   },
+  "menu": {
+    "download": "Download menu (PDF)",
+    "currency": "DKK",
+    "allergens": "Please ask our staff about allergens.",
+    "closingTitle": "A place where time has a little more room",
+    "closing": "It's about good flavours, good conversation and moments you're in no hurry to end. Sankt Knuds is a place to meet and enjoy good company."
+  },
   "reception": {
     "date": "Date",
     "time": "Time",

@@ -1,7 +1,7 @@
 import {
   cocktailCard,
   drinksCard,
-  menuSections,
+  foodCard,
   pages,
   receptions,
   tastings,
@@ -10,7 +10,8 @@ import {
 import type { Locale } from '@/i18n/routing';
 
 export type ContentPage = (typeof pages)[number];
-export type ContentMenuSection = (typeof menuSections)[number];
+export type FoodCard = typeof foodCard;
+export type FoodChapter = FoodCard['chapters'][number];
 export type ContentTasting = (typeof tastings)[number];
 export type ContentReception = (typeof receptions)[number];
 export type WineCard = typeof wineCard;
@@ -28,10 +29,8 @@ export function getPage(slug: string, locale: Locale): ContentPage {
   return page;
 }
 
-export function getMenuSections(locale: Locale): ContentMenuSection[] {
-  return menuSections
-    .filter((s) => s.locale === locale)
-    .sort((a, b) => a.slug.localeCompare(b.slug));
+export function getFoodChapters(): FoodChapter[] {
+  return foodCard.chapters;
 }
 
 export function getTasting(slug: string, locale: Locale): ContentTasting | undefined {

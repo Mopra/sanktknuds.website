@@ -44,6 +44,13 @@
   "tasting": {
     "viewMenu": "Se menukortet"
   },
+  "menu": {
+    "download": "Hent menukort (PDF)",
+    "currency": "kr",
+    "allergens": "Spørg venligst personalet om allergener.",
+    "closingTitle": "Et sted, hvor tiden får lidt mere plads",
+    "closing": "Her handler det om gode smage, gode samtaler og stunder, man ikke har travlt med at afslutte. Sankt Knuds er et sted at mødes og opleve det gode samvær."
+  },
   "reception": {
     "date": "Dato",
     "time": "Tid",
