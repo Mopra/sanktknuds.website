@@ -76,29 +76,6 @@ const tastings = defineCollection({
     })),
 });
 
-const receptions = defineCollection({
-  name: 'Reception',
-  pattern: 'reception/*.md',
-  schema: s
-    .object({
-      slug: s.string(),
-      locale: localeEnum,
-      eyebrow: s.string().optional(),
-      title: s.string(),
-      description: s.string().optional(),
-      dateLabel: s.string(),
-      timeLabel: s.string(),
-      startDate: s.string(),
-      endDate: s.string(),
-      closing: s.string().optional(),
-      body: s.markdown(),
-    })
-    .transform((data) => ({
-      ...data,
-      id: `${data.slug}.${data.locale}`,
-    })),
-});
-
 const wineCard = defineCollection({
   name: 'WineCard',
   pattern: 'wine/card.md',
@@ -280,7 +257,6 @@ export default defineConfig({
     pages,
     foodCard,
     tastings,
-    receptions,
     wineCard,
     cocktailCard,
     drinksCard,

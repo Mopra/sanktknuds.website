@@ -1,19 +1,10 @@
-import {
-  cocktailCard,
-  drinksCard,
-  foodCard,
-  pages,
-  receptions,
-  tastings,
-  wineCard,
-} from '#content';
+import { cocktailCard, drinksCard, foodCard, pages, tastings, wineCard } from '#content';
 import type { Locale } from '@/i18n/routing';
 
 export type ContentPage = (typeof pages)[number];
 export type FoodCard = typeof foodCard;
 export type FoodChapter = FoodCard['chapters'][number];
 export type ContentTasting = (typeof tastings)[number];
-export type ContentReception = (typeof receptions)[number];
 export type WineCard = typeof wineCard;
 export type WineSection = WineCard['sections'][number];
 export type CocktailCard = typeof cocktailCard;
@@ -35,10 +26,6 @@ export function getFoodChapters(): FoodChapter[] {
 
 export function getTasting(slug: string, locale: Locale): ContentTasting | undefined {
   return tastings.find((t) => t.slug === slug && t.locale === locale);
-}
-
-export function getReception(slug: string, locale: Locale): ContentReception | undefined {
-  return receptions.find((r) => r.slug === slug && r.locale === locale);
 }
 
 export function getWineSections(): WineSection[] {

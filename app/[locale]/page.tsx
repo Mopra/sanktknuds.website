@@ -4,7 +4,6 @@ import { setRequestLocale } from 'next-intl/server';
 import { site } from '#content';
 import { CocktailBar } from '@/components/content/CocktailBar';
 import { MenuTease } from '@/components/content/MenuTease';
-import { ReceptionInvite } from '@/components/content/ReceptionInvite';
 import { BookingButton } from '@/components/ui/BookingButton';
 // Temporarily hidden — restore when ready
 // import { TrustpilotRating } from '@/components/ui/TrustpilotRating';
@@ -65,9 +64,6 @@ export default async function HomePage({ params }: Props) {
           />
         </div>
       </section>
-
-      {/* Opening reception — timely announcement, given prominence near the top */}
-      <ReceptionInvite locale={locale} />
 
       {/* Editorial intro — text and a full-height glimpse of the glass, side by side */}
       <section className="border-t border-ink/10 bg-bone">
