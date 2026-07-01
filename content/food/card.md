@@ -69,12 +69,12 @@ chapters:
           en: Potato
         items:
           - name:
-              da: Syrlige, sprøde kartofler med urtemayo
-              en: Tangy, crisp potatoes with herb mayo
+              da: Syrlige, sprøde chips med urtemayo
+              en: Tangy, crisp potato crisps with herb mayo
             price: 40
           - name:
-              da: Friterede kartofler med pebermayo
-              en: Fried potatoes with pepper mayo
+              da: Pommes frites med pebermayo
+              en: French fries with pepper mayo
             price: 45
       - id: kylling
         label:
@@ -100,10 +100,6 @@ chapters:
               da: Dampet i hvidvin og ingefær med urter
               en: Steamed in white wine and ginger with herbs
             price: 135
-          - name:
-              da: Pakket i glaskål med syrnet fløde, ribs og friske urter
-              en: Wrapped in kohlrabi with soured cream, redcurrants and fresh herbs
-            price: 125
       - id: kammuslinger
         label:
           da: Kammuslinger
@@ -256,8 +252,11 @@ chapters:
       - id: desserter-liste
         items:
           - name:
-              da: Crème brûlée
-              en: Crème brûlée
+              da: Knickerbocker glory
+              en: Knickerbocker glory
+            description:
+              da: Vaniljeis, frugt, crème anglaise og flødeskum
+              en: Vanilla ice cream, fruit, crème anglaise and whipped cream
             price: 95
           - name:
               da: Tærte
