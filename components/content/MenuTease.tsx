@@ -26,26 +26,19 @@ export function MenuTease({ locale }: { locale: Locale }) {
         </div>
       </div>
 
-      {/* Full-bleed glimpse of the plate — two panels, flush edge to edge */}
-      <div className="mt-14 grid grid-cols-1 md:mt-20 md:grid-cols-2">
-        <div className="relative aspect-[4/3] md:aspect-auto md:h-[30rem] lg:h-[38rem]">
-          <Image
-            src="/images/edward-howell-R8HoXig87p8-unsplash.jpg"
-            alt={locale === 'da' ? 'Anretning fra køkkenet' : 'A plated dish from the kitchen'}
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="relative aspect-[4/3] md:aspect-auto md:h-[30rem] lg:h-[38rem]">
-          <Image
-            src="/images/edward-howell-vvUy1hWVYEA-unsplash.jpg"
-            alt={locale === 'da' ? 'Årstidens råvarer på tallerkenen' : 'Seasonal produce, plated'}
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-          />
-        </div>
+      {/* One full-bleed photograph of the plate — quiet and confident */}
+      <div className="relative mt-14 aspect-[4/3] md:mt-20 md:aspect-video">
+        <Image
+          src="/images/VIC09823.webp"
+          alt={
+            locale === 'da'
+              ? 'Frisk pasta med spanske skinke og en spritz ved bordet'
+              : 'Fresh pasta with cured ham and a spritz at the table'
+          }
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
       </div>
 
       <div className="mx-auto max-w-6xl px-6 pb-24 md:px-10 md:pb-32 lg:px-16">

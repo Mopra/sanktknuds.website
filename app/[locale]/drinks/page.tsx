@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Figure } from '@/components/ui/Figure';
 import type { Locale } from '@/i18n/routing';
 import { getDrinksChapters, getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
@@ -24,6 +25,20 @@ export default async function DrinksPage({ params }: Props) {
     <article className="mx-auto max-w-3xl px-6 py-24">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
+
+      <Figure
+        src="/images/VIC09841.webp"
+        alt={
+          locale === 'da'
+            ? 'En kold fadøl fra Carlsberg ved bordet'
+            : 'A cold Carlsberg draught beer at the table'
+        }
+        aspect="aspect-[3/2]"
+        sizes="(min-width: 768px) 48rem, 100vw"
+        position="50% 42%"
+        priority
+        className="mt-12"
+      />
 
       <div className="mt-16 space-y-24">
         {chapters.map((chapter) => (

@@ -47,14 +47,15 @@ export default async function MenuPage({ params }: Props) {
       </a>
 
       <Figure
-        src="/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        src="/images/VIC00002.webp"
         alt={
           locale === 'da'
-            ? 'Anretning serveret ved bordet med vin'
-            : 'A dish served at the table with wine'
+            ? 'Sæsonens råvarer anrettet med et glas vin'
+            : 'Seasonal produce plated, with a glass of wine'
         }
         aspect="aspect-[16/9]"
         sizes="(min-width: 768px) 48rem, 100vw"
+        position="50% 55%"
         priority
         className="mt-12"
       />

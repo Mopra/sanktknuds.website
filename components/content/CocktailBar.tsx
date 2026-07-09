@@ -17,8 +17,10 @@ export function CocktailBar({ locale }: { locale: Locale }) {
         {/* The bar, in low light */}
         <div className="relative order-last min-h-[60vh] lg:order-first lg:min-h-0">
           <Image
-            src="/images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
-            alt={locale === 'da' ? 'Baren i aftenlys' : 'The bar in evening light'}
+            src="/images/VIC00177.webp"
+            alt={
+              locale === 'da' ? 'Husets signatur-cocktail ved baren' : 'A signature cocktail at the bar'
+            }
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"

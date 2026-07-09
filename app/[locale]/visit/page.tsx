@@ -39,14 +39,15 @@ export default async function VisitPage({ params }: Props) {
       ) : null}
 
       <Figure
-        src="/images/nick-hillier-xBXF9pr6LQo-unsplash.jpg"
+        src="/images/VIC00096.webp"
         alt={
           locale === 'da'
-            ? 'Spisesalen hos Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C'
-            : 'The dining room at Sankt Knuds Brasseri & Bar in central Aarhus'
+            ? 'Gæster foran indgangen til Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C'
+            : 'Guests outside the entrance to Sankt Knuds Brasseri & Bar in central Aarhus'
         }
         aspect="aspect-[16/9]"
         sizes="(min-width: 768px) 48rem, 100vw"
+        position="50% 35%"
         priority
         className="mt-12"
       />

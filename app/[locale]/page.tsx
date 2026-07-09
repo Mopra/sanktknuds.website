@@ -26,8 +26,8 @@ export default async function HomePage({ params }: Props) {
   const tagline = site.tagline[locale];
   const heroAlt =
     locale === 'da'
-      ? 'Gæster ved bordene på Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C'
-      : 'Guests at the tables of Sankt Knuds Brasseri & Bar in central Aarhus';
+      ? 'Baren med grøn marmor og ophængte glas hos Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C'
+      : 'The green marble bar with hanging glassware at Sankt Knuds Brasseri & Bar in central Aarhus';
 
   return (
     <>
@@ -54,13 +54,13 @@ export default async function HomePage({ params }: Props) {
         {/* The room — one wide, quiet photograph */}
         <div className="relative mt-12 h-[60vh] md:mt-16 md:h-[75vh]">
           <Image
-            src="/hero-bar.jpg"
+            src="/hero-bar-marble.jpg"
             alt={heroAlt}
             fill
             priority
             quality={90}
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-[center_40%]"
           />
         </div>
       </section>
@@ -84,8 +84,12 @@ export default async function HomePage({ params }: Props) {
           {/* Image fills its half top-to-bottom — anchored, not floating */}
           <div className="relative min-h-[65vh] lg:min-h-0">
             <Image
-              src="/images/kyle-bushnell-GwlMJ2cDkNs-unsplash.jpg"
-              alt={locale === 'da' ? 'Fadøl tappet ved baren' : 'Beer poured fresh at the bar'}
+              src="/images/VIC00139.webp"
+              alt={
+                locale === 'da'
+                  ? 'Bartenderen sier en cocktail bag baren'
+                  : 'The bartender strains a cocktail behind the bar'
+              }
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
