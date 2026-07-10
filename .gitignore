@@ -33,6 +33,7 @@ pnpm-debug.log*
 .vscode/
 .idea/
 *.swp
+*.vsix
 
 # claude code local settings
 .claude/
