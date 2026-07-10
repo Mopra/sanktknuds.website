@@ -10,6 +10,10 @@ export const routing = defineRouting({
       da: '/menukort',
       en: '/menu',
     },
+    '/lunch': {
+      da: '/frokost',
+      en: '/lunch',
+    },
     '/wine': {
       da: '/vinkort',
       en: '/wine',
@@ -47,6 +51,7 @@ export type AppPathname = keyof typeof routing.pathnames;
 export const routes = {
   home: '/',
   menu: '/menu',
+  lunch: '/lunch',
   wine: '/wine',
   cocktails: '/cocktails',
   drinks: '/drinks',

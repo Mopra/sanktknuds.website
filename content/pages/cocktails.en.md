@@ -2,6 +2,7 @@
 slug: cocktails
 locale: en
 title: Cocktails
+seoTitle: Cocktail bar in central Aarhus | Sankt Knuds
 description: Signature and classic cocktails — stirred and shaken at the bar on Ryesgade.
 ---
 

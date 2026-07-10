@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Figure } from '@/components/ui/Figure';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Link } from '@/i18n/navigation';
 import { type Locale, routes } from '@/i18n/routing';
 import { getFoodChapters, getPage } from '@/lib/content';
-import { buildPageMetadata } from '@/lib/seo';
+import { buildMenuSchema, buildPageMetadata } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -23,16 +24,23 @@ export default async function MenuPage({ params }: Props) {
   const tw = await getTranslations('wine');
   const tc = await getTranslations('cocktails');
   const currency = t('currency');
+  const menuSchema = buildMenuSchema(chapters, locale);
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-24 md:py-32">
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD needs raw injection
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }}
+      />
       <div className="h-px w-16 bg-ember" />
       <h1 className="mt-6 font-display text-5xl tracking-tight text-ink md:text-6xl">
         {page.title}
       </h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
 
-      <a
+      <TrackedLink
+        event="menu_pdf_download"
         href="/Menu.pdf"
         download
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
@@ -44,7 +52,7 @@ export default async function MenuPage({ params }: Props) {
         >
           ↓
         </span>
-      </a>
+      </TrackedLink>
 
       <Figure
         src="/images/VIC00002.webp"

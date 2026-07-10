@@ -22,6 +22,18 @@
 
   /* Radius / misc */
   --radius-none: 0;
+
+  /* Hero slider dot fill — duration must match SLIDE_MS in HeroSlider.tsx */
+  --animate-hero-progress: hero-progress 6s linear forwards;
+
+  @keyframes hero-progress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
 }
 
 @layer base {
@@ -114,4 +126,13 @@
 }
 .prose-invert {
   /* single-theme — kept as a no-op for legacy markup */
+}
+
+/* Swipeable tracks scroll, but the bar itself would cut the plates off */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

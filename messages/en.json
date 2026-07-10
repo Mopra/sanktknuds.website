@@ -7,14 +7,23 @@
     "story": "Story",
     "visit": "Visit",
     "events": "Events",
-    "book": "Reserve"
+    "book": "Reserve",
+    "lunch": "Lunch"
   },
   "booking": {
     "cta": "Reserve a table"
   },
-  "trustpilot": {
-    "score": "TrustScore",
-    "rating": "Rated {score} out of 5 on Trustpilot"
+  "hero": {
+    "label": "Images from Sankt Knuds",
+    "dot": "Show image {n}"
+  },
+  "food": {
+    "eyebrow": "From the kitchen",
+    "title": "The plates we're proud of",
+    "description": "From caviar and Argentine prawns to pizza and tart. Swipe along and see what leaves the kitchen.",
+    "prev": "Previous dish",
+    "next": "Next dish",
+    "viewMenu": "See the full menu"
   },
   "footer": {
     "visit": "Visit",
@@ -73,5 +82,21 @@
     "title": "Page not found",
     "description": "The link seems to have gone. Try the homepage.",
     "home": "Back home"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What our guests say",
+    "summary": "{rating} out of 5 on Google",
+    "readAll": "Read all reviews on Google",
+    "write": "Write a review",
+    "seeOriginal": "See original ({lang})",
+    "langNames": {
+      "da": "Danish",
+      "en": "English"
+    }
+  },
+  "lunch": {
+    "hoursTitle": "Lunch is served",
+    "quotesTitle": "Lunch guests say"
   }
 }

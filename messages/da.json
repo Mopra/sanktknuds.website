@@ -7,14 +7,23 @@
     "story": "Historie",
     "visit": "Besøg",
     "events": "Selskaber",
-    "book": "Book bord"
+    "book": "Book bord",
+    "lunch": "Frokost"
   },
   "booking": {
     "cta": "Book bord"
   },
-  "trustpilot": {
-    "score": "TrustScore",
-    "rating": "Bedømt {score} ud af 5 på Trustpilot"
+  "hero": {
+    "label": "Billeder fra Sankt Knuds",
+    "dot": "Vis billede {n}"
+  },
+  "food": {
+    "eyebrow": "Fra køkkenet",
+    "title": "Retterne, vi er stolte af",
+    "description": "Fra caviar og argentinske rejer til pizza og tærte. Skub til siden og se, hvad der kommer ud fra køkkenet.",
+    "prev": "Forrige ret",
+    "next": "Næste ret",
+    "viewMenu": "Se hele menukortet"
   },
   "footer": {
     "visit": "Besøg",
@@ -73,5 +82,21 @@
     "title": "Siden findes ikke",
     "description": "Linket er vist blevet væk. Prøv forsiden.",
     "home": "Til forsiden"
+  },
+  "reviews": {
+    "eyebrow": "Anmeldelser",
+    "title": "Det siger vores gæster",
+    "summary": "{rating} ud af 5 på Google",
+    "readAll": "Læs alle anmeldelser på Google",
+    "write": "Skriv en anmeldelse",
+    "seeOriginal": "Se original ({lang})",
+    "langNames": {
+      "da": "dansk",
+      "en": "engelsk"
+    }
+  },
+  "lunch": {
+    "hoursTitle": "Frokost serveres",
+    "quotesTitle": "Frokostgæster siger"
   }
 }

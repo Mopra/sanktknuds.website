@@ -2,6 +2,7 @@
 slug: story
 locale: en
 title: Our story
+seoTitle: The story of Sankt Knuds — Ryesgade 29, Aarhus C
 description: Named after Canute the Holy. Built on a place with weight.
 ---
 

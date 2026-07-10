@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { tv, type VariantProps } from 'tailwind-variants';
 import { site } from '#content';
+import { trackEvent } from '@/lib/analytics';
 import { cn } from '@/lib/cn';
 
 const button = tv({
@@ -36,6 +37,7 @@ export function BookingButton({ variant, size, className }: BookingButtonProps) 
       href={site.bookingUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('book_click')}
       className={cn(button({ variant, size }), className)}
     >
       {t('cta')}

@@ -159,6 +159,34 @@ const drinksCard = defineCollection({
   }),
 });
 
+const reviews = defineCollection({
+  name: 'Reviews',
+  pattern: 'reviews/card.md',
+  single: true,
+  schema: s.object({
+    // Where guests go to read or leave a review. `writeUrl` is the short
+    // "Ask for reviews" link from the Google Business Profile dashboard.
+    googleUrl: s.string().url(),
+    writeUrl: s.string().url().optional(),
+    rating: s.number(),
+    quotes: s.array(
+      s.object({
+        author: s.string(),
+        rating: s.number(),
+        lunch: s.boolean().default(false),
+        // The language the guest actually wrote in.
+        lang: localeEnum,
+        // Their verbatim words, in `lang`. Optional only because it may not have
+        // been transcribed yet; once set, it's what a reader of `lang` sees.
+        original: s.string().optional(),
+        // Our translations, shown to readers of other languages and always
+        // labelled as translations — never passed off as the guest's own wording.
+        translated: s.object({ da: s.string().optional(), en: s.string().optional() }).optional(),
+      }),
+    ),
+  }),
+});
+
 const site = defineCollection({
   name: 'Site',
   pattern: 'settings/site.md',
@@ -188,16 +216,6 @@ const site = defineCollection({
       instagram: s.string().url().optional(),
       facebook: s.string().url().optional(),
     }),
-    trustpilot: s
-      .object({
-        url: s.string().url(),
-        score: s.number(),
-        reviewCount: s.number().optional(),
-        // Trustpilot Business → Integrations → any widget snippet → data-businessunit-id.
-        // When set, the live official TrustBox badge renders instead of the custom stars.
-        businessUnitId: s.string().optional(),
-      })
-      .optional(),
     tagline: s.object({
       da: s.string(),
       en: s.string(),
@@ -260,6 +278,7 @@ export default defineConfig({
     wineCard,
     cocktailCard,
     drinksCard,
+    reviews,
     site,
     hours,
   },

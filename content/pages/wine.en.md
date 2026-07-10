@@ -2,6 +2,7 @@
 slug: wine
 locale: en
 title: Wine list
+seoTitle: Wine list — wine bar in central Aarhus | Sankt Knuds
 description: Champagne, white, rosé, red and dessert wines — from the glass to the rare bottles.
 ---
 

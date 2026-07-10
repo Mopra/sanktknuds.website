@@ -1,4 +1,4 @@
-import { cocktailCard, drinksCard, foodCard, pages, tastings, wineCard } from '#content';
+import { cocktailCard, drinksCard, foodCard, pages, reviews, tastings, wineCard } from '#content';
 import type { Locale } from '@/i18n/routing';
 
 export type ContentPage = (typeof pages)[number];
@@ -64,4 +64,16 @@ export function getCocktailSections(): CocktailSection[] {
 
 export function getDrinksChapters(): DrinksChapter[] {
   return drinksCard.chapters;
+}
+
+export type Reviews = typeof reviews;
+export type ReviewQuote = Reviews['quotes'][number];
+
+export function getReviews(): Reviews {
+  return reviews;
+}
+
+/** Quotes that mention lunch — surfaced on the frokost/lunch page. */
+export function getLunchQuotes(): ReviewQuote[] {
+  return reviews.quotes.filter((q) => q.lunch);
 }

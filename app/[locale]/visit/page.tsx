@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { site } from '#content';
 import { HoursList } from '@/components/content/HoursList';
 import { Figure } from '@/components/ui/Figure';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
@@ -34,9 +35,7 @@ export default async function VisitPage({ params }: Props) {
   return (
     <article className="mx-auto max-w-3xl px-6 py-24">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
-      {page.description ? (
-        <p className="mt-6 text-lg text-ink/80">{page.description}</p>
-      ) : null}
+      {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
 
       <Figure
         src="/images/VIC00096.webp"
@@ -63,9 +62,13 @@ export default async function VisitPage({ params }: Props) {
             <br />
             {site.address.postalCode} {site.address.locality}
             <br />
-            <a href={`tel:${site.phone.replace(/\s/g, '')}`} className="hover:text-ember">
+            <TrackedLink
+              event="phone_click"
+              href={`tel:${site.phone.replace(/\s/g, '')}`}
+              className="hover:text-ember"
+            >
               {site.phone}
-            </a>
+            </TrackedLink>
             <br />
             <a href={`mailto:${site.email}`} className="hover:text-ember">
               {site.email}
@@ -82,22 +85,26 @@ export default async function VisitPage({ params }: Props) {
             {locale === 'da' ? 'Rutevejledning' : 'Directions'}
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <a
+            <TrackedLink
+              event="directions_click"
+              eventParams={{ provider: 'google' }}
               href={googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={directionsLink}
             >
               Google Maps
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
+              event="directions_click"
+              eventParams={{ provider: 'apple' }}
               href={appleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={directionsLink}
             >
               Apple Maps
-            </a>
+            </TrackedLink>
           </div>
         </section>
 

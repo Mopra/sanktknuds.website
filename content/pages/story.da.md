@@ -2,6 +2,7 @@
 slug: story
 locale: da
 title: Vores historie
+seoTitle: Historien om Sankt Knuds — Ryesgade 29, Aarhus C
 description: Opkaldt efter Knud den Hellige. Bygget på et sted med vægt.
 ---
 

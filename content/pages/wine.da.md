@@ -2,6 +2,7 @@
 slug: wine
 locale: da
 title: Vinkort
+seoTitle: Vinkort — vinbar i Aarhus C | Sankt Knuds
 description: Champagne, hvidvin, rosé, rødvin og dessertvin — fra glasset til de sjældne flasker.
 ---
 

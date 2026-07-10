@@ -2,6 +2,7 @@
 slug: drinks
 locale: da
 title: Øvrige drikke
+seoTitle: Øvrige drikke — bar i Aarhus C | Sankt Knuds
 description: Vand, sodavand, fadøl, kaffe og avec — det daglige ved siden af maden og det gode til sidst.
 ---
 

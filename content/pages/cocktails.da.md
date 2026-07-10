@@ -2,6 +2,7 @@
 slug: cocktails
 locale: da
 title: Cocktailkort
+seoTitle: Cocktailbar i Aarhus C — cocktailkort | Sankt Knuds
 description: Signatur- og klassiske cocktails — rørt og rystet ved baren i Ryesgade.
 ---
 

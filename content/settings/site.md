@@ -18,9 +18,6 @@ bookingUrl: https://sanktknuds.superbexperience.com/
 social:
   instagram: https://www.instagram.com/sankt.knuds/
   facebook: https://www.facebook.com/profile.php?id=61590480759865
-trustpilot:
-  url: https://dk.trustpilot.com/review/sanktknuds.dk
-  score: 4.9
 tagline:
   da: Sankt Knuds er et sted at mødes
   en: Sankt Knuds is a place to meet

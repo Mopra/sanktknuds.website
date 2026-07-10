@@ -3,10 +3,11 @@ import Image from 'next/image';
 import { setRequestLocale } from 'next-intl/server';
 import { site } from '#content';
 import { CocktailBar } from '@/components/content/CocktailBar';
+import { FoodSlider } from '@/components/content/FoodSlider';
+import { GoogleRatingBadge, GoogleReviews } from '@/components/content/GoogleReviews';
 import { MenuTease } from '@/components/content/MenuTease';
 import { BookingButton } from '@/components/ui/BookingButton';
-// Temporarily hidden — restore when ready
-// import { TrustpilotRating } from '@/components/ui/TrustpilotRating';
+import { type HeroSlide, HeroSlider } from '@/components/ui/HeroSlider';
 import type { Locale } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
@@ -24,10 +25,43 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
   const page = getPage('home', locale);
   const tagline = site.tagline[locale];
-  const heroAlt =
+
+  const heroSlides: HeroSlide[] =
     locale === 'da'
-      ? 'Baren med grøn marmor og ophængte glas hos Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C'
-      : 'The green marble bar with hanging glassware at Sankt Knuds Brasseri & Bar in central Aarhus';
+      ? [
+          {
+            src: '/hero-bar-marble.jpg',
+            alt: 'Baren med grøn marmor og ophængte glas hos Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C',
+            position: 'object-[center_40%]',
+          },
+          {
+            src: '/images/VIC00086.webp',
+            alt: 'Gæster i solen på fortovsserveringen foran Sankt Knuds Brasseri & Bar i Ryesgade',
+            position: 'object-[center_55%]',
+          },
+          {
+            src: '/images/bar-bottles.jpg',
+            alt: 'Spiritusflasker og cocktailværktøj opstillet bag baren',
+            position: 'object-center',
+          },
+        ]
+      : [
+          {
+            src: '/hero-bar-marble.jpg',
+            alt: 'The green marble bar with hanging glassware at Sankt Knuds Brasseri & Bar in central Aarhus',
+            position: 'object-[center_40%]',
+          },
+          {
+            src: '/images/VIC00086.webp',
+            alt: 'Guests in the sun on the pavement terrace outside Sankt Knuds Brasseri & Bar on Ryesgade',
+            position: 'object-[center_55%]',
+          },
+          {
+            src: '/images/bar-bottles.jpg',
+            alt: 'Spirit bottles and bar tools lined up behind the bar',
+            position: 'object-center',
+          },
+        ];
 
   return (
     <>
@@ -41,28 +75,17 @@ export default async function HomePage({ params }: Props) {
             {page.title}
           </h1>
 
-          <div className="mt-12 flex flex-col gap-8 border-t border-ink/10 pt-8 sm:flex-row sm:items-end sm:justify-between md:mt-16">
+          <div className="mt-12 flex flex-col gap-8 border-t border-ink/10 pt-8 sm:flex-row sm:items-center sm:justify-between md:mt-16">
             <p className="max-w-md text-lg leading-relaxed text-ink-soft md:text-xl">{tagline}</p>
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8">
-              {/* Temporarily hidden — restore when ready */}
-              {/* <TrustpilotRating /> */}
+              <GoogleRatingBadge />
               <BookingButton size="lg" />
             </div>
           </div>
         </div>
 
-        {/* The room — one wide, quiet photograph */}
-        <div className="relative mt-12 h-[60vh] md:mt-16 md:h-[75vh]">
-          <Image
-            src="/hero-bar-marble.jpg"
-            alt={heroAlt}
-            fill
-            priority
-            quality={90}
-            sizes="100vw"
-            className="object-cover object-[center_40%]"
-          />
-        </div>
+        {/* The room — a slow procession of wide, quiet photographs */}
+        <HeroSlider slides={heroSlides} className="mt-12 md:mt-16" />
       </section>
 
       {/* Editorial intro — text and a full-height glimpse of the glass, side by side */}
@@ -98,11 +121,19 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
+      {/* The plates themselves — swipe through what leaves the kitchen */}
+      <FoodSlider locale={locale} />
+
       {/* Menu taste test — a curated tease of the kitchen */}
       <MenuTease locale={locale} />
 
       {/* The bar — cocktails after the kitchen, in a darker register */}
       <CocktailBar locale={locale} />
+
+      {/* What guests actually said — plain HTML, no review markup (see GoogleReviews) */}
+      <section className="border-t border-ink/10 bg-bone py-24 md:py-32">
+        <GoogleReviews />
+      </section>
     </>
   );
 }

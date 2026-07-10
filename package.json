@@ -15,7 +15,8 @@
     "content:watch": "velite dev",
     "lint": "biome check .",
     "format": "biome format --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seo": "node --env-file=.env.local scripts/seo/pull-seo.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -37,6 +38,7 @@
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "google-auth-library": "^10.9.0",
     "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3"
   }

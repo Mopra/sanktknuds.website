@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getPathname } from '@/i18n/navigation';
 import { type AppPathname, type Locale, routing } from '@/i18n/routing';
-import type { ContentPage } from './content';
+import type { ContentPage, FoodChapter } from './content';
 
 export function getSiteUrl(): string {
   const raw = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sanktknuds.dk';
@@ -185,5 +185,55 @@ export function buildRestaurantSchema(site: SiteSettings, hours: HoursSettings, 
         name: locale === 'da' ? 'Book bord' : 'Book a table',
       },
     },
+  };
+}
+
+/**
+ * Full Menu → MenuSection → MenuItem graph, generated from the same velite food
+ * card the page renders. `@id` matches the Restaurant's `hasMenu` URL, so the two
+ * nodes reconcile into one entity rather than competing.
+ *
+ * Prices are DKK numbers in the content; schema.org wants a bare number plus a
+ * currency, which is exactly what `Offer` takes.
+ */
+export function buildMenuSchema(chapters: FoodChapter[], locale: Locale) {
+  const base = getSiteUrl();
+  const menuUrl = `${base}${getPathname({ href: '/menu', locale })}`;
+
+  const hasMenuSection = chapters.map((chapter) => ({
+    '@type': 'MenuSection',
+    name: chapter.label[locale],
+    ...(chapter.note ? { description: chapter.note[locale] } : {}),
+    hasMenuSection: chapter.sections.map((section) => ({
+      '@type': 'MenuSection',
+      ...(section.label ? { name: section.label[locale] } : {}),
+      ...(section.note ? { description: section.note[locale] } : {}),
+      hasMenuItem: section.items.map((item) => ({
+        '@type': 'MenuItem',
+        name: item.name[locale],
+        ...(item.description ? { description: item.description[locale] } : {}),
+        ...(item.price !== undefined
+          ? {
+              offers: {
+                '@type': 'Offer',
+                price: item.price,
+                priceCurrency: 'DKK',
+              },
+            }
+          : {}),
+      })),
+    })),
+  }));
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Menu',
+    '@id': menuUrl,
+    name: locale === 'da' ? 'Menukort' : 'Menu',
+    url: menuUrl,
+    inLanguage: locale === 'da' ? 'da-DK' : 'en-US',
+    // Ties the menu back to the venue declared in the root layout.
+    isPartOf: { '@id': `${base}/#restaurant` },
+    hasMenuSection,
   };
 }

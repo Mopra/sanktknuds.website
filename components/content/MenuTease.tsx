@@ -27,7 +27,7 @@ export function MenuTease({ locale }: { locale: Locale }) {
       </div>
 
       {/* One full-bleed photograph of the plate — quiet and confident */}
-      <div className="relative mt-14 aspect-[4/3] md:mt-20 md:aspect-video">
+      <div className="relative mt-14 aspect-[3/2] md:mt-20 md:aspect-[21/9]">
         <Image
           src="/images/VIC09823.webp"
           alt={
