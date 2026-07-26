@@ -49,10 +49,10 @@ export async function Header() {
 
           <div className="flex items-center gap-4">
             <LocaleToggle />
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <SocialLinks linkClassName="text-ink/60 hover:text-ink" />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <BookingButton />
             </div>
             <MobileNav links={links} locale={locale} />
