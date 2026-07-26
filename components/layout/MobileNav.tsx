@@ -16,7 +16,7 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
     <Drawer.Root open={open} onOpenChange={setOpen} direction="right">
       <Drawer.Trigger
         aria-label="Open menu"
-        className="flex h-10 w-10 items-center justify-center border border-ink/20 text-ink/80 transition-colors hover:text-ink md:hidden"
+        className="flex h-10 w-10 items-center justify-center border border-ink/20 text-ink/80 transition-colors hover:text-ink lg:hidden"
       >
         <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" strokeWidth="1.25" />
@@ -25,7 +25,7 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-50 bg-ink/30 backdrop-blur-sm" />
         <Drawer.Content
-          className="fixed inset-y-0 right-0 z-50 flex w-[85vw] max-w-sm flex-col bg-bone text-ink outline-none"
+          className="fixed inset-y-0 right-0 z-50 flex w-[85vw] max-w-sm flex-col overflow-x-hidden overflow-y-auto bg-bone text-ink outline-none"
           aria-describedby={undefined}
         >
           <Drawer.Title className="sr-only">Menu</Drawer.Title>

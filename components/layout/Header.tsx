@@ -35,7 +35,7 @@ export async function Header() {
             Sankt Knuds
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -49,10 +49,10 @@ export async function Header() {
 
           <div className="flex items-center gap-4">
             <LocaleToggle />
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <SocialLinks linkClassName="text-ink/60 hover:text-ink" />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <BookingButton />
             </div>
             <MobileNav links={links} locale={locale} />
