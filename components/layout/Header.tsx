@@ -35,7 +35,7 @@ export async function Header() {
             Sankt Knuds
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
             {links.map((link) => (
               <Link
                 key={link.href}
