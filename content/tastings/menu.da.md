@@ -13,7 +13,7 @@ groups:
   - name: Argentinske rejer
     items:
       - Frisk chili, hvidløg, varmt smør og frisk brød
-      - Stegt ananas og chimichurri-brød
+      - Stegt ananas, chimichurri og brød
   - name: Kammuslinger
     items:
       - Crudité, sprød blomkål med bagte hasselnødder, ponzu og mynte
@@ -21,15 +21,16 @@ groups:
     items:
       - Mørbrad med broccolini, bønnepuré og sesamolie
       - Rib-eye med broccolini, bønnepuré og sesamolie
-      - Burger med okse og lam, grillet ananas, bbq-sauce, applewood cheddar, bacon og snittet kål
+      - Burger med okse og lam, grillet ananas, bbq-sauce, bacon, applewood-cheddar og snittet kål
       - Rørt tatar med dehydrerede tomater, stegte svampe og svampemayo
   - name: Pizza
     items:
-      - San Daniele-skinke og frisk burrata
+      - Serranoskinke af kastanjefodret gris, frisk mozzarella og olivenolie
       - Diavola
-  - name: Crème brûlée
-    items: []
-  - name: Æble kompot
+  - name: Knickerbocker glory
+    items:
+      - Vaniljeis, frugt, crème anglaise og flødeskum
+  - name: Æblekompot
     items:
       - Med bagt havre og hvid chokoladeskum
 ---

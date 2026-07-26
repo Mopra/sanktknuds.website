@@ -82,7 +82,7 @@ chapters:
           en: Chicken
         items:
           - name:
-              da: Friterede underlår i ørlydej med buffalo sauce
+              da: Friterede underlår i orlydej med buffalosauce
               en: Fried chicken thighs in batter with buffalo sauce
             price: 65
 
@@ -266,7 +266,7 @@ chapters:
               en: With lemon cream and vanilla crème fraîche
             price: 95
           - name:
-              da: Æble kompot
+              da: Æblekompot
               en: Apple compote
             description:
               da: Med bagt havre, hvid chokoladeskum og ingefærtuiles

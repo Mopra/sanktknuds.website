@@ -13,7 +13,7 @@ groups:
   - name: Argentine prawns
     items:
       - Fresh chilli, garlic, warm butter and fresh bread
-      - Seared pineapple and chimichurri bread
+      - Seared pineapple, chimichurri and bread
   - name: Scallops
     items:
       - Crudité, crisp cauliflower with roasted hazelnuts, ponzu and mint
@@ -21,14 +21,15 @@ groups:
     items:
       - Tenderloin with broccolini, bean purée and sesame oil
       - Rib-eye with broccolini, bean purée and sesame oil
-      - Burger of beef and lamb, grilled pineapple, BBQ sauce, applewood cheddar, bacon and shaved cabbage
+      - Burger of beef and lamb, grilled pineapple, BBQ sauce, bacon, applewood cheddar and shaved cabbage
       - Hand-stirred tartare with dehydrated tomatoes, fried mushrooms and mushroom mayo
   - name: Pizza
     items:
-      - San Daniele ham and fresh burrata
+      - Serrano ham from chestnut-fed pork, fresh mozzarella and olive oil
       - Diavola
-  - name: Crème brûlée
-    items: []
+  - name: Knickerbocker glory
+    items:
+      - Vanilla ice cream, fruit, crème anglaise and whipped cream
   - name: Apple compote
     items:
       - With baked oats and white-chocolate foam
