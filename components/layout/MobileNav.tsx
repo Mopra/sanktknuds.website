@@ -25,7 +25,7 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-50 bg-ink/30 backdrop-blur-sm" />
         <Drawer.Content
-          className="fixed inset-y-0 right-0 z-50 flex w-[85vw] max-w-sm flex-col overflow-y-auto bg-bone text-ink outline-none"
+          className="fixed inset-y-0 right-0 z-50 flex w-[85vw] max-w-sm flex-col overflow-x-hidden overflow-y-auto bg-bone text-ink outline-none"
           aria-describedby={undefined}
         >
           <Drawer.Title className="sr-only">Menu</Drawer.Title>
