@@ -108,12 +108,11 @@ export async function Footer() {
 
         <FooterMarque className="mt-20" />
 
-        <div className="mt-12 flex flex-col gap-2 text-[0.625rem] uppercase tracking-[0.3em] text-ink/40 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 text-[0.625rem] uppercase tracking-[0.3em] text-ink/40">
           <p>
             © {year} {site.name}
             {site.cvr ? ` · CVR ${site.cvr}` : ''}
           </p>
-          <p>Made by Morten Pradsgaard</p>
         </div>
       </div>
     </footer>
