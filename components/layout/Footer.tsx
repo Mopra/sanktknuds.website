@@ -114,10 +114,6 @@ export async function Footer() {
             {site.cvr ? ` · CVR ${site.cvr}` : ''}
           </p>
         </div>
-
-        <div className="mt-4 text-sm text-ink/60">
-          <p>test</p>
-        </div>
       </div>
     </footer>
   );
