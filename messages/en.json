@@ -97,6 +97,7 @@
   },
   "lunch": {
     "hoursTitle": "Lunch is served",
-    "quotesTitle": "Lunch guests say"
+    "quotesTitle": "Lunch guests say",
+    "download": "Download Lunch Menu (PDF)"
   }
 }
