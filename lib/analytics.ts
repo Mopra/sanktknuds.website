@@ -14,7 +14,8 @@ export type ConversionEvent =
   | 'book_click'
   | 'phone_click'
   | 'directions_click'
-  | 'menu_pdf_download';
+  | 'menu_pdf_download'
+  | 'lunch_menu_pdf_download';
 
 export function trackEvent(name: ConversionEvent, params?: Record<string, unknown>) {
   // Never let a blocked/absent analytics script break a link the guest just tapped.
