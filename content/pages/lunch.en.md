@@ -15,7 +15,7 @@ The kitchen serves lunch from **11.30 to 16.00, Monday to Saturday**. We're clos
 
 ## What we serve
 
-Lunch comes from the same kitchen as dinner: honest food, good produce, and a card that changes with the season. [See the full menu](/en/menu) — or simply come by and let the waiter tell you what's good today.
+Lunch comes from the same kitchen as dinner: honest food, good produce, and a card that changes with the season. [See the full Evening Menu](/en/menu) — or simply come by and let the waiter tell you what's good today.
 
 If lunch calls for a celebration, there's wine by the glass and cocktails from the bar. If it calls for quiet, there's a table by the window.
 
