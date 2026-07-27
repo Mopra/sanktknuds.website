@@ -229,7 +229,7 @@ export function buildMenuSchema(chapters: FoodChapter[], locale: Locale) {
     '@context': 'https://schema.org',
     '@type': 'Menu',
     '@id': menuUrl,
-    name: locale === 'da' ? 'Menukort' : 'Menu',
+    name: locale === 'da' ? 'Aften Menu' : 'Menu',
     url: menuUrl,
     inLanguage: locale === 'da' ? 'da-DK' : 'en-US',
     // Ties the menu back to the venue declared in the root layout.

@@ -1,6 +1,6 @@
 {
   "nav": {
-    "menu": "Menu",
+    "menu": "Evening Menu",
     "wine": "Wine",
     "cocktails": "Cocktails",
     "drinks": "Other drinks",
@@ -23,7 +23,7 @@
     "description": "From caviar and Argentine prawns to pizza and tart. Swipe along and see what leaves the kitchen.",
     "prev": "Previous dish",
     "next": "Next dish",
-    "viewMenu": "See the full menu"
+    "viewMenu": "See the full Evening Menu"
   },
   "footer": {
     "visit": "Visit",
@@ -51,10 +51,10 @@
     "label": "In the glass now"
   },
   "tasting": {
-    "viewMenu": "View the menu"
+    "viewMenu": "View the Evening Menu"
   },
   "menu": {
-    "download": "Download menu (PDF)",
+    "download": "Download Evening Menu (PDF)",
     "currency": "DKK",
     "allergens": "Please ask our staff about allergens.",
     "closingTitle": "A place where time has a little more room",

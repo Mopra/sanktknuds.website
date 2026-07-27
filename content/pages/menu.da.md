@@ -1,8 +1,8 @@
 ---
 slug: menu
 locale: da
-title: Menukort
-seoTitle: Menukort — brasserie i Aarhus C | Sankt Knuds
+title: Aften Menu
+seoTitle: Aften Menu — brasserie i Aarhus C | Sankt Knuds
 description: Ærlig mad og velbrygget øl på Ryesgade 29 i Aarhus C. Kortet skifter med årstiden — se retter og priser.
 ---
 

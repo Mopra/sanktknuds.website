@@ -1,6 +1,6 @@
 {
   "nav": {
-    "menu": "Menukort",
+    "menu": "Aften Menu",
     "wine": "Vinkort",
     "cocktails": "Cocktails",
     "drinks": "Øvrige drikke",
@@ -23,7 +23,7 @@
     "description": "Fra caviar og argentinske rejer til pizza og tærte. Skub til siden og se, hvad der kommer ud fra køkkenet.",
     "prev": "Forrige ret",
     "next": "Næste ret",
-    "viewMenu": "Se hele menukortet"
+    "viewMenu": "Se hele Aften Menu"
   },
   "footer": {
     "visit": "Besøg",
@@ -51,10 +51,10 @@
     "label": "I glasset nu"
   },
   "tasting": {
-    "viewMenu": "Se menukortet"
+    "viewMenu": "Se Aften Menu"
   },
   "menu": {
-    "download": "Hent menukort (PDF)",
+    "download": "Hent Aften Menu (PDF)",
     "currency": "kr",
     "allergens": "Spørg venligst personalet om allergener.",
     "closingTitle": "Et sted, hvor tiden får lidt mere plads",
