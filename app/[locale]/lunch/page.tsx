@@ -165,6 +165,54 @@ export default async function LunchPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: page.body }}
       />
 
+      <div className="mt-16" id="lunch-menu">
+        <div className="border-b border-ink/15 pb-4">
+          <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+            {locale === 'da' ? 'Frokost Menu' : 'Lunch Menu'}
+          </h2>
+        </div>
+
+        <div className="mt-10 space-y-12">
+          {lunchMenuSections.map((section) => (
+            <section key={section.id}>
+              <div className="flex items-center gap-4">
+                <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                  {section.label[locale]}
+                </h3>
+                <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
+              </div>
+              {section.note ? (
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/55">
+                  {section.note[locale]}
+                </p>
+              ) : null}
+
+              <ul className="mt-4 divide-y divide-ink/10">
+                {section.items.map((item) => (
+                  <li
+                    key={item.name[locale]}
+                    className="flex items-baseline justify-between gap-6 py-3"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-[0.95rem] leading-snug text-ink/85">
+                        {item.name[locale]}
+                      </p>
+                    </div>
+                    {item.price !== undefined ? (
+                      <span className="whitespace-nowrap font-mono text-sm tabular-nums text-ember">
+                        {item.price} {currency}
+                      </span>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+
+        <p className="mt-8 text-sm text-ink/50">{tMenu('allergens')}</p>
+      </div>
+
       {quotes.length > 0 ? (
         <section className="mt-16" aria-labelledby="lunch-quotes">
           <h2
