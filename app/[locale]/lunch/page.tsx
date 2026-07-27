@@ -35,6 +35,22 @@ export default async function LunchPage({ params }: Props) {
       <h1 className="mt-4 font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
 
+      <TrackedLink
+        event="lunch_menu_pdf_download"
+        href="/uploads/ms3ezuz2-frokost-kort.pdf"
+        download
+        target="_blank"
+        className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
+      >
+        {t('download')}
+        <span
+          aria-hidden="true"
+          className="text-ember/80 transition-transform group-hover:translate-y-0.5"
+        >
+          ↓
+        </span>
+      </TrackedLink>
+
       <Figure
         src="/images/VIC00086.webp"
         alt={
