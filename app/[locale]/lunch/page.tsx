@@ -9,96 +9,318 @@ import { type Locale, routes } from '@/i18n/routing';
 import { getLunchQuotes, getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
 
+type LunchMenuItem = { name: { da: string; en: string }; price?: number };
 type LunchMenuSection = {
   id: string;
-  label: { da: string; en: string };
+  label?: { da: string; en: string };
   note?: { da: string; en: string };
-  items: { name: { da: string; en: string }; price?: number }[];
+  items: LunchMenuItem[];
+};
+type LunchMenuChapter = {
+  id: string;
+  label: { da: string; en: string };
+  sections: LunchMenuSection[];
 };
 
-const lunchMenuSections: LunchMenuSection[] = [
+const lunchMenuChapters: LunchMenuChapter[] = [
   {
-    id: 'lunch-oesters',
-    label: { da: 'Østers', en: 'Oysters' },
-    items: [
-      { name: { da: 'Natural', en: 'Natural' }, price: 40 },
+    id: 'lunch-snacks',
+    label: { da: 'Snacks', en: 'Snacks' },
+    sections: [
       {
-        name: { da: 'Champagnecreme og purløg', en: 'Champagne cream and chives' },
-        price: 45,
+        id: 'lunch-oesters',
+        label: { da: 'Østers', en: 'Oysters' },
+        items: [
+          { name: { da: 'Natural', en: 'Natural' }, price: 40 },
+          {
+            name: { da: 'Champagnecreme og purløg', en: 'Champagne cream and chives' },
+            price: 45,
+          },
+          {
+            name: {
+              da: 'Sprød kartoffel, cremet peber og dild',
+              en: 'Crisp potato, creamy pepper and dill',
+            },
+            price: 45,
+          },
+        ],
       },
       {
-        name: {
-          da: 'Sprød kartoffel, cremet peber og dild',
-          en: 'Crisp potato, creamy pepper and dill',
+        id: 'lunch-caviar',
+        label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
+        note: {
+          da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Fås enten med cremefraiche, purløg og løg-/kartoffelchips — eller dild, cremefraiche og vaffel.',
+          en: 'Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps — or dill, crème fraîche and waffle.',
         },
-        price: 45,
+        items: [
+          { name: { da: 'Baerii 30 g', en: 'Baerii 30 g' }, price: 465 },
+          { name: { da: 'Baerii 50 g', en: 'Baerii 50 g' }, price: 725 },
+          { name: { da: 'Osietra 30 g', en: 'Osietra 30 g' }, price: 545 },
+        ],
+      },
+      {
+        id: 'lunch-rejer',
+        label: { da: 'Argentinske rejer', en: 'Argentine prawns' },
+        items: [
+          {
+            name: {
+              da: 'Chili, hvidløg, varmt smør og brød',
+              en: 'Chilli, garlic, warm butter and bread',
+            },
+            price: 125,
+          },
+          {
+            name: {
+              da: 'Stegt ananas, chimichurri og brød',
+              en: 'Seared pineapple, chimichurri and bread',
+            },
+            price: 125,
+          },
+        ],
+      },
+      {
+        id: 'lunch-kartoffel',
+        label: { da: 'Kartoffel', en: 'Potato' },
+        items: [
+          {
+            name: {
+              da: 'Syrlige, sprøde chips med urtemayo',
+              en: 'Tangy, crisp potato crisps with herb mayo',
+            },
+            price: 40,
+          },
+          {
+            name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' },
+            price: 45,
+          },
+        ],
+      },
+      {
+        id: 'lunch-kylling',
+        label: { da: 'Kylling', en: 'Chicken' },
+        items: [
+          {
+            name: {
+              da: 'Friterede underlår i orlydej ledsaget af buffalosauce',
+              en: 'Fried chicken thighs in batter with buffalo sauce',
+            },
+            price: 65,
+          },
+        ],
       },
     ],
   },
   {
-    id: 'lunch-caviar',
-    label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
-    note: {
-      da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Fås enten med cremefraiche, purløg og løg-/kartoffelchips — eller dild, cremefraiche og vaffel.',
-      en: 'Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps — or dill, crème fraîche and waffle.',
-    },
-    items: [
-      { name: { da: 'Baerii 30 g', en: 'Baerii 30 g' }, price: 465 },
-      { name: { da: 'Baerii 50 g', en: 'Baerii 50 g' }, price: 725 },
-      { name: { da: 'Osietra 30 g', en: 'Osietra 30 g' }, price: 545 },
+    id: 'lunch-sandwiches',
+    label: { da: 'Sandwiches og varme retter', en: 'Sandwiches and hot dishes' },
+    sections: [
+      {
+        id: 'lunch-sandwiches-liste',
+        items: [
+          {
+            name: {
+              da: 'Croque madame — med ålerøget skinke, applewood cheddar, spejlæg, salat og sennepsvinaigrette',
+              en: 'Croque madame — with smoked ham, applewood cheddar, fried egg, lettuce and mustard vinaigrette',
+            },
+            price: 145,
+          },
+          {
+            name: {
+              da: 'Burger — med okse og lam, stegt ananas, bbq sauce, bacon, applewood-cheddar, snittet kål og pommes frites',
+              en: 'Burger — with beef and lamb, seared pineapple, BBQ sauce, bacon, applewood cheddar, shaved cabbage and fries',
+            },
+            price: 225,
+          },
+          {
+            name: {
+              da: 'Rørt oksetatar — med dehydrerede tomater, stegte svampe og svampemayo',
+              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, fried mushrooms and mushroom mayo',
+            },
+            price: 155,
+          },
+          {
+            name: {
+              da: 'Steak sandwich — med oksemørbrad, pebersauce, kål og tomatsalsa',
+              en: 'Steak sandwich — with beef tenderloin, pepper sauce, cabbage and tomato salsa',
+            },
+            price: 189,
+          },
+          {
+            name: {
+              da: 'Kyllinge sandwich — med kyllingesalat med æg, svampe, cornichoner og friske løg',
+              en: 'Chicken sandwich — with chicken salad, egg, mushrooms, gherkins and fresh onion',
+            },
+            price: 125,
+          },
+          {
+            name: {
+              da: 'Fettuccine — med cremet tomatsauce og sprød serrano fra kastanjefodrede grise',
+              en: 'Fettuccine — with creamy tomato sauce and crisp serrano from chestnut-fed pigs',
+            },
+            price: 179,
+          },
+          {
+            name: {
+              da: 'Serrano — fra kastanjefodrede grise, frisk burrata, rapsolie og citronsmør',
+              en: 'Serrano — from chestnut-fed pigs, fresh burrata, rapeseed oil and lemon butter',
+            },
+            price: 149,
+          },
+          {
+            name: {
+              da: 'Risotto — med asparges, citron og sprødt kyllingeskind',
+              en: 'Risotto — with asparagus, lemon and crisp chicken skin',
+            },
+            price: 220,
+          },
+          {
+            name: {
+              da: 'Tuntatar — tatar med sprøde bønner, avocado og sennepsvinaigrette',
+              en: 'Tuna tartare — with crisp beans, avocado and mustard vinaigrette',
+            },
+            price: 135,
+          },
+          {
+            name: {
+              da: 'Dampede blåmuslinger — dampet i hvidvin og ingefær med urter',
+              en: 'Steamed blue mussels — steamed in white wine and ginger with herbs',
+            },
+            price: 149,
+          },
+        ],
+      },
     ],
   },
   {
-    id: 'lunch-rejer',
-    label: { da: 'Argentinske rejer', en: 'Argentine prawns' },
-    items: [
+    id: 'lunch-pizza',
+    label: { da: 'Pizza', en: 'Pizza' },
+    sections: [
       {
-        name: {
-          da: 'Frisk chili, hvidløg, varmt smør og frisk brød',
-          en: 'Fresh chilli, garlic, warm butter and fresh bread',
-        },
-        price: 125,
-      },
-      {
-        name: {
-          da: 'Stegt ananas, chimichurri og brød',
-          en: 'Seared pineapple, chimichurri and bread',
-        },
-        price: 125,
+        id: 'lunch-pizza-liste',
+        items: [
+          { name: { da: 'Margherita', en: 'Margherita' }, price: 125 },
+          {
+            name: {
+              da: 'Kartoffel, ricotta, rosmarin, trøffelolie',
+              en: 'Potato, ricotta, rosemary, truffle oil',
+            },
+            price: 145,
+          },
+          {
+            name: {
+              da: 'Serranoskinke af kastanjefodret gris, frisk mozzarella',
+              en: 'Serrano ham from chestnut-fed pork, fresh mozzarella',
+            },
+            price: 165,
+          },
+          {
+            name: {
+              da: 'Diavola med salami Ventricina, dehydreret tomat, frisk mozzarella og citron',
+              en: 'Diavola with Ventricina salami, dehydrated tomato, fresh mozzarella and lemon',
+            },
+            price: 149,
+          },
+          {
+            name: {
+              da: 'Oksemørbrad, gorgonzola, svampe og syltede løg',
+              en: 'Beef tenderloin, gorgonzola, mushrooms and pickled onions',
+            },
+            price: 189,
+          },
+        ],
       },
     ],
   },
   {
-    id: 'lunch-kartoffel',
-    label: { da: 'Kartoffel', en: 'Potato' },
-    items: [
+    id: 'lunch-salat',
+    label: { da: 'Salat', en: 'Salad' },
+    sections: [
       {
-        name: {
-          da: 'Syrlige, sprøde chips med urtemayo',
-          en: 'Tangy, crisp potato crisps with herb mayo',
-        },
-        price: 40,
-      },
-      {
-        name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' },
-        price: 45,
+        id: 'lunch-salat-liste',
+        items: [
+          {
+            name: {
+              da: 'Cæsarsalat på hjertesalat, med croutoner og dressing',
+              en: 'Caesar salad on romaine hearts, with croutons and dressing',
+            },
+            price: 135,
+          },
+          {
+            name: {
+              da: 'Bulgursalat med grønne bønner, glaskål og sprød blomkål',
+              en: 'Bulgur salad with green beans, kohlrabi and crisp cauliflower',
+            },
+            price: 159,
+          },
+          {
+            name: { da: 'Tilkøb kylling', en: 'Add chicken' },
+            price: 50,
+          },
+        ],
       },
     ],
   },
   {
-    id: 'lunch-kylling',
-    label: { da: 'Kylling', en: 'Chicken' },
-    items: [
+    id: 'lunch-desserter',
+    label: { da: 'Desserter', en: 'Desserts' },
+    sections: [
       {
-        name: {
-          da: 'Friterede underlår i orlydej med buffalosauce',
-          en: 'Fried chicken thighs in batter with buffalo sauce',
-        },
-        price: 65,
+        id: 'lunch-desserter-liste',
+        items: [
+          {
+            name: {
+              da: 'Knickerbocker glory — vaniljeis, frugt, créme anglaise, flødeskum',
+              en: 'Knickerbocker glory — vanilla ice cream, fruit, crème anglaise, whipped cream',
+            },
+            price: 95,
+          },
+          {
+            name: {
+              da: 'Tærte — med citroncreme og vaniljecremefraiche',
+              en: 'Tart — with lemon cream and vanilla crème fraîche',
+            },
+            price: 95,
+          },
+          {
+            name: {
+              da: 'Æblekompot — med bagt havre, hvid chokoladeskum og ingefærtuiles',
+              en: 'Apple compote — with baked oats, white-chocolate foam and ginger tuiles',
+            },
+            price: 95,
+          },
+          {
+            name: {
+              da: 'Ostetallerken — 3 slags oste med kompot, syltede nødder og brød',
+              en: 'Cheese plate — three cheeses with compote, pickled nuts and bread',
+            },
+            price: 95,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'lunch-kaffe',
+    label: { da: 'Kaffe og te', en: 'Coffee and tea' },
+    sections: [
+      {
+        id: 'lunch-kaffe-liste',
+        items: [
+          { name: { da: 'Alm. kaffe', en: 'Regular coffee' }, price: 25 },
+          { name: { da: 'Cafe latté', en: 'Café latte' }, price: 45 },
+          { name: { da: 'Cappuccino', en: 'Cappuccino' }, price: 45 },
+          { name: { da: 'Americano', en: 'Americano' }, price: 35 },
+          { name: { da: 'Espresso', en: 'Espresso' }, price: 30 },
+          { name: { da: 'Dobbelt espresso', en: 'Double espresso' }, price: 35 },
+          { name: { da: 'Flat white', en: 'Flat white' }, price: 45 },
+          { name: { da: 'Cortado', en: 'Cortado' }, price: 40 },
+          { name: { da: 'The fra A. C. Perch', en: "Tea from A. C. Perch's" }, price: 35 },
+        ],
       },
     ],
   },
 ];
+
 
 type Props = { params: Promise<{ locale: Locale }> };
 
