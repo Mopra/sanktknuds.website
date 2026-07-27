@@ -3,10 +3,102 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReviewCard } from '@/components/content/GoogleReviews';
 import { BookingButton } from '@/components/ui/BookingButton';
 import { Figure } from '@/components/ui/Figure';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Link } from '@/i18n/navigation';
 import { type Locale, routes } from '@/i18n/routing';
 import { getLunchQuotes, getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
+
+type LunchMenuSection = {
+  id: string;
+  label: { da: string; en: string };
+  note?: { da: string; en: string };
+  items: { name: { da: string; en: string }; price?: number }[];
+};
+
+const lunchMenuSections: LunchMenuSection[] = [
+  {
+    id: 'lunch-oesters',
+    label: { da: 'Østers', en: 'Oysters' },
+    items: [
+      { name: { da: 'Natural', en: 'Natural' }, price: 40 },
+      {
+        name: { da: 'Champagnecreme og purløg', en: 'Champagne cream and chives' },
+        price: 45,
+      },
+      {
+        name: {
+          da: 'Sprød kartoffel, cremet peber og dild',
+          en: 'Crisp potato, creamy pepper and dill',
+        },
+        price: 45,
+      },
+    ],
+  },
+  {
+    id: 'lunch-caviar',
+    label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
+    note: {
+      da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Fås enten med cremefraiche, purløg og løg-/kartoffelchips — eller dild, cremefraiche og vaffel.',
+      en: 'Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps — or dill, crème fraîche and waffle.',
+    },
+    items: [
+      { name: { da: 'Baerii 30 g', en: 'Baerii 30 g' }, price: 465 },
+      { name: { da: 'Baerii 50 g', en: 'Baerii 50 g' }, price: 725 },
+      { name: { da: 'Osietra 30 g', en: 'Osietra 30 g' }, price: 545 },
+    ],
+  },
+  {
+    id: 'lunch-rejer',
+    label: { da: 'Argentinske rejer', en: 'Argentine prawns' },
+    items: [
+      {
+        name: {
+          da: 'Frisk chili, hvidløg, varmt smør og frisk brød',
+          en: 'Fresh chilli, garlic, warm butter and fresh bread',
+        },
+        price: 125,
+      },
+      {
+        name: {
+          da: 'Stegt ananas, chimichurri og brød',
+          en: 'Seared pineapple, chimichurri and bread',
+        },
+        price: 125,
+      },
+    ],
+  },
+  {
+    id: 'lunch-kartoffel',
+    label: { da: 'Kartoffel', en: 'Potato' },
+    items: [
+      {
+        name: {
+          da: 'Syrlige, sprøde chips med urtemayo',
+          en: 'Tangy, crisp potato crisps with herb mayo',
+        },
+        price: 40,
+      },
+      {
+        name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' },
+        price: 45,
+      },
+    ],
+  },
+  {
+    id: 'lunch-kylling',
+    label: { da: 'Kylling', en: 'Chicken' },
+    items: [
+      {
+        name: {
+          da: 'Friterede underlår i orlydej med buffalosauce',
+          en: 'Fried chicken thighs in batter with buffalo sauce',
+        },
+        price: 65,
+      },
+    ],
+  },
+];
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -23,6 +115,8 @@ export default async function LunchPage({ params }: Props) {
   const quotes = getLunchQuotes();
   const t = await getTranslations('lunch');
   const tm = await getTranslations('nav');
+  const tMenu = await getTranslations('menu');
+  const currency = tMenu('currency');
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-24">
