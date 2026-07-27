@@ -19,35 +19,6 @@ Frokosten kommer fra det samme køkken som om aftenen: ærlig mad, gode råvarer
 
 Skal frokosten fejres, har vi vin i glas og cocktails fra baren. Skal den være stille, har vi et bord ved vinduet.
 
-## Frokost Menu
-
-### Snacks
-
-**Østers**
-- Natural — 40 kr.
-- Champagnecreme og purløg — 45 kr.
-- Sprød kartoffel, cremet peber og dild — 45 kr.
-
-**Caviar fra Stokkebye**
-
-Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Fås enten med cremefraiche, purløg og løg-/kartoffelchips — eller dild, cremefraiche og vaffel.
-- Baerii 30 g — 465 kr.
-- Baerii 50 g — 725 kr.
-- Osietra 30 g — 545 kr.
-
-**Argentinske rejer**
-- Chili, hvidløg, varmt smør og brød — 125 kr.
-- Stegt ananas, chimichurri og brød — 125 kr.
-
-**Kartoffel**
-- Syrlige, sprøde chips med urtemayo — 40 kr.
-- Pommes frites med pebermayo — 45 kr.
-
-**Kylling**
-- Friterede underlår i orlydej med buffalosauce — 65 kr.
-
-*Spørg venligst personalet om allergener.*
-
 ## Frokost for firmaet
 
 Vi tager imod større frokostselskaber og lukkede arrangementer. Skriv til os på [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk), eller læs mere om [selskaber](/da/selskaber).
