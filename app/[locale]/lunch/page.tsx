@@ -314,7 +314,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           { name: { da: 'Dobbelt espresso', en: 'Double espresso' }, price: 35 },
           { name: { da: 'Flat white', en: 'Flat white' }, price: 45 },
           { name: { da: 'Cortado', en: 'Cortado' }, price: 40 },
-          { name: { da: 'The fra A. C. Perch', en: "Tea from A. C. Perch's" }, price: 35 },
+          { name: { da: 'The fra A. C. Perch', en: 'Tea from A. C. Perch' }, price: 35 },
         ],
       },
     ],
