@@ -19,35 +19,6 @@ Lunch comes from the same kitchen as dinner: honest food, good produce, and a ca
 
 If lunch calls for a celebration, there's wine by the glass and cocktails from the bar. If it calls for quiet, there's a table by the window.
 
-## Lunch Menu
-
-### Snacks
-
-**Oysters**
-- Natural — 40 DKK
-- Champagne cream and chives — 45 DKK
-- Crisp potato, creamy pepper and dill — 45 DKK
-
-**Caviar from Stokkebye**
-
-Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps — or dill, crème fraîche and waffle.
-- Baerii 30 g — 465 DKK
-- Baerii 50 g — 725 DKK
-- Osietra 30 g — 545 DKK
-
-**Argentine prawns**
-- Chilli, garlic, warm butter and bread — 125 DKK
-- Seared pineapple, chimichurri and bread — 125 DKK
-
-**Potato**
-- Tangy, crisp potato crisps with herb mayo — 40 DKK
-- French fries with pepper mayo — 45 DKK
-
-**Chicken**
-- Fried chicken thighs in batter with buffalo sauce — 65 DKK
-
-*Please ask our staff about allergens.*
-
 ## Lunch for your company
 
 We welcome larger lunch parties and private arrangements. Write to us at [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk), or read more about [events](/en/events).
