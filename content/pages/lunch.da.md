@@ -15,7 +15,7 @@ Køkkenet serverer frokost fra **11.30 til 16.00, mandag til lørdag**. Søndag 
 
 ## Hvad vi serverer
 
-Frokosten kommer fra det samme køkken som om aftenen: ærlig mad, gode råvarer og et kort, der skifter med årstiden. [Se hele menukortet](/da/menukort) — eller kig forbi og lad tjeneren fortælle, hvad der er godt i dag.
+Frokosten kommer fra det samme køkken som om aftenen: ærlig mad, gode råvarer og et kort, der skifter med årstiden. [Se hele Aften Menu](/da/menukort) — eller kig forbi og lad tjeneren fortælle, hvad der er godt i dag.
 
 Skal frokosten fejres, har vi vin i glas og cocktails fra baren. Skal den være stille, har vi et bord ved vinduet.
 
