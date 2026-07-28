@@ -8,7 +8,7 @@
     "visit": "Besøg",
     "events": "Selskaber",
     "book": "Book bord",
-    "lunch": "Frokost"
+    "lunch": "Frokost Menu"
   },
   "booking": {
     "cta": "Book bord"
@@ -97,6 +97,7 @@
   },
   "lunch": {
     "hoursTitle": "Frokost serveres",
-    "quotesTitle": "Frokostgæster siger"
+    "quotesTitle": "Frokostgæster siger",
+    "download": "Hent Frokost Menu (PDF)"
   }
 }
