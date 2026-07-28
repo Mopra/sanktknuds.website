@@ -126,20 +126,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Burger — med okse og lam, stegt ananas, bbq sauce, bacon, applewood-cheddar, snittet kål og pommes frites',
-              en: 'Burger — with beef and lamb, seared pineapple, BBQ sauce, bacon, applewood cheddar, shaved cabbage and fries',
-            },
-            price: 225,
-          },
-          {
-            name: {
-              da: 'Rørt oksetatar — med dehydrerede tomater, stegte svampe og svampemayo',
-              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, fried mushrooms and mushroom mayo',
-            },
-            price: 155,
-          },
-          {
-            name: {
               da: 'Steak sandwich — med oksemørbrad, pebersauce, kål og tomatsalsa',
               en: 'Steak sandwich — with beef tenderloin, pepper sauce, cabbage and tomato salsa',
             },
@@ -151,6 +137,20 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               en: 'Chicken sandwich — with chicken salad, egg, mushrooms, gherkins and fresh onion',
             },
             price: 125,
+          },
+          {
+            name: {
+              da: 'Burger — med okse og lam, stegt ananas, bbq sauce, bacon, applewood-cheddar, snittet kål og pommes frites',
+              en: 'Burger — with beef and lamb, seared pineapple, BBQ sauce, bacon, applewood cheddar, shaved cabbage and fries',
+            },
+            price: 225,
+          },
+          {
+            name: {
+              da: 'Rørt oksetatar — med dehydrerede tomater, stegte svampe og svampemayo',
+              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, fried mushrooms and mushroom mayo',
+            },
+            price: 155,
           },
           {
             name: {
