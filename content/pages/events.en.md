@@ -37,6 +37,8 @@ Whether you're planning a company Christmas lunch, a department party, a club ga
 - Brie with pickled nuts and raisins
 - Risalamande with cherry sauce
 
+---
+
 We also offer a wide range of cocktails, mocktails, wine, beer, schnapps and soft drinks.
 
 **Price per person: DKK 495.00**
