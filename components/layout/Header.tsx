@@ -14,7 +14,6 @@ export async function Header() {
   const links = [
     { href: routes.menu, label: t('menu') },
     { href: routes.lunch, label: t('lunch') },
-    { href: routes.christmasLunch, label: t('christmasLunch') },
     { href: routes.wine, label: t('wine') },
     { href: routes.cocktails, label: t('cocktails') },
     { href: routes.drinks, label: t('drinks') },
