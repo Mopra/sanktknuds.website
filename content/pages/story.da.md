@@ -14,4 +14,4 @@ Der er ingen løfter om afholdenhed her. Kun løfter om smag.
 
 Vi serverer velbrygget øl, ærlig mad og gode stunder — i rammer hvor fortidens tyngde møder nutidens puls. Et sted hvor du må blive lidt længere.
 
-Dette er ikke bare en gastropub. Sankt Knuds er hvor historie møder håndværk.
+Sankt Knuds er hvor historie møder håndværk.
