@@ -20,6 +20,6 @@ Der er flere offentlige parkeringshuse i gåafstand af Ryesgade. Kører du i bil
 
 ## Hvornår vi har åbent
 
-Vi har åbent fra frokost til sent alle dage undtagen søndag. Køkkenet serverer [frokost](/da/frokost) fra 11.30 til 16.00, og baren har åbent til sent fredag og lørdag.
+Vi har åbent fra frokost til sent alle dage undtagen søndag. Køkkenet serverer [frokost](/da/frokost) fra 11.30 til 16.00, og aftenmenu fra kl. 17.30. Baren har åbent til sent fredag og lørdag.
 
 Bordreservation anbefales især fredag og lørdag.
