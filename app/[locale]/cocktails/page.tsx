@@ -92,8 +92,8 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
             <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
-                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand eller juice).'
-                : 'Includes 6 bottles of mixer of your choice (soft drinks or juice).'}
+                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
             </p>
           </div>
           <div>
@@ -110,8 +110,8 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
             <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
-                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand eller juice).'
-                : 'Includes 6 bottles of mixer of your choice (soft drinks or juice).'}
+                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
             </p>
           </div>
         </div>
