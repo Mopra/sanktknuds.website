@@ -37,6 +37,8 @@ Uanset om I planlægger firmajulefrokost, afdelingsarrangement, foreningsfest el
 - Brie med syltede nødder og rosiner
 - Risalamande med kirsebærsauce
 
+---
+
 Vi har desuden et bredt udvalg af cocktails, mocktails, vin, øl, snaps og sodavand.
 
 **Pris pr. person: 495,00 kr.**
