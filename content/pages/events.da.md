@@ -37,11 +37,11 @@ Uanset om I planlægger firmajulefrokost, afdelingsarrangement, foreningsfest el
 - Brie med syltede nødder og rosiner
 - Risalamande med kirsebærsauce
 
+**Pris pr. person: 495,00 kr.**
+
 ---
 
 Vi har desuden et bredt udvalg af cocktails, mocktails, vin, øl, snaps og sodavand.
-
-**Pris pr. person: 495,00 kr.**
 
 Ønsker I at afholde årets julefrokost hos Sankt Knuds?
 
