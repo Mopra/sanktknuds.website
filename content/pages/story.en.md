@@ -14,4 +14,4 @@ There are no promises of abstinence here. Only promises of flavour.
 
 We serve well-crafted beer, honest food and good hours — in surroundings where the weight of the past meets the pulse of the present. A place where you are allowed to stay a little longer.
 
-This is not just a gastropub. Sankt Knuds is where history meets craftsmanship.
+Sankt Knuds is where history meets craftsmanship.
