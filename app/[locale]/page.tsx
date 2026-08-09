@@ -89,6 +89,36 @@ export default async function HomePage({ params }: Props) {
         <HeroSlider slides={heroSlides} className="mt-12 md:mt-16" />
       </section>
 
+      {/* Seasonal banner — points at the Christmas lunch menu on the events page */}
+      <section className="border-t border-ink/10 bg-ink text-bone">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-14 md:flex-row md:items-center md:justify-between md:px-10 md:py-16 lg:px-16">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-ember/80">
+              {locale === 'da' ? 'Julefrokost 2026' : 'Christmas Lunch 2026'}
+            </p>
+            <h2 className="mt-3 font-display text-2xl tracking-tight md:text-3xl">
+              {locale === 'da'
+                ? 'Saml jeres selskab til en klassisk dansk julefrokost'
+                : 'Gather your group for a classic Danish Christmas lunch'}
+            </h2>
+            <p className="mt-3 max-w-md text-bone/70">
+              {locale === 'da'
+                ? 'Se hele menuen og skriv til os for at booke — bestilles på forhånd.'
+                : 'See the full menu and write to us to book — order in advance.'}
+            </p>
+          </div>
+          <Link
+            href={routes.events}
+            className="group inline-flex items-center gap-2 border border-bone/25 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-bone transition-colors hover:border-ember/60 hover:text-ember"
+          >
+            {locale === 'da' ? 'Se menu og book' : 'See menu and book'}
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+              →
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* Editorial intro — text and a full-height glimpse of the glass, side by side */}
       <section className="border-t border-ink/10 bg-bone">
         <div className="mx-auto grid max-w-6xl lg:grid-cols-2">
