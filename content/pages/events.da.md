@@ -16,6 +16,8 @@ Vores julefrokostmenu byder på klassiske danske julefavoritter med fokus på go
 
 Uanset om I planlægger firmajulefrokost, afdelingsarrangement, foreningsfest eller en hyggelig aften med familie og venner, danner Sankt Knuds Brasseri & Bar de perfekte rammer for en vellykket julefrokost.
 
+---
+
 **Første servering**
 - Sild anrettet med karrysalat, rødløg og dild (kan ved forespørgsel laves med røget makrel)
 
