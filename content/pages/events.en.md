@@ -43,4 +43,6 @@ We also offer a wide range of cocktails, mocktails, wine, beer, schnapps and sof
 
 **Price per person: DKK 495.00**
 
-Write to us at [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk) to book your Christmas lunch 2026.
+Would you like to hold this year's Christmas lunch at Sankt Knuds?
+
+Send us an email and we'll get back to you as soon as possible. We're happy to help find the solution that best suits your group: [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk).
