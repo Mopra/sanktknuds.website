@@ -62,6 +62,61 @@ export default async function CocktailsPage({ params }: Props) {
         ))}
       </div>
 
+      <section className="mt-20 border-t border-ink/10 pt-16">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+          {locale === 'da' ? 'Flaskeservering til dit bord' : 'Bottle service at your table'}
+        </p>
+        <h2 className="mt-4 font-display text-3xl tracking-tight md:text-4xl">
+          {locale === 'da'
+            ? 'Skal aftenen have en opgradering?'
+            : 'Ready to upgrade the evening?'}
+        </h2>
+        <p className="mt-4 max-w-2xl text-ink/70">
+          {locale === 'da'
+            ? 'Bestil en hel flaske spiritus direkte til bordet, inklusive kolde mixere. Perfekt til deling og den ultimative feststemning.'
+            : 'Order a whole bottle of spirits straight to your table, including cold mixers. Perfect for sharing and the ultimate party feeling.'}
+        </p>
+
+        <div className="mt-10 grid gap-10 sm:grid-cols-2">
+          <div>
+            <h3 className="font-display text-xl tracking-tight text-ink">
+              {locale === 'da' ? 'Housebrand spiritus' : 'Housebrand spirits'}
+            </h3>
+            <p className="mt-1.5 font-mono text-sm tabular-nums text-ember">
+              {locale === 'da' ? 'Pris: 650 kr.' : 'Price: DKK 650'}
+            </p>
+            <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/80">
+              {locale === 'da'
+                ? 'Vælg mellem vores faste hus-mærker inden for vodka, gin, rom eller whisky.'
+                : 'Choose between our house brands of vodka, gin, rum or whisky.'}
+            </p>
+            <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
+              {locale === 'da'
+                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-xl tracking-tight text-ink">
+              {locale === 'da' ? 'Luksus spiritus' : 'Premium spirits'}
+            </h3>
+            <p className="mt-1.5 font-mono text-sm tabular-nums text-ember">
+              {locale === 'da' ? 'Pris: 950 kr.' : 'Price: DKK 950'}
+            </p>
+            <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/80">
+              {locale === 'da'
+                ? 'Opgrader til vores premium-mærker for en ekstra god smagsoplevelse.'
+                : 'Upgrade to our premium brands for an extra fine tasting experience.'}
+            </p>
+            <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
+              {locale === 'da'
+                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
+            </p>
+          </div>
+        </div>
+      </section>
+
       <div className="mt-20 space-y-3 border-t border-ink/10 pt-8 text-sm text-ink/50">
         <p>{t('classicsNote')}</p>
         <p>{t('allergensNote')}</p>
