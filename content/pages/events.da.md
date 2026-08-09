@@ -43,4 +43,6 @@ Vi har desuden et bredt udvalg af cocktails, mocktails, vin, øl, snaps og sodav
 
 **Pris pr. person: 495,00 kr.**
 
-Skriv til os på [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk) og book jeres julefrokost 2026.
+Ønsker I at afholde årets julefrokost hos Sankt Knuds?
+
+Send os en mail, så vender vi tilbage hurtigst muligt. Vi hjælper gerne med at finde den løsning, der passer bedst til jeres selskab: [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk).
