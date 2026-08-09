@@ -16,6 +16,8 @@ Our Christmas lunch menu features classic Danish holiday favourites, with a focu
 
 Whether you're planning a company Christmas lunch, a department party, a club gathering or a cosy evening with family and friends, Sankt Knuds Brasseri & Bar sets the perfect scene for a successful Christmas lunch.
 
+---
+
 **First course**
 - Pickled herring with curry salad, red onion and dill (can be served with smoked mackerel on request)
 
