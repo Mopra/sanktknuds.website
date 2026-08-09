@@ -31,8 +31,8 @@ chapters:
               da: Craft-lemonader
               en: Craft lemonades
             description:
-              da: hyldeblomst · lemon/lime · rabarber · passion
-              en: elderflower · lemon/lime · rhubarb · passion fruit
+              da: hyldeblomst · lemon/lime · rabarber
+              en: elderflower · lemon/lime · rhubarb
             price: 39
       - id: draught
         label:

@@ -20,6 +20,6 @@ There are several public car parks within walking distance of Ryesgade. If you'r
 
 ## When we're open
 
-We're open from lunch until late every day except Sunday. The kitchen serves [lunch](/en/lunch) from 11.30 to 16.00, and the bar stays open late on Fridays and Saturdays.
+We're open from lunch until late every day except Sunday. The kitchen serves [lunch](/en/lunch) from 11.30 to 16.00, and the [dinner menu](/en/menu) from 17.30. The bar stays open late on Fridays and Saturdays.
 
-Reservations are recommended on Fridays and Saturdays.
+Reservations are especially recommended on Fridays and Saturdays.
