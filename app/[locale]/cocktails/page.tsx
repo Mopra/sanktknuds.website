@@ -115,12 +115,6 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
           </div>
         </div>
-
-        <p className="mt-8 text-sm text-ink/50">
-          {locale === 'da'
-            ? 'Bemærk: Ønskes energidrik (fx Red Bull) som mixer, pålægges et mindre tillæg.'
-            : 'Please note: an energy drink (e.g. Red Bull) as a mixer carries a small surcharge.'}
-        </p>
       </section>
 
       <div className="mt-20 space-y-3 border-t border-ink/10 pt-8 text-sm text-ink/50">
