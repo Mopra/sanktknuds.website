@@ -8,7 +8,8 @@ import { GoogleRatingBadge, GoogleReviews } from '@/components/content/GoogleRev
 import { MenuTease } from '@/components/content/MenuTease';
 import { BookingButton } from '@/components/ui/BookingButton';
 import { type HeroSlide, HeroSlider } from '@/components/ui/HeroSlider';
-import type { Locale } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
+import { type Locale, routes } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
 
