@@ -92,6 +92,7 @@ export default async function CocktailsPage({ params }: Props) {
   const page = getPage('cocktails', locale);
   const sections = getCocktailSections();
   const t = await getTranslations('cocktails');
+  const currency = locale === 'da' ? 'kr' : 'DKK';
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-24">
