@@ -122,6 +122,29 @@ export default async function CocktailsPage({ params }: Props) {
         <p>{t('classicsNote')}</p>
         <p>{t('allergensNote')}</p>
       </div>
+
+      <section className="mt-12 border-t border-ink/10 pt-8">
+        <p className="text-ink/70">
+          {locale === 'da'
+            ? 'Sulten mellem drinks? Se udvalget af snacks til baren.'
+            : 'Peckish between drinks? See the selection of bar snacks.'}
+        </p>
+        <TrackedLink
+          event="bar_snacks_pdf_download"
+          href="/uploads/msnh0wsk-bar-snacks.pdf"
+          download
+          target="_blank"
+          className="group mt-4 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
+        >
+          {locale === 'da' ? 'Bar snacks (PDF)' : 'Bar snacks (PDF)'}
+          <span
+            aria-hidden="true"
+            className="text-ember/80 transition-transform group-hover:translate-y-0.5"
+          >
+            ↓
+          </span>
+        </TrackedLink>
+      </section>
     </article>
   );
 }
