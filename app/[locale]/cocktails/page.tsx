@@ -33,7 +33,7 @@ const barSnacksGroups = [
           da: 'Jordnødder, ristet med cayennepeber',
           en: 'Peanuts, roasted with cayenne pepper',
         },
-        price: 65,
+        price: 35,
       },
       {
         name: { da: 'Cashewnødder, ristet og saltet', en: 'Cashews, roasted and salted' },
