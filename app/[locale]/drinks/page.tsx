@@ -73,7 +73,7 @@ const barSnacksGroups = [
           da: 'Friterede underlår i orlydej med buffalosauce',
           en: 'Fried chicken thighs in batter with buffalo sauce',
         },
-        price: 35,
+        price: 65,
       },
     ],
   },
