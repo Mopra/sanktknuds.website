@@ -170,12 +170,44 @@ export default async function DrinksPage({ params }: Props) {
             ? 'Sulten mellem drinks? Se udvalget af snacks til baren.'
             : 'Peckish between drinks? See the selection of bar snacks.'}
         </p>
+
+        <div className="mt-8 space-y-10">
+          {barSnacksGroups.map((group) => (
+            <div key={group.id}>
+              <div className="flex items-center gap-4">
+                <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                  {group.label[locale]}
+                </h3>
+                <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
+              </div>
+              {group.note ? (
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/55">
+                  {group.note[locale]}
+                </p>
+              ) : null}
+              <ul className="mt-4 divide-y divide-ink/10">
+                {group.items.map((item) => (
+                  <li
+                    key={item.name[locale]}
+                    className="flex items-baseline justify-between gap-6 py-3"
+                  >
+                    <p className="text-[0.95rem] leading-snug text-ink/85">{item.name[locale]}</p>
+                    <span className="whitespace-nowrap font-mono text-sm tabular-nums text-ember">
+                      {item.price} {currency}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
         <TrackedLink
           event="bar_snacks_pdf_download"
           href="/uploads/msnh0wsk-bar-snacks.pdf"
           download
           target="_blank"
-          className="group mt-4 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
+          className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
         >
           {locale === 'da' ? 'Bar snacks (PDF)' : 'Bar snacks (PDF)'}
           <span
