@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { getCocktailSections, getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
