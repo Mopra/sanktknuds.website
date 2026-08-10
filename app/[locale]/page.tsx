@@ -45,6 +45,11 @@ export default async function HomePage({ params }: Props) {
             alt: 'Spiritusflasker og cocktailværktøj opstillet bag baren',
             position: 'object-center',
           },
+          {
+            src: '/uploads/msnbnzef-billede-til-hjemmesiden.webp',
+            alt: 'Sankt Knuds Brasserie & Bar',
+            position: 'object-center',
+          },
         ]
       : [
           {
