@@ -9,6 +9,77 @@ type Props = { params: Promise<{ locale: Locale }> };
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 
+const barSnacksGroups = [
+  {
+    id: 'caviar',
+    label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
+    note: {
+      da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Serveres med cremefraiche, purløg og løg-/kartoffelchips.',
+      en: 'Stokkebye in Nyborg raise their own sturgeon in large, natural lakes in Schleswig-Holstein, in partnership with nature. Served with crème fraîche, chives and onion/potato crisps.',
+    },
+    items: [
+      { name: { da: 'Baerii 30 g', en: 'Baerii 30 g' }, price: 465 },
+      { name: { da: 'Baerii 50 g', en: 'Baerii 50 g' }, price: 725 },
+      { name: { da: 'Osietra 30 g', en: 'Osietra 30 g' }, price: 545 },
+    ],
+  },
+  {
+    id: 'nodder',
+    label: { da: 'Nødder, ærter og mandler', en: 'Nuts, peas and almonds' },
+    items: [
+      { name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' }, price: 40 },
+      {
+        name: {
+          da: 'Jordnødder, ristet med cayennepeber',
+          en: 'Peanuts, roasted with cayenne pepper',
+        },
+        price: 65,
+      },
+      {
+        name: { da: 'Cashewnødder, ristet og saltet', en: 'Cashews, roasted and salted' },
+        price: 45,
+      },
+      { name: { da: 'Wasabiærter', en: 'Wasabi peas' }, price: 35 },
+      { name: { da: 'Mandler, ristet og saltet', en: 'Almonds, roasted and salted' }, price: 30 },
+    ],
+  },
+  {
+    id: 'kartoffel-oliven',
+    label: { da: 'Kartoffel og oliven', en: 'Potato and olives' },
+    items: [
+      {
+        name: {
+          da: 'Syrlige, sprøde chips med urtemayo',
+          en: 'Tangy, crisp potato crisps with herb mayo',
+        },
+        price: 50,
+      },
+      { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 35 },
+      { name: { da: 'Oliven', en: 'Olives' }, price: 35 },
+      {
+        name: {
+          da: 'Friturestegte oliven med cremefraichedressing',
+          en: 'Deep-fried olives with crème fraîche dressing',
+        },
+        price: 40,
+      },
+    ],
+  },
+  {
+    id: 'kylling',
+    label: { da: 'Kylling', en: 'Chicken' },
+    items: [
+      {
+        name: {
+          da: 'Friterede underlår i orlydej med buffalosauce',
+          en: 'Fried chicken thighs in batter with buffalo sauce',
+        },
+        price: 35,
+      },
+    ],
+  },
+];
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const page = getPage('cocktails', locale);
