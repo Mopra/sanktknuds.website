@@ -40,7 +40,7 @@ const barSnacksGroups = [
         price: 40,
       },
       { name: { da: 'Wasabiærter', en: 'Wasabi peas' }, price: 35 },
-      { name: { da: 'Mandler, ristet og saltet', en: 'Almonds, roasted and salted' }, price: 30 },
+      { name: { da: 'Mandler, ristet og saltet', en: 'Almonds, roasted and salted' }, price: 35 },
     ],
   },
   {
