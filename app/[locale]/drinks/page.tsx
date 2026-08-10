@@ -26,7 +26,7 @@ const barSnacksGroups = [
     id: 'nodder',
     label: { da: 'Nødder, ærter og mandler', en: 'Nuts, peas and almonds' },
     items: [
-      { name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' }, price: 40 },
+      { name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' }, price: 35 },
       {
         name: {
           da: 'Jordnødder, ristet med cayennepeber',
