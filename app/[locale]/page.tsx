@@ -45,6 +45,11 @@ export default async function HomePage({ params }: Props) {
             alt: 'Spiritusflasker og cocktailværktøj opstillet bag baren',
             position: 'object-center',
           },
+          {
+            src: '/uploads/msnbnzef-billede-til-hjemmesiden.webp',
+            alt: 'Sankt Knuds Brasserie & Bar',
+            position: 'object-center',
+          },
         ]
       : [
           {
@@ -60,6 +65,11 @@ export default async function HomePage({ params }: Props) {
           {
             src: '/images/bar-bottles.jpg',
             alt: 'Spirit bottles and bar tools lined up behind the bar',
+            position: 'object-center',
+          },
+          {
+            src: '/uploads/msnbnzef-billede-til-hjemmesiden.webp',
+            alt: 'Sankt Knuds Brasserie & Bar',
             position: 'object-center',
           },
         ];
