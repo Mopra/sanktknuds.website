@@ -53,7 +53,7 @@ const barSnacksGroups = [
         },
         price: 40,
       },
-      { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 35 },
+      { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 45 },
       { name: { da: 'Oliven', en: 'Olives' }, price: 35 },
       {
         name: {
