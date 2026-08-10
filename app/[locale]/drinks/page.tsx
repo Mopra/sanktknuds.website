@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Figure } from '@/components/ui/Figure';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { getDrinksChapters, getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
