@@ -52,7 +52,7 @@ const barSnacksGroups = [
           da: 'Syrlige, sprøde chips med urtemayo',
           en: 'Tangy, crisp potato crisps with herb mayo',
         },
-        price: 50,
+        price: 40,
       },
       { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 35 },
       { name: { da: 'Oliven', en: 'Olives' }, price: 35 },
