@@ -91,7 +91,10 @@ export default async function DrinksPage({ params }: Props) {
       </div>
 
       <section className="mt-16 border-t border-ink/10 pt-8">
-        <p className="text-ink/70">
+        <h2 className="font-display text-2xl tracking-tight text-ink">
+          {locale === 'da' ? 'Bar snacks' : 'Bar snacks'}
+        </h2>
+        <p className="mt-2 text-ink/70">
           {locale === 'da'
             ? 'Sulten mellem drinks? Se udvalget af snacks til baren.'
             : 'Peckish between drinks? See the selection of bar snacks.'}
