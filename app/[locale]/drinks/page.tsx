@@ -60,7 +60,7 @@ const barSnacksGroups = [
           da: 'Friturestegte oliven med cremefraichedressing',
           en: 'Deep-fried olives with crème fraîche dressing',
         },
-        price: 40,
+        price: 50,
       },
     ],
   },
