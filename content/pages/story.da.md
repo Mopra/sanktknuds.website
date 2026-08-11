@@ -12,6 +12,6 @@ Vi er opkaldt efter den danske konge og helgen, Knud den Hellige — en mand der
 
 Der er ingen løfter om afholdenhed her. Kun løfter om smag.
 
-Vi serverer Godt håndværk i glasset, ærlig mad og gode stunder — i rammer hvor fortidens tyngde møder nutidens puls. Et sted hvor du må blive lidt længere.
+Vi serverer godt håndværk i glasset, ærlig mad og gode stunder — i rammer hvor fortidens tyngde møder nutidens puls. Et sted hvor du må blive lidt længere.
 
 Sankt Knuds er hvor historie møder håndværk.
