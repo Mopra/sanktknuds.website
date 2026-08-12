@@ -160,8 +160,8 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
-                ? 'Vælg mellem vores faste hus-mærker inden for vodka, gin, rom eller whisky.'
-                : 'Choose between our house brands of vodka, gin, rum or whisky.'}
+                ? 'Vælg mellem vores faste hus-mærker inden for vodka, gin eller rom.'
+                : 'Choose between our house brands of vodka, gin or rum.'}
             </p>
             <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
