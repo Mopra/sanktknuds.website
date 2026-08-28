@@ -1,17 +1,47 @@
 ---
 slug: story
 locale: en
-title: Our story
-seoTitle: The story of Sankt Knuds — Ryesgade 29, Aarhus C
-description: Named after Canute the Holy. Built on a place with weight.
+title: Christmas Lunch 2026
+seoTitle: Christmas Lunch 2026 in Aarhus C | Sankt Knuds
+description: A classic Danish Christmas lunch at Sankt Knuds Brasseri & Bar. The menu is ordered in advance — perfect for a company Christmas lunch, department party, club gathering or a cosy evening with family and friends.
 ---
 
-At Ryesgade 29 in Aarhus, this building was once home to mission hotels with temperance restaurants. A place of silence, discipline, and faith. Today, it has been reborn.
+Sankt Knuds is a place to gather! So bring colleagues, friends or family together for a festive Christmas lunch at Sankt Knuds Brasseri & Bar.
 
-We are named after the Danish king and saint, Canute the Holy — a man who stood for power, faith and destiny. We build a bridge between the ceremonial and the grounded. We honour history, but we live in the present.
+Our Christmas lunch menu features classic Danish holiday favourites, with a focus on good ingredients and plenty of Christmas spirit. The menu is an extra offering and must therefore be ordered in advance.
 
-There are no promises of abstinence here. Only promises of flavour.
+Whether you're planning a company Christmas lunch, a department party, a club gathering or a cosy evening with family and friends, Sankt Knuds Brasseri & Bar sets the perfect scene for a successful Christmas lunch.
 
-We serve well-crafted beer, honest food and good hours — in surroundings where the weight of the past meets the pulse of the present. A place where you are allowed to stay a little longer.
+[Christmas lunch menu (PDF)](/uploads/msm7vct0-julemenu.pdf)
 
-Sankt Knuds is where history meets craftsmanship.
+---
+
+**First course**
+- Herring with curry salad, red onion and dill (can be made with smoked mackerel on request)
+
+**Second course**
+- Prawns, mayonnaise, egg and lemon
+- Fish fillet, remoulade and lemon
+- Served with light and dark bread, butter and lard spread
+
+**Third course**
+- Duck rillette with gherkins
+
+**Fourth course**
+- Roast pork with orange, brown sauce, boiled potatoes and red cabbage
+- Glazed ham with creamed white cabbage and browned potatoes
+
+**Fifth course**
+- Brie with pickled nuts and raisins
+- Rice pudding with cherry sauce
+
+**Price per person: DKK 495.00**
+
+---
+
+We also offer a wide range of cocktails, mocktails, wine, beer, spirits and soft drinks.
+
+Would you like to hold this year's Christmas lunch at Sankt Knuds?
+
+Send us an email and we'll get back to you as soon as possible. We're happy to help find the solution that best suits your group: [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk).
+
