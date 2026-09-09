@@ -50,21 +50,4 @@ sections:
           da: fylde af stenfrugt / citrusbalance / silkeblød tekstur / blomstret sødme
           en: stone fruit richness / citrus balance / silky texture / floral sweetness
 
-  - id: kings-cellar
-    label:
-      da: Kongens kælder
-      en: The King's Cellar
-    note:
-      da: En samling spiritusdrevne cocktails bygget på lagrede spiritusser, bitter og hedvine. Fyldige, aromatiske og tænkt til langsom nydelse.
-      en: A collection of spirit-forward cocktails built around aged spirits, bitters and fortified wines. Rich, aromatic and intended for slow enjoyment.
-    cocktails: []
-
-  - id: orchard-coast
-    label:
-      da: Frugthave & kyst
-      en: The Orchard & Coast
-    note:
-      da: Et livligt udvalg af frugtdrevne og tropiske cocktails, der balancerer citrus, stenfrugt og eksotiske noter. Lyse, forfriskende og tænkt som et mere legende udtryk af smag.
-      en: A vibrant selection of fruit-driven and tropical cocktails balancing citrus, stone fruit and exotic influences. Bright, refreshing and designed for a more playful expression of flavour.
-    cocktails: []
 ---
