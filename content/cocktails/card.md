@@ -57,14 +57,7 @@ sections:
     note:
       da: En samling spiritusdrevne cocktails bygget på lagrede spiritusser, bitter og hedvine. Fyldige, aromatiske og tænkt til langsom nydelse.
       en: A collection of spirit-forward cocktails built around aged spirits, bitters and fortified wines. Rich, aromatic and intended for slow enjoyment.
-    cocktails:
-      - name: Kingston Old Fashioned
-        ingredients:
-          da: Angostura Dark 7 YO Rum, ahornsirup, chokoladebitter, orangebitter
-          en: Angostura Dark 7 YO Rum, maple, chocolate bitters, orange bitters
-        notes:
-          da: fylde af lagret rom / bagekrydderi / mørk chokolade
-          en: aged rum richness / baking spice / dark chocolate
+    cocktails: []
 
   - id: orchard-coast
     label:
