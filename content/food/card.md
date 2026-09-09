@@ -133,8 +133,8 @@ chapters:
           en: Tuna
         items:
           - name:
-              da: Lynstegt med solbærsauce, syltet knoldselleri og cashewnødder
-              en: Seared with blackcurrant sauce, pickled celeriac and cashew nuts
+              da: Lynstegt med syltet knoldselleri, cashewnødder og solbærsauce
+              en: Seared with pickled celeriac, cashew nuts and blackcurrant sauce
             price: 120
       - id: forret-gris
         label:
@@ -206,13 +206,13 @@ chapters:
             price: 465
           - name:
               da: >-
-                Burger med okse og lam, sprøde og karamelliserede løg, ristede
-                løg, syrlig løgcreme, applewood cheddar, snittet kål og
-                pommes frites
+                Burger med okse og lam, friske løg, karamelliseret løg,
+                ristede løg, syrlig løgcreme, applewood cheddar, cornichoner,
+                snittet kål og pommes frites
               en: >-
-                Burger of beef and lamb, crisp and caramelised onions, fried
-                onions, tangy onion cream, applewood cheddar, shaved cabbage
-                and French fries
+                Burger of beef and lamb, fresh onions, caramelised onions,
+                fried onions, tangy onion cream, applewood cheddar,
+                cornichons, shaved cabbage and French fries
             price: 225
           - name:
               da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
@@ -276,8 +276,8 @@ chapters:
               en: Add chicken
             price: 50
           - name:
-              da: Lynstegt tun, vagtelæg, rødløg, hjertesalat, oliven og kartoffel
-              en: Seared tuna, quail egg, red onion, romaine hearts, olives and potato
+              da: Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven
+              en: Seared tuna, potato, quail egg, red onion, romaine hearts and olives
             price: 180
 
   - id: desserter
