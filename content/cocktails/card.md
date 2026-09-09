@@ -58,13 +58,6 @@ sections:
       da: En samling spiritusdrevne cocktails bygget på lagrede spiritusser, bitter og hedvine. Fyldige, aromatiske og tænkt til langsom nydelse.
       en: A collection of spirit-forward cocktails built around aged spirits, bitters and fortified wines. Rich, aromatic and intended for slow enjoyment.
     cocktails:
-      - name: Aquavit Cardinale
-        ingredients:
-          da: Copenhagen Distillery Long Pepper Aquavit, Campari, Suze de Gentiane-likør, orangebitter
-          en: Copenhagen Distillery Long Pepper Aquavit, Campari, Suze de Gentiane Liqueur, orange bitters
-        notes:
-          da: urtekrydret / ensianbitterhed / citrusolier / lang eftersmag
-          en: herbal spice / gentian bitterness / citrus oils / lingering finish
       - name: Kingston Old Fashioned
         ingredients:
           da: Angostura Dark 7 YO Rum, ahornsirup, chokoladebitter, orangebitter
