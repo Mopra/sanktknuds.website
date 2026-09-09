@@ -276,8 +276,8 @@ chapters:
               en: Add chicken
             price: 50
           - name:
-              da: Lynstegt tun, vagtelæg, rødløg, hjertesalat, oliven og kartoffel
-              en: Seared tuna, quail egg, red onion, romaine hearts, olives and potato
+              da: Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven
+              en: Seared tuna, potato, quail egg, red onion, romaine hearts and olives
             price: 180
 
   - id: desserter
