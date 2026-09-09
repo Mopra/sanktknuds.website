@@ -66,40 +66,5 @@ sections:
     note:
       da: Et livligt udvalg af frugtdrevne og tropiske cocktails, der balancerer citrus, stenfrugt og eksotiske noter. Lyse, forfriskende og tænkt som et mere legende udtryk af smag.
       en: A vibrant selection of fruit-driven and tropical cocktails balancing citrus, stone fruit and exotic influences. Bright, refreshing and designed for a more playful expression of flavour.
-    cocktails:
-      - name: Across the Pacific
-        ingredients:
-          da: Angostura Dark 7 YO Rum, Appleton Estate Signature Jamaica Rum, Amaro Averna Siciliano, lime, orgeat, revet muskatnød
-          en: Angostura Dark 7 YO Rum, Appleton Estate Signature Jamaica Rum, Amaro Averna Siciliano, lime, orgeat, grated nutmeg
-        notes:
-          da: tropisk romblanding / nøddesødme / urtet amaro-dybde / varmende krydderiafslutning
-          en: tropical rum blend / nutty sweetness / herbal amaro depth / warming spice finish
-      - name: Plum Tai
-        ingredients:
-          da: Angostura Reserva White Rum, Angostura Dark 7 YO Rum, Choya Umeshu UJI Green Tea, blommesyltetøj, limejuice, orgeat, blommebitter
-          en: Angostura Reserva White Rum, Angostura Dark 7 YO Rum, Choya Umeshu UJI Green Tea, plum preserve, lime juice, orgeat, plum bitters
-        notes:
-          da: sødme af stenfrugt / tropisk romdybde / mandelfylde / umami-blommeafslutning
-          en: stone fruit sweetness / tropical rum depth / almond richness / umami plum finish
-      - name: Yuzu no Hana
-        ingredients:
-          da: Midori melonlikør, Choya Yuzu, lime, honning, agurk, æggehvide, Peychaud bitter
-          en: Midori Melon Liqueur, Choya Yuzu, lime, honey, cucumber, egg white, Peychaud bitters
-        notes:
-          da: citruslethed / melonsødme / blomstret yuzu / silkeblød tekstur
-          en: citrus brightness / melon sweetness / floral yuzu / silky texture
-      - name: Water Lily
-        ingredients:
-          da: Thorn Gin, Giffard Crème de Violette, Cointreau, citron, sukkersirup
-          en: Thorn Gin, Giffard Crème de Violette, Cointreau, lemon, simple syrup
-        notes:
-          da: blomstret viol / citruslethed / blød sødme / elegant urteafslutning
-          en: floral violet / citrus brightness / soft sweetness / elegant herbal finish
-      - name: Scarlet's Secret
-        ingredients:
-          da: Thorn Gin, hibiscuste, grapefrugt-citron-cordial, Campari, citron, kardemomme, danskvand
-          en: Thorn Gin, hibiscus tea, grapefruit–lemon cordial, Campari, lemon, cardamom, sparkling water
-        notes:
-          da: blomstret hibiscus / bitter citrus / urtekrydderi / forfriskende brus
-          en: floral hibiscus / bitter citrus / herbal spice / refreshing sparkle
+    cocktails: []
 ---
