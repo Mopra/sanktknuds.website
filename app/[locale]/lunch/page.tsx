@@ -38,8 +38,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Sprød kartoffel, cremet peber og dild',
-              en: 'Crisp potato, creamy pepper and dill',
+              da: 'Tigermælk, urteolie og timian',
+              en: "Tiger's milk, herb oil and thyme",
             },
             price: 45,
           },
@@ -64,17 +64,43 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
-              da: 'Chili, hvidløg, varmt smør og brød',
-              en: 'Chilli, garlic, warm butter and bread',
+              da: 'Chili, hvidløg og varmt smør',
+              en: 'Chilli, garlic and warm butter',
             },
             price: 125,
           },
           {
             name: {
-              da: 'Stegt ananas, chimichurri og brød',
-              en: 'Seared pineapple, chimichurri and bread',
+              da: 'Urtemayo, citron, spidskål, brombær og tuile',
+              en: 'Herb mayo, lemon, pointed cabbage, blackberry and tuile',
             },
             price: 125,
+          },
+        ],
+      },
+      {
+        id: 'lunch-kammusling',
+        label: { da: 'Kammusling', en: 'Scallop' },
+        items: [
+          {
+            name: {
+              da: 'Rimmet, med agurk, urtemayo og dild',
+              en: 'Cured, with cucumber, herb mayo and dill',
+            },
+            price: 59,
+          },
+        ],
+      },
+      {
+        id: 'lunch-makrel',
+        label: { da: 'Makrel', en: 'Mackerel' },
+        items: [
+          {
+            name: {
+              da: 'Varmrøget, med peber mayo, radiser, karse og sprødt brød',
+              en: 'Hot-smoked, with pepper mayo, radishes, cress and crisp bread',
+            },
+            price: 75,
           },
         ],
       },
@@ -101,8 +127,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
-              da: 'Friterede underlår i orlydej ledsaget af buffalosauce',
-              en: 'Fried chicken thighs in batter with buffalo sauce',
+              da: 'Friterede underlår i øldej med buffalosauce',
+              en: 'Fried chicken thighs in beer batter with buffalo sauce',
             },
             price: 65,
           },
@@ -126,36 +152,36 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Steak sandwich — med oksemørbrad, pebersauce, kål og tomatsalsa',
-              en: 'Steak sandwich — with beef tenderloin, pepper sauce, cabbage and tomato salsa',
-            },
-            price: 189,
-          },
-          {
-            name: {
-              da: 'Kyllinge sandwich — med kyllingesalat med æg, svampe, cornichoner og friske løg',
-              en: 'Chicken sandwich — with chicken salad, egg, mushrooms, gherkins and fresh onion',
+              da: 'Kyllinge sandwich — med kyllingesalat med svampe, cornichoner og løg',
+              en: 'Chicken sandwich — with chicken salad, mushrooms, gherkins and onion',
             },
             price: 125,
           },
           {
             name: {
-              da: 'Burger — med okse og lam, stegt ananas, bbq sauce, bacon, applewood-cheddar, snittet kål og pommes frites',
-              en: 'Burger — with beef and lamb, seared pineapple, BBQ sauce, bacon, applewood cheddar, shaved cabbage and fries',
-            },
-            price: 225,
-          },
-          {
-            name: {
-              da: 'Rørt oksetatar — med dehydrerede tomater, stegte svampe og svampemayo',
-              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, fried mushrooms and mushroom mayo',
+              da: 'Pizza sandwich — med fennikel salami, stracciatella, pesto og salat',
+              en: 'Pizza sandwich — with fennel salami, stracciatella, pesto and salad',
             },
             price: 155,
           },
           {
             name: {
-              da: 'Fettuccine — med cremet tomatsauce og sprød serrano fra kastanjefodrede grise',
-              en: 'Fettuccine — with creamy tomato sauce and crisp serrano from chestnut-fed pigs',
+              da: 'Rørt oksetatar — med dehydrerede tomater, sprød jordskokke og svampemayo',
+              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo',
+            },
+            price: 155,
+          },
+          {
+            name: {
+              da: 'Burger — med okse og lam, friske løg, karamelliseret løg, ristede løg, syrlig løgcreme, applewood cheddar, cornichoner, snittet kål og pommes frites',
+              en: 'Burger — with beef and lamb, fresh onions, caramelised onions, fried onions, tangy onion cream, applewood cheddar, cornichons, shaved cabbage and fries',
+            },
+            price: 225,
+          },
+          {
+            name: {
+              da: 'Fettuccine — med cremet tomatsauce, salami ventricina, chili og lime',
+              en: 'Fettuccine — with creamy tomato sauce, ventricina salami, chilli and lime',
             },
             price: 179,
           },
@@ -168,24 +194,31 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Risotto — med asparges, citron og sprødt kyllingeskind',
-              en: 'Risotto — with asparagus, lemon and crisp chicken skin',
+              da: 'Suppe — italiensk bondesuppe med salsiccia, squash og cannellini bønner',
+              en: 'Soup — Italian farmhouse soup with salsiccia, squash and cannellini beans',
+            },
+            price: 115,
+          },
+          {
+            name: {
+              da: 'Froutalia — græsk æggekage med salami ventricina, salat ost, mynte og marineret salat',
+              en: 'Froutalia — Greek-style omelette with ventricina salami, salad cheese, mint and marinated salad',
+            },
+            price: 120,
+          },
+          {
+            name: {
+              da: 'Risotto — med jordskokker, citron og sprødt kyllingeskind',
+              en: 'Risotto — with Jerusalem artichoke, lemon and crisp chicken skin',
             },
             price: 220,
           },
           {
             name: {
-              da: 'Tuntatar — tatar med sprøde bønner, avocado og sennepsvinaigrette',
-              en: 'Tuna tartare — with crisp beans, avocado and mustard vinaigrette',
+              da: 'Tun — lynstegt med syltet knoldselleri, cashewnødder og solbærsauce',
+              en: 'Tuna — seared with pickled celeriac, cashew nuts and blackcurrant sauce',
             },
             price: 135,
-          },
-          {
-            name: {
-              da: 'Dampede blåmuslinger — dampet i hvidvin og ingefær med urter',
-              en: 'Steamed blue mussels — steamed in white wine and ginger with herbs',
-            },
-            price: 149,
           },
         ],
       },
@@ -201,15 +234,15 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           { name: { da: 'Margherita', en: 'Margherita' }, price: 125 },
           {
             name: {
-              da: 'Kartoffel, ricotta, rosmarin, trøffelolie',
-              en: 'Potato, ricotta, rosemary, truffle oil',
+              da: 'Kartoffel, ricotta, mozzarella, rosmarin, karamelliseret løg og trøffelolie',
+              en: 'Potato, ricotta, mozzarella, rosemary, caramelised onion and truffle oil',
             },
             price: 145,
           },
           {
             name: {
-              da: 'Serranoskinke af kastanjefodret gris, frisk mozzarella',
-              en: 'Serrano ham from chestnut-fed pork, fresh mozzarella',
+              da: 'Serranoskinke af kastanjefodret gris, frisk mozzarella og rapsolie',
+              en: 'Serrano ham from chestnut-fed pork, fresh mozzarella and rapeseed oil',
             },
             price: 165,
           },
@@ -247,14 +280,21 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Bulgursalat med grønne bønner, glaskål og sprød blomkål',
-              en: 'Bulgur salad with green beans, kohlrabi and crisp cauliflower',
+              da: 'Bulgursalat vendt i yoghurt-mynte dressing, salat, bagt græskar, oliven og saltet ost',
+              en: 'Bulgur salad tossed in yoghurt-mint dressing, salad, baked pumpkin, olives and salted cheese',
             },
             price: 159,
           },
           {
             name: { da: 'Tilkøb kylling', en: 'Add chicken' },
             price: 50,
+          },
+          {
+            name: {
+              da: 'Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven',
+              en: 'Seared tuna, potato, quail egg, red onion, romaine hearts and olives',
+            },
+            price: 180,
           },
         ],
       },
@@ -269,29 +309,36 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
-              da: 'Knickerbocker glory — vaniljeis, frugt, créme anglaise, flødeskum',
-              en: 'Knickerbocker glory — vanilla ice cream, fruit, crème anglaise, whipped cream',
+              da: 'Sandkage — med limemousse og krydret mango',
+              en: 'Sand cake — with lime mousse and spiced mango',
             },
             price: 95,
           },
           {
             name: {
-              da: 'Tærte — med citroncreme og vaniljecremefraiche',
-              en: 'Tart — with lemon cream and vanilla crème fraîche',
+              da: 'Ølkage — med kardemommecreme og appelsin',
+              en: 'Beer cake — with cardamom cream and orange',
             },
             price: 95,
           },
           {
             name: {
-              da: 'Æblekompot — med bagt havre, hvid chokoladeskum og ingefærtuiles',
-              en: 'Apple compote — with baked oats, white-chocolate foam and ginger tuiles',
+              da: 'Affogato — med baileys is, nougatine og espresso',
+              en: 'Affogato — with Baileys ice cream, nougatine and espresso',
             },
             price: 95,
           },
           {
             name: {
-              da: 'Ostetallerken — 3 slags oste med kompot, syltede nødder og brød',
-              en: 'Cheese plate — three cheeses with compote, pickled nuts and bread',
+              da: 'Æblekompot — med bagt havre, hvid chokoladeskum og ingefærtuile',
+              en: 'Apple compote — with baked oats, white-chocolate foam and ginger tuile',
+            },
+            price: 95,
+          },
+          {
+            name: {
+              da: 'Ostetallerken — 3 slags oste med kompot, syltede nødder og knækbrød',
+              en: 'Cheese plate — three cheeses with compote, pickled nuts and crispbread',
             },
             price: 95,
           },
