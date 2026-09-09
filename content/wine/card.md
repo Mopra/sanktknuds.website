@@ -22,9 +22,6 @@ sections:
           da: Hvidvin
           en: White
         wines:
-          - name: 2023 Trimbach Riesling, Alsace, Frankrig
-            glass: 95
-            bottle: 495
           - name: 2024 Erste Neue Pinot Grigio, Alto Adige, Italien
             glass: 85
             bottle: 465
