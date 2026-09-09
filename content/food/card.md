@@ -133,8 +133,8 @@ chapters:
           en: Tuna
         items:
           - name:
-              da: Lynstegt med solbærsauce, syltet knoldselleri og cashewnødder
-              en: Seared with blackcurrant sauce, pickled celeriac and cashew nuts
+              da: Lynstegt med syltet knoldselleri, cashewnødder og solbærsauce
+              en: Seared with pickled celeriac, cashew nuts and blackcurrant sauce
             price: 120
       - id: forret-gris
         label:
