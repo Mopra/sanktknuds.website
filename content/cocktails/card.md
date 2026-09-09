@@ -70,13 +70,6 @@ sections:
         notes:
           da: fylde af stenfrugt / citrusbalance / silkeblød tekstur / blomstret sødme
           en: stone fruit richness / citrus balance / silky texture / floral sweetness
-      - name: Maple Bourbon Sour
-        ingredients:
-          da: Buffalo Trace Bourbon Whiskey, citron, ahornsirup, orangebitter, æggehvide
-          en: Buffalo Trace Bourbon Whiskey, lemon, maple, orange bitters, egg white
-        notes:
-          da: bourbonvarme / citrussyre / sødme af ahorn / blød tekstur
-          en: bourbon warmth / citrus acidity / maple sweetness / smooth texture
 
   - id: kings-cellar
     label:
