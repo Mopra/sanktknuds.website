@@ -84,13 +84,6 @@ sections:
         notes:
           da: dybde af mørk rom / sherryfylde / kakaobitterhed / struktureret sour
           en: dark rum depth / Sherry richness / cocoa bitterness / structured sour
-      - name: Clover Club 1911
-        ingredients:
-          da: Thorn Gin, Noilly Prat Original Dry Vermouth, citron, hindbær, æggehvide
-          en: Thorn Gin, Noilly Prat Original Dry Vermouth, lemon, raspberry, egg white
-        notes:
-          da: bærfriskhed / urtet gin / citrusløft / silkeblødt skum
-          en: berry freshness / herbal gin / citrus lift / silky foam
 
   - id: kings-cellar
     label:
