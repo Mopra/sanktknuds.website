@@ -40,7 +40,7 @@ export default async function WinePage({ params }: Props) {
       ) : null}
 
       <a
-        href="/vinkort.pdf"
+        href="/uploads/mtua25w1-vinkort-september.pdf"
         download
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
       >
