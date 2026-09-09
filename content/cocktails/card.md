@@ -26,13 +26,6 @@ sections:
         notes:
           da: sødme af solbær / mousserende vin / fyldig aperitif / elegant bitterhed
           en: blackcurrant sweetness / sparkling wine / rich aperitif / elegant bitterness
-      - name: Peach Affair
-        ingredients:
-          da: Tanqueray London Dry Gin, ferskenlikør, citron, Scavi & Ray Prosecco DOC
-          en: Tanqueray London Dry Gin, Peach Liqueur, lemon, Scavi & Ray Prosecco DOC
-        notes:
-          da: sødme af stenfrugt / citrusløft / blomstret gin / mousserende afslutning
-          en: stone fruit sweetness / citrus lift / floral gin / sparkling finish
 
   - id: trade-routes
     label:
