@@ -206,13 +206,13 @@ chapters:
             price: 465
           - name:
               da: >-
-                Burger med okse og lam, sprøde og karamelliserede løg, ristede
-                løg, syrlig løgcreme, applewood cheddar, snittet kål og
-                pommes frites
+                Burger med okse og lam, friske løg, karamelliseret løg,
+                ristede løg, syrlig løgcreme, applewood cheddar, cornichoner,
+                snittet kål og pommes frites
               en: >-
-                Burger of beef and lamb, crisp and caramelised onions, fried
-                onions, tangy onion cream, applewood cheddar, shaved cabbage
-                and French fries
+                Burger of beef and lamb, fresh onions, caramelised onions,
+                fried onions, tangy onion cream, applewood cheddar,
+                cornichons, shaved cabbage and French fries
             price: 225
           - name:
               da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
