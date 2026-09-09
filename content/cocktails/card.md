@@ -40,13 +40,6 @@ sections:
         notes:
           da: citrusfriskhed / blomstret sødme / let bitterhed / aperitif-elegance
           en: citrus freshness / floral sweetness / light bitterness / aperitif elegance
-      - name: Bitter Earl
-        ingredients:
-          da: Campari, Corsieri del Palio Vermouth Rosso, Earl Grey-sirup, danskvand
-          en: Campari, Corsieri del Palio Vermouth Rosso, Earl Grey syrup, sparkling water
-        notes:
-          da: bitter aperitif / tearomatik / blød sødme / forfriskende spritz
-          en: bitter aperitif / tea aromatics / soft sweetness / refreshing spritz
 
   - id: trade-routes
     label:
