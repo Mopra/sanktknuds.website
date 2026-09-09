@@ -77,13 +77,6 @@ sections:
         notes:
           da: bourbonvarme / citrussyre / sødme af ahorn / blød tekstur
           en: bourbon warmth / citrus acidity / maple sweetness / smooth texture
-      - name: PX Sherry Coast
-        ingredients:
-          da: Angostura Dark 7 YO Rum, Don Guido PX sherry, lime, kokoscreme, sukkersirup, chokoladebitter
-          en: Angostura Dark 7 YO Rum, Don Guido PX Sherry, lime, coconut cream, simple syrup, chocolate bitters
-        notes:
-          da: dybde af mørk rom / sherryfylde / kakaobitterhed / struktureret sour
-          en: dark rum depth / Sherry richness / cocoa bitterness / structured sour
 
   - id: kings-cellar
     label:
