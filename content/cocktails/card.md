@@ -33,13 +33,6 @@ sections:
         notes:
           da: sødme af stenfrugt / citrusløft / blomstret gin / mousserende afslutning
           en: stone fruit sweetness / citrus lift / floral gin / sparkling finish
-      - name: French Blondie
-        ingredients:
-          da: Lillet Blanc, Tanqueray London Dry Gin, hyldeblomstlikør, pink grapefrugt, citronbitter
-          en: Lillet Blanc, Tanqueray London Dry Gin, Elderflower Liqueur, pink grapefruit, lemon bitters
-        notes:
-          da: citrusfriskhed / blomstret sødme / let bitterhed / aperitif-elegance
-          en: citrus freshness / floral sweetness / light bitterness / aperitif elegance
 
   - id: trade-routes
     label:
