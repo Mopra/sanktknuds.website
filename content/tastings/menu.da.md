@@ -20,7 +20,6 @@ groups:
   - name: Okse
     items:
       - Mørbrad med broccolini, bønnepuré og sesamolie
-      - Rib-eye med broccolini, bønnepuré og sesamolie
       - Burger med okse og lam, grillet ananas, bbq-sauce, bacon, applewood-cheddar og snittet kål
       - Rørt tatar med dehydrerede tomater, stegte svampe og svampemayo
   - name: Pizza
