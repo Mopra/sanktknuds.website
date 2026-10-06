@@ -201,10 +201,6 @@ chapters:
               en: Tenderloin with pumpkin, bean purée and sesame
             price: 375
           - name:
-              da: Rib-eye med græskar, bønnepuré og sesam
-              en: Rib-eye with pumpkin, bean purée and sesame
-            price: 465
-          - name:
               da: >-
                 Burger med okse og lam, friske løg, karamelliseret løg,
                 ristede løg, syrlig løgcreme, applewood cheddar, cornichoner,

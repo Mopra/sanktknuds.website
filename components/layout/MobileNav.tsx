@@ -9,7 +9,15 @@ import type { AppPathname } from '@/i18n/routing';
 
 type NavLink = { href: AppPathname; label: string };
 
-export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale: string }) {
+export function MobileNav({
+  links,
+  locale,
+  giftCardLink,
+}: {
+  links: readonly NavLink[];
+  locale: string;
+  giftCardLink?: { href: string; label: string };
+}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -51,6 +59,17 @@ export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale
                 {link.label}
               </Link>
             ))}
+            {giftCardLink && (
+              <a
+                href={giftCardLink.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+              >
+                {giftCardLink.label}
+              </a>
+            )}
           </nav>
           <div className="border-t border-ink/10 p-6">
             <BookingButton size="lg" className="w-full" />

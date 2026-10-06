@@ -8,7 +8,8 @@
     "visit": "Besøg",
     "events": "Selskaber",
     "book": "Book bord",
-    "lunch": "Frokost Menu"
+    "lunch": "Frokost Menu",
+    "giftcard": "Gavekort"
   },
   "booking": {
     "cta": "Book bord"

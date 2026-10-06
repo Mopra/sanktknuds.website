@@ -20,7 +20,6 @@ groups:
   - name: Beef
     items:
       - Tenderloin with broccolini, bean purée and sesame oil
-      - Rib-eye with broccolini, bean purée and sesame oil
       - Burger of beef and lamb, grilled pineapple, BBQ sauce, bacon, applewood cheddar and shaved cabbage
       - Hand-stirred tartare with dehydrated tomatoes, fried mushrooms and mushroom mayo
   - name: Pizza
