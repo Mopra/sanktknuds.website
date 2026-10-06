@@ -8,7 +8,8 @@
     "visit": "Visit",
     "events": "Events",
     "book": "Reserve",
-    "lunch": "Lunch Menu"
+    "lunch": "Lunch Menu",
+    "giftcard": "Gift Card"
   },
   "booking": {
     "cta": "Reserve a table"
