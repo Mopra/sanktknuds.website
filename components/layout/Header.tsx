@@ -19,7 +19,6 @@ export async function Header() {
     { href: routes.drinks, label: t('drinks') },
     { href: routes.story, label: t('story') },
     { href: routes.visit, label: t('visit') },
-    { href: routes.events, label: t('events') },
   ] as const;
 
   const giftCardLink = {
