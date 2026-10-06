@@ -9,7 +9,15 @@ import type { AppPathname } from '@/i18n/routing';
 
 type NavLink = { href: AppPathname; label: string };
 
-export function MobileNav({ links, locale }: { links: readonly NavLink[]; locale: string }) {
+export function MobileNav({
+  links,
+  locale,
+  giftCardLink,
+}: {
+  links: readonly NavLink[];
+  locale: string;
+  giftCardLink?: { href: string; label: string };
+}) {
   const [open, setOpen] = useState(false);
 
   return (
