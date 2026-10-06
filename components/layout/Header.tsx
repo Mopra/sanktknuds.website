@@ -22,6 +22,11 @@ export async function Header() {
     { href: routes.events, label: t('events') },
   ] as const;
 
+  const giftCardLink = {
+    href: 'https://giftcard.superbexperience.com/sanktknuds',
+    label: t('giftcard'),
+  };
+
   return (
     <>
       <Masthead />
@@ -45,6 +50,14 @@ export async function Header() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={giftCardLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/60 transition-colors hover:text-ink"
+            >
+              {giftCardLink.label}
+            </a>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -55,7 +68,7 @@ export async function Header() {
             <div className="hidden lg:block">
               <BookingButton />
             </div>
-            <MobileNav links={links} locale={locale} />
+            <MobileNav links={links} locale={locale} giftCardLink={giftCardLink} />
           </div>
         </div>
       </header>
