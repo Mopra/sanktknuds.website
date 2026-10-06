@@ -59,6 +59,17 @@ export function MobileNav({
                 {link.label}
               </Link>
             ))}
+            {giftCardLink && (
+              <a
+                href={giftCardLink.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+              >
+                {giftCardLink.label}
+              </a>
+            )}
           </nav>
           <div className="border-t border-ink/10 p-6">
             <BookingButton size="lg" className="w-full" />
