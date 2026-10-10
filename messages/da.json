@@ -13,7 +13,8 @@
     "giftcard": "Gavekort"
   },
   "booking": {
-    "cta": "Book bord"
+    "cta": "Book bord",
+    "call": "Eller ring"
   },
   "hero": {
     "label": "Billeder fra Sankt Knuds",
@@ -78,7 +79,8 @@
     "currency": "kr"
   },
   "masthead": {
-    "founded": "Grundlagt"
+    "founded": "Grundlagt",
+    "call": "Ring"
   },
   "notFound": {
     "title": "Siden findes ikke",

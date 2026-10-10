@@ -13,7 +13,8 @@
     "giftcard": "Gift Card"
   },
   "booking": {
-    "cta": "Reserve a table"
+    "cta": "Reserve a table",
+    "call": "Or call"
   },
   "hero": {
     "label": "Images from Sankt Knuds",
@@ -78,7 +79,8 @@
     "currency": "DKK"
   },
   "masthead": {
-    "founded": "Established"
+    "founded": "Established",
+    "call": "Call"
   },
   "notFound": {
     "title": "Page not found",

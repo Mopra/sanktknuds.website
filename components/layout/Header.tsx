@@ -24,7 +24,7 @@ export async function Header() {
     <>
       <Masthead />
       <header className="sticky top-0 z-40 border-b border-ink/10 bg-bone/85 backdrop-blur supports-[backdrop-filter]:bg-bone/75">
-        <div className="flex w-full items-center justify-between gap-6 px-6 py-4 md:px-10">
+        <div className="flex w-full items-center justify-between gap-3 px-6 sm:gap-6 py-4 md:px-10">
           <Link
             href={routes.home}
             className="shrink-0 whitespace-nowrap font-display text-lg tracking-tight text-ink transition-colors hover:text-ember"
@@ -45,12 +45,15 @@ export async function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 lg:gap-4">
             <div className="hidden lg:block">
               <SocialLinks linkClassName="text-ink/60 hover:text-ink" />
             </div>
             <div className="hidden lg:block">
               <BookingButton />
+            </div>
+            <div className="lg:hidden">
+              <BookingButton size="xs" />
             </div>
             <MobileNav links={links} locale={locale} />
           </div>

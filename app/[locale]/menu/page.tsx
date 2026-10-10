@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Link } from '@/i18n/navigation';
@@ -38,6 +39,8 @@ export default async function MenuPage({ params }: Props) {
         {page.title}
       </h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
+
+      <BookingCta className="mt-8" />
 
       <TrackedLink
         event="menu_pdf_download"
@@ -130,6 +133,7 @@ export default async function MenuPage({ params }: Props) {
         </p>
         <p className="mt-4 max-w-xl text-ink/70">{t('closing')}</p>
         <p className="mt-8 text-sm text-ink/50">{t('allergens')}</p>
+        <BookingCta className="mt-10" />
       </div>
 
       <div className="mt-16 flex flex-col gap-4">

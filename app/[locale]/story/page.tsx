@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
+import { BookingCta } from '@/components/ui/BookingCta';
+import type { Locale } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
-import type { Locale } from '@/i18n/routing';
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -25,6 +26,7 @@ export default async function StoryPage({ params }: Props) {
         // biome-ignore lint/security/noDangerouslySetInnerHtml: trusted repo-sourced content
         dangerouslySetInnerHTML={{ __html: page.body }}
       />
+      <BookingCta className="mt-16 border-t border-ink/10 pt-8" />
     </article>
   );
 }

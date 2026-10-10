@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { site } from '#content';
 import { HoursList } from '@/components/content/HoursList';
+import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
@@ -36,6 +37,8 @@ export default async function VisitPage({ params }: Props) {
     <article className="mx-auto max-w-3xl px-6 py-24">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
+
+      <BookingCta className="mt-8" />
 
       <Figure
         src="/images/VIC00096.webp"

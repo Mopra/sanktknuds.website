@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
@@ -26,7 +27,10 @@ const barSnacksGroups = [
     id: 'nodder',
     label: { da: 'Nødder, ærter og mandler', en: 'Nuts, peas and almonds' },
     items: [
-      { name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' }, price: 35 },
+      {
+        name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' },
+        price: 35,
+      },
       {
         name: {
           da: 'Jordnødder, ristet med cayennepeber',
@@ -53,7 +57,10 @@ const barSnacksGroups = [
         },
         price: 40,
       },
-      { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 45 },
+      {
+        name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' },
+        price: 45,
+      },
       { name: { da: 'Oliven', en: 'Olives' }, price: 30 },
       {
         name: {
@@ -218,6 +225,8 @@ export default async function DrinksPage({ params }: Props) {
           </span>
         </TrackedLink>
       </section>
+
+      <BookingCta className="mt-16 border-t border-ink/10 pt-8" />
     </article>
   );
 }

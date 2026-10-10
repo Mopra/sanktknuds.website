@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { BookingCta } from '@/components/ui/BookingCta';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import type { Locale } from '@/i18n/routing';
 import { getCocktailSections, getPage } from '@/lib/content';
@@ -27,7 +28,10 @@ const barSnacksGroups = [
     id: 'nodder',
     label: { da: 'Nødder, ærter og mandler', en: 'Nuts, peas and almonds' },
     items: [
-      { name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' }, price: 35 },
+      {
+        name: { da: 'Jordnødder, ristet og saltet', en: 'Peanuts, roasted and salted' },
+        price: 35,
+      },
       {
         name: {
           da: 'Jordnødder, ristet med cayennepeber',
@@ -54,7 +58,10 @@ const barSnacksGroups = [
         },
         price: 40,
       },
-      { name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' }, price: 45 },
+      {
+        name: { da: 'Pommes frites med pebermayo', en: 'French fries with pepper mayo' },
+        price: 45,
+      },
       { name: { da: 'Oliven', en: 'Olives' }, price: 30 },
       {
         name: {
@@ -140,9 +147,7 @@ export default async function CocktailsPage({ params }: Props) {
           {locale === 'da' ? 'Flaskeservering til dit bord' : 'Bottle service at your table'}
         </p>
         <h2 className="mt-4 font-display text-3xl tracking-tight md:text-4xl">
-          {locale === 'da'
-            ? 'Skal aftenen have en opgradering?'
-            : 'Ready to upgrade the evening?'}
+          {locale === 'da' ? 'Skal aftenen have en opgradering?' : 'Ready to upgrade the evening?'}
         </h2>
         <p className="mt-4 max-w-2xl text-ink/70">
           {locale === 'da'
@@ -252,6 +257,8 @@ export default async function CocktailsPage({ params }: Props) {
           </span>
         </TrackedLink>
       </section>
+
+      <BookingCta className="mt-16 border-t border-ink/10 pt-8" />
     </article>
   );
 }

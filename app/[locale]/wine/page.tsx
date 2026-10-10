@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { BookingCta } from '@/components/ui/BookingCta';
 import type { Locale } from '@/i18n/routing';
 import { getPage, getWineSections, type WineSection } from '@/lib/content';
 import { buildPageMetadata } from '@/lib/seo';
@@ -35,9 +36,7 @@ export default async function WinePage({ params }: Props) {
   return (
     <article className="mx-auto max-w-3xl px-6 py-24">
       <h1 className="font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
-      {page.description ? (
-        <p className="mt-6 text-lg text-ink/80">{page.description}</p>
-      ) : null}
+      {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
 
       <a
         href="/uploads/mtua25w1-vinkort-september.pdf"
@@ -113,6 +112,8 @@ export default async function WinePage({ params }: Props) {
         </p>
         <p>{t('priceNote')}</p>
       </div>
+
+      <BookingCta className="mt-12" />
     </article>
   );
 }

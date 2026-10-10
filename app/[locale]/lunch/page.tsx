@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReviewCard } from '@/components/content/GoogleReviews';
-import { BookingButton } from '@/components/ui/BookingButton';
+import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Link } from '@/i18n/navigation';
@@ -368,7 +368,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
   },
 ];
 
-
 type Props = { params: Promise<{ locale: Locale }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -397,6 +396,8 @@ export default async function LunchPage({ params }: Props) {
       ) : null}
       <h1 className="mt-4 font-display text-5xl tracking-tight md:text-6xl">{page.title}</h1>
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
+
+      <BookingCta className="mt-8" />
 
       <TrackedLink
         event="lunch_menu_pdf_download"
@@ -505,7 +506,7 @@ export default async function LunchPage({ params }: Props) {
       ) : null}
 
       <div className="mt-16 flex flex-wrap items-center gap-6 border-t border-ink/10 pt-8">
-        <BookingButton />
+        <BookingCta />
         <Link
           href={routes.menu}
           className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ember transition-colors hover:text-ink"

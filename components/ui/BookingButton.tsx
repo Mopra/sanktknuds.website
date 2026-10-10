@@ -14,6 +14,7 @@ const button = tv({
       outline: 'border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-bone',
     },
     size: {
+      xs: 'px-3 py-2 tracking-[0.12em]',
       sm: 'px-4 py-2',
       md: 'px-5 py-3',
       lg: 'px-8 py-4 text-sm',
