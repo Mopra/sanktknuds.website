@@ -73,6 +73,15 @@ export async function ReviewCard({ quote }: { quote: ReviewQuote }) {
   );
 }
 
+/** "5,0 ud af 5 · 22 anmeldelser på Google", or without the count if it isn't set. */
+function summaryText(
+  t: Awaited<ReturnType<typeof getTranslations<'reviews'>>>,
+  rating: string,
+  count?: number,
+) {
+  return count ? t('summaryWithCount', { rating, count }) : t('summary', { rating });
+}
+
 /** Compact rating line — sits beside the hero's booking CTA. */
 export async function GoogleRatingBadge({ className }: { className?: string }) {
   const reviews = getReviews();
@@ -95,7 +104,7 @@ export async function GoogleRatingBadge({ className }: { className?: string }) {
     >
       <Stars rating={reviews.rating} className="text-sm tracking-[0.15em]" />
       <span className="font-mono text-xs uppercase tracking-[0.15em] tabular-nums">
-        {t('summary', { rating: ratingText })}
+        {summaryText(t, ratingText, reviews.reviewCount)}
       </span>
     </a>
   );
@@ -126,7 +135,7 @@ export async function GoogleReviews({ className }: { className?: string }) {
       <p className="mt-4 flex flex-wrap items-center gap-3 text-ink/70">
         <Stars rating={reviews.rating} className="tracking-[0.15em]" />
         <span className="font-mono text-sm tabular-nums">
-          {t('summary', { rating: ratingText })}
+          {summaryText(t, ratingText, reviews.reviewCount)}
         </span>
       </p>
 

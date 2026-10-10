@@ -169,6 +169,7 @@ const reviews = defineCollection({
     googleUrl: s.string().url(),
     writeUrl: s.string().url().optional(),
     rating: s.number(),
+    reviewCount: s.number().int().optional(),
     quotes: s.array(
       s.object({
         author: s.string(),

@@ -15,9 +15,10 @@
 # The Danish page will then show the guest's real wording instead of a translation.
 #
 # `writeUrl`: paste the short link from GBP → "Ask for reviews".
-# Keep `rating` in step with the live listing.
+# Keep `rating` and `reviewCount` in step with the live listing.
 googleUrl: https://www.google.com/maps?cid=4172510566083019308
 rating: 5.0
+reviewCount: 22
 quotes:
   - author: Filip B.
     rating: 5
