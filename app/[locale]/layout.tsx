@@ -17,7 +17,7 @@ const fraunces = Fraunces({
   subsets: ['latin'],
   variable: '--font-display',
   display: 'swap',
-  axes: ['opsz', 'SOFT'],
+  axes: ['opsz'],
 });
 
 const geist = Geist({
@@ -30,6 +30,8 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
   display: 'swap',
+  // Only small labels use it; let the display and body faces have the early bandwidth
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -83,10 +85,11 @@ export default async function LocaleLayout({
           // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD needs raw injection
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        {/* Google Analytics (gtag.js) */}
+        {/* Google Analytics (gtag.js). The stub below queues calls at once; the
+            177 KB library loads after the page so it never competes with the hero */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2PF8JYFR5R"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
