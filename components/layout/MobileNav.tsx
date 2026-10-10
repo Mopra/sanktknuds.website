@@ -33,7 +33,7 @@ export function MobileNav({
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-50 bg-ink/30 backdrop-blur-sm" />
         <Drawer.Content
-          className="fixed inset-y-0 right-0 z-50 flex w-[85vw] max-w-sm flex-col overflow-x-hidden overflow-y-auto bg-bone text-ink outline-none"
+          className="fixed top-0 right-0 z-50 flex h-dvh w-[85vw] max-w-sm flex-col overflow-hidden bg-bone text-ink outline-none"
           aria-describedby={undefined}
         >
           <Drawer.Title className="sr-only">Menu</Drawer.Title>
@@ -48,37 +48,40 @@ export function MobileNav({
               ✕
             </Drawer.Close>
           </div>
-          <nav className="flex flex-1 flex-col gap-1 p-6">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
-              >
-                {link.label}
-              </Link>
-            ))}
-            {giftCardLink && (
-              <a
-                href={giftCardLink.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
-              >
-                {giftCardLink.label}
-              </a>
-            )}
-          </nav>
-          <div className="border-t border-ink/10 p-6">
-            <BookingButton size="lg" className="w-full" />
-            <SocialLinks
-              showLabel
-              className="mt-6 justify-center"
-              linkClassName="text-xs uppercase tracking-[0.2em] text-ink/70 hover:text-ink"
-              iconClassName="h-4 w-4"
-            />
+          {/* vaul sets touch-action: none on the drawer, so this area opts back into vertical panning */}
+          <div className="flex min-h-0 flex-1 touch-pan-y flex-col overflow-y-auto overscroll-contain">
+            <nav className="flex flex-1 flex-col gap-1 p-6">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              {giftCardLink && (
+                <a
+                  href={giftCardLink.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+                >
+                  {giftCardLink.label}
+                </a>
+              )}
+            </nav>
+            <div className="border-t border-ink/10 p-6">
+              <BookingButton size="lg" className="w-full" />
+              <SocialLinks
+                showLabel
+                className="mt-6 justify-center"
+                linkClassName="text-xs uppercase tracking-[0.2em] text-ink/70 hover:text-ink"
+                iconClassName="h-4 w-4"
+              />
+            </div>
           </div>
         </Drawer.Content>
       </Drawer.Portal>
