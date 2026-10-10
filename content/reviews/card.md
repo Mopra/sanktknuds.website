@@ -16,7 +16,7 @@
 #
 # `writeUrl`: paste the short link from GBP → "Ask for reviews".
 # Keep `rating` in step with the live listing.
-googleUrl: https://www.google.com/maps/search/?api=1&query=Sankt+Knuds+Ryesgade+29+8000+Aarhus+C
+googleUrl: https://www.google.com/maps?cid=4172510566083019308
 rating: 5.0
 quotes:
   - author: Filip B.

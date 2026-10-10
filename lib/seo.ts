@@ -131,9 +131,6 @@ export function buildRestaurantSchema(site: SiteSettings, hours: HoursSettings, 
   const sameAs = [site.social.instagram, site.social.facebook].filter(Boolean);
   const openingHoursSpecification = buildOpeningHoursSpecification(hours);
   const menuUrl = `${base}${getPathname({ href: '/menu', locale })}`;
-  const mapQuery = encodeURIComponent(
-    `${site.name}, ${site.address.streetAddress}, ${site.address.postalCode} ${site.address.locality}`,
-  );
 
   return {
     '@context': 'https://schema.org',
@@ -159,7 +156,8 @@ export function buildRestaurantSchema(site: SiteSettings, hours: HoursSettings, 
           },
         }
       : {}),
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+    // CID of the Google Business listing, so it opens the place with its reviews.
+    hasMap: 'https://www.google.com/maps?cid=4172510566083019308',
     areaServed: { '@type': 'City', name: 'Aarhus' },
     ...(sameAs.length > 0 ? { sameAs } : {}),
     servesCuisine: ['Danish', 'European'],
