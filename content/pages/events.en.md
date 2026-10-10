@@ -7,7 +7,3 @@ description: Private gatherings, company lunches and closed parties at Ryesgade 
 ---
 
 We host private events for 8 to 60 guests. Write to us and we'll tailor an evening around your occasion.
-
-## Christmas Lunch 2026
-
-Planning this year's Christmas party? See our classic five-course Christmas lunch menu at DKK 495 per person: [Christmas Lunch 2026](/en/christmas-lunch).

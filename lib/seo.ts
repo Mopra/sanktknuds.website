@@ -13,17 +13,19 @@ export function buildPageMetadata({
   locale,
   path,
 }: {
-  page: ContentPage;
+  page: Pick<ContentPage, 'title' | 'seoTitle' | 'description'>;
   locale: Locale;
-  path: AppPathname;
+  path: AppPathname | { pathname: AppPathname; params: Record<string, string> };
 }): Metadata {
   const base = getSiteUrl();
-  const canonical = `${base}${getPathname({ href: path, locale })}`;
+  // biome-ignore lint/suspicious/noExplicitAny: path is one of the typed app pathnames
+  const href = path as any;
+  const canonical = `${base}${getPathname({ href, locale })}`;
   const languages: Record<string, string> = Object.fromEntries(
-    routing.locales.map((l) => [l, `${base}${getPathname({ href: path, locale: l })}`]),
+    routing.locales.map((l) => [l, `${base}${getPathname({ href, locale: l })}`]),
   );
   // x-default points at the primary (Danish) market for unmatched locales.
-  languages['x-default'] = `${base}${getPathname({ href: path, locale: routing.defaultLocale })}`;
+  languages['x-default'] = `${base}${getPathname({ href, locale: routing.defaultLocale })}`;
 
   // Display title (page.title) drives the on-page H1; seoTitle, when set, drives the
   // browser/search <title> with the location + brand keyword pattern.

@@ -18,8 +18,12 @@ export function LocaleToggle() {
           <button
             type="button"
             onClick={() => {
-              // biome-ignore lint/suspicious/noExplicitAny: pathname is typed as the union of app pathnames
-              router.replace(pathname as any, { locale });
+              // Landing pages share their slug across locales, so the params carry over as-is.
+              router.replace(
+                // biome-ignore lint/suspicious/noExplicitAny: pathname is typed as the union of app pathnames
+                { pathname, params: params.slug ? { slug: params.slug } : {} } as any,
+                { locale },
+              );
             }}
             aria-current={current === locale ? 'true' : undefined}
             className={cn(

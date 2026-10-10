@@ -42,6 +42,18 @@ export const routing = defineRouting({
       da: '/selskaber',
       en: '/events',
     },
+    '/menu/[slug]': {
+      da: '/menukort/[slug]',
+      en: '/menu/[slug]',
+    },
+    '/visit/[slug]': {
+      da: '/besoeg/[slug]',
+      en: '/visit/[slug]',
+    },
+    '/events/[slug]': {
+      da: '/selskaber/[slug]',
+      en: '/events/[slug]',
+    },
     '/christmas-lunch': {
       da: '/julefrokost',
       en: '/christmas-lunch',
@@ -65,3 +77,10 @@ export const routes = {
   events: '/events',
   christmasLunch: '/christmas-lunch',
 } as const satisfies Record<string, AppPathname>;
+
+/** Hub page for each landing-page group, and the dynamic route its children live on. */
+export const hubs = {
+  events: { href: '/events', child: '/events/[slug]' },
+  menu: { href: '/menu', child: '/menu/[slug]' },
+  visit: { href: '/visit', child: '/visit/[slug]' },
+} as const satisfies Record<string, { href: AppPathname; child: AppPathname }>;

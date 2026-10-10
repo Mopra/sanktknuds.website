@@ -4,8 +4,8 @@ import { CurrentPour } from '@/components/content/CurrentPour';
 import { HoursList } from '@/components/content/HoursList';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import { Link } from '@/i18n/navigation';
-import { routes } from '@/i18n/routing';
-import { getRecommendedWines } from '@/lib/content';
+import { hubs, type Locale, routes } from '@/i18n/routing';
+import { getLandings, getRecommendedWines } from '@/lib/content';
 import { FooterMarque } from './FooterMarque';
 
 export async function Footer() {
@@ -15,6 +15,7 @@ export async function Footer() {
 
   const year = new Date().getFullYear();
   const recommendedWines = getRecommendedWines();
+  const landings = getLandings(locale as Locale);
 
   return (
     <footer className="mt-32 border-t border-ink/10 bg-bone-dim">
@@ -108,6 +109,25 @@ export async function Footer() {
                 </Link>
               </li>
             </ul>
+            {landings.length > 0 ? (
+              <>
+                <h3 className="mt-10 text-xs uppercase tracking-[0.3em] text-stone">
+                  {t('explore')}
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {landings.map((page) => (
+                    <li key={`${page.hub}/${page.slug}`}>
+                      <Link
+                        href={{ pathname: hubs[page.hub].child, params: { slug: page.slug } }}
+                        className="text-ink/75 hover:text-ink"
+                      >
+                        {page.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
           </nav>
         </div>
 

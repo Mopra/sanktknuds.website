@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { HubLinks } from '@/components/content/HubLinks';
 import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
@@ -156,6 +157,8 @@ export default async function MenuPage({ params }: Props) {
           </span>
         </Link>
       </div>
+
+      <HubLinks hub="menu" locale={locale} className="mt-16" />
     </article>
   );
 }

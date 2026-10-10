@@ -7,7 +7,8 @@ import { SocialLinks } from '@/components/ui/SocialLinks';
 import { Link } from '@/i18n/navigation';
 import type { AppPathname } from '@/i18n/routing';
 
-type NavLink = { href: AppPathname; label: string };
+// Nav links are static pages only; dynamic routes like /menu/[slug] need params.
+type NavLink = { href: Exclude<AppPathname, `${string}[${string}`>; label: string };
 
 export function MobileNav({
   links,

@@ -1,7 +1,18 @@
-import { cocktailCard, drinksCard, foodCard, pages, reviews, tastings, wineCard } from '#content';
+import {
+  cocktailCard,
+  drinksCard,
+  foodCard,
+  landing,
+  pages,
+  reviews,
+  tastings,
+  wineCard,
+} from '#content';
 import type { Locale } from '@/i18n/routing';
 
 export type ContentPage = (typeof pages)[number];
+export type LandingPage = (typeof landing)[number];
+export type LandingHub = LandingPage['hub'];
 export type FoodCard = typeof foodCard;
 export type FoodChapter = FoodCard['chapters'][number];
 export type ContentTasting = (typeof tastings)[number];
@@ -18,6 +29,22 @@ export function getPage(slug: string, locale: Locale): ContentPage {
     throw new Error(`Missing page content: ${slug}.${locale}.md`);
   }
   return page;
+}
+
+export function getLanding(hub: LandingHub, slug: string, locale: Locale): LandingPage | undefined {
+  return landing.find((p) => p.hub === hub && p.slug === slug && p.locale === locale);
+}
+
+/** Landing pages under one hub, in display order. Omit `hub` to get every hub. */
+export function getLandings(locale: Locale, hub?: LandingHub): LandingPage[] {
+  return landing
+    .filter((p) => p.locale === locale && (hub === undefined || p.hub === hub))
+    .sort((a, b) => a.order - b.order);
+}
+
+/** Every hub/slug pair, for generateStaticParams and the sitemap. */
+export function getLandingSlugs(hub: LandingHub): string[] {
+  return [...new Set(landing.filter((p) => p.hub === hub).map((p) => p.slug))];
 }
 
 export function getFoodChapters(): FoodChapter[] {
@@ -71,6 +98,14 @@ export type ReviewQuote = Reviews['quotes'][number];
 
 export function getReviews(): Reviews {
   return reviews;
+}
+
+/** Quotes whose text mentions `word`, in any language we hold it in. */
+export function getQuotesMatching(word: string): ReviewQuote[] {
+  const needle = word.toLowerCase();
+  return reviews.quotes.filter((q) =>
+    [q.original, q.translated?.da, q.translated?.en].some((t) => t?.toLowerCase().includes(needle)),
+  );
 }
 
 /** Quotes that mention lunch — surfaced on the frokost/lunch page. */

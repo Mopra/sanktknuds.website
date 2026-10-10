@@ -7,7 +7,3 @@ description: Private arrangementer, firmafrokost og lukkede selskaber på Ryesga
 ---
 
 Vi tager imod private selskaber fra 8 til 60 gæster. Skriv til os, så skræddersyer vi en aften omkring jeres anledning.
-
-## Julefrokost 2026
-
-Skal I holde julefrokost i år? Se vores klassiske julefrokostmenu i fem serveringer til 495 kr. pr. person: [Julefrokost 2026](/da/julefrokost).

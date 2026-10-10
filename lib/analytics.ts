@@ -18,6 +18,7 @@ declare global {
 export type ConversionEvent =
   | 'book_click'
   | 'phone_click'
+  | 'inquiry_click'
   | 'directions_click'
   | 'menu_pdf_download'
   | 'lunch_menu_pdf_download'
@@ -27,6 +28,7 @@ export type ConversionEvent =
 const metaStandardEvents: Partial<Record<ConversionEvent, string>> = {
   book_click: 'Lead',
   phone_click: 'Contact',
+  inquiry_click: 'Contact',
   directions_click: 'FindLocation',
 };
 

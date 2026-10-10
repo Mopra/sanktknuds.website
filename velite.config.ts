@@ -23,6 +23,39 @@ const pages = defineCollection({
     })),
 });
 
+// Long-tail landing pages (occasions, signature dishes, nearby venues). They hang
+// under an existing hub page instead of the header nav: /selskaber/[slug],
+// /menukort/[slug] and /besoeg/[slug]. The slug is shared by both locales so the
+// language toggle can swap locale without a lookup table.
+const landing = defineCollection({
+  name: 'Landing',
+  pattern: 'landing/*.md',
+  schema: s
+    .object({
+      slug: s.string(),
+      locale: localeEnum,
+      hub: s.enum(['events', 'menu', 'visit']),
+      order: s.number().default(100),
+      title: s.string(),
+      seoTitle: s.string().optional(),
+      description: s.string(),
+      eyebrow: s.string().optional(),
+      // Short teaser for the hub cards and footer.
+      teaser: s.string(),
+      image: s.string().optional(),
+      imageAlt: s.string().optional(),
+      // 'inquiry' leads with email (groups); 'book' leads with the table booking.
+      cta: s.enum(['book', 'inquiry']).default('book'),
+      // Case-insensitive word that picks guest quotes mentioning this page's topic.
+      quoteMatch: s.string().optional(),
+      body: s.markdown(),
+    })
+    .transform((data) => ({
+      ...data,
+      id: `${data.slug}.${data.locale}`,
+    })),
+});
+
 const foodCard = defineCollection({
   name: 'FoodCard',
   pattern: 'food/card.md',
@@ -274,6 +307,7 @@ export default defineConfig({
   },
   collections: {
     pages,
+    landing,
     foodCard,
     tastings,
     wineCard,

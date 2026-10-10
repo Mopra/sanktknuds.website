@@ -32,6 +32,7 @@
     "visit": "Visit",
     "hours": "Hours",
     "sitemap": "Sitemap",
+    "explore": "Explore",
     "smiley": "See our food-safety rating"
   },
   "days": {
@@ -104,5 +105,9 @@
     "hoursTitle": "Lunch is served",
     "quotesTitle": "Lunch guests say",
     "download": "Download Lunch Menu (PDF)"
+  },
+  "landing": {
+    "related": "Read more",
+    "inquiry": "Write to us"
   }
 }

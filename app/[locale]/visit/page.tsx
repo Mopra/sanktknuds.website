@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { site } from '#content';
 import { HoursList } from '@/components/content/HoursList';
+import { HubLinks } from '@/components/content/HubLinks';
 import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { TrackedLink } from '@/components/ui/TrackedLink';
@@ -139,6 +140,8 @@ export default async function VisitPage({ params }: Props) {
           className="block h-[320px] w-full border-0 grayscale-[0.2] md:h-[420px]"
         />
       </div>
+
+      <HubLinks hub="visit" locale={locale} className="mt-16" />
     </article>
   );
 }

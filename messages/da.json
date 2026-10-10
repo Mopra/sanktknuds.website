@@ -32,6 +32,7 @@
     "visit": "Besøg",
     "hours": "Åbningstider",
     "sitemap": "Oversigt",
+    "explore": "Udforsk",
     "smiley": "Se vores smiley-rapport"
   },
   "days": {
@@ -104,5 +105,9 @@
     "hoursTitle": "Frokost serveres",
     "quotesTitle": "Frokostgæster siger",
     "download": "Hent Frokost Menu (PDF)"
+  },
+  "landing": {
+    "related": "Læs også",
+    "inquiry": "Skriv til os"
   }
 }
