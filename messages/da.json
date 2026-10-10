@@ -91,7 +91,7 @@
     "eyebrow": "Anmeldelser",
     "title": "Det siger vores gæster",
     "summary": "{rating} ud af 5 på Google",
-    "summaryWithCount": "{rating} ud af 5 · {count, plural, one {# anmeldelse} other {# anmeldelser}} på Google",
+    "summaryWithCount": "{rating} ud af 5 · {count} anmeldelser på Google",
     "readAll": "Læs alle anmeldelser på Google",
     "write": "Skriv en anmeldelse",
     "seeOriginal": "Se original ({lang})",

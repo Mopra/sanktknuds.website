@@ -91,7 +91,7 @@
     "eyebrow": "Reviews",
     "title": "What our guests say",
     "summary": "{rating} out of 5 on Google",
-    "summaryWithCount": "{rating} out of 5 · {count, plural, one {# review} other {# reviews}} on Google",
+    "summaryWithCount": "{rating} out of 5 · {count} reviews on Google",
     "readAll": "Read all reviews on Google",
     "write": "Write a review",
     "seeOriginal": "See original ({lang})",

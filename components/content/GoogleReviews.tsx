@@ -73,13 +73,17 @@ export async function ReviewCard({ quote }: { quote: ReviewQuote }) {
   );
 }
 
-/** "5,0 ud af 5 · 22 anmeldelser på Google", or without the count if it isn't set. */
+/**
+ * "5,0 ud af 5 · 20+ anmeldelser på Google", or without the count if it isn't set.
+ * The count rounds down to the nearest ten so it stays true as reviews come in.
+ */
 function summaryText(
   t: Awaited<ReturnType<typeof getTranslations<'reviews'>>>,
   rating: string,
   count?: number,
 ) {
-  return count ? t('summaryWithCount', { rating, count }) : t('summary', { rating });
+  if (!count || count < 10) return t('summary', { rating });
+  return t('summaryWithCount', { rating, count: `${Math.floor(count / 10) * 10}+` });
 }
 
 /** Compact rating line — sits beside the hero's booking CTA. */
