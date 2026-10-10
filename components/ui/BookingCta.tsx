@@ -11,9 +11,9 @@ export async function BookingCta({ className }: { className?: string }) {
   return (
     <div className={cn('flex flex-wrap items-center gap-x-6 gap-y-4', className)}>
       <BookingButton />
-      <PhoneLink className="group font-mono text-xs uppercase tracking-[0.25em] text-ink/60 transition-colors hover:text-ember">
+      <PhoneLink className="group font-mono text-xs uppercase tracking-[0.15em] text-ink/60 transition-colors hover:text-ember">
         {t('call')}{' '}
-        <span className="whitespace-nowrap text-ink tabular-nums transition-colors group-hover:text-ember">
+        <span className="whitespace-nowrap text-sm tracking-normal text-ink tabular-nums transition-colors group-hover:text-ember">
           {site.phone}
         </span>
       </PhoneLink>

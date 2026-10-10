@@ -27,9 +27,9 @@ export default async function BookPage({ params }: Props) {
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
       <div className="mt-12 flex flex-col items-center gap-6">
         <BookingButton size="lg" />
-        <PhoneLink className="group font-mono text-xs uppercase tracking-[0.25em] text-ink/60 transition-colors hover:text-ember">
+        <PhoneLink className="group font-mono text-xs uppercase tracking-[0.15em] text-ink/60 transition-colors hover:text-ember">
           {t('call')}{' '}
-          <span className="whitespace-nowrap text-ink tabular-nums transition-colors group-hover:text-ember">
+          <span className="whitespace-nowrap text-sm tracking-normal text-ink tabular-nums transition-colors group-hover:text-ember">
             {site.phone}
           </span>
         </PhoneLink>
