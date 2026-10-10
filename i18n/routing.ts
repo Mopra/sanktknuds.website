@@ -42,6 +42,10 @@ export const routing = defineRouting({
       da: '/selskaber',
       en: '/events',
     },
+    '/christmas-lunch': {
+      da: '/julefrokost',
+      en: '/christmas-lunch',
+    },
   },
 });
 
@@ -59,4 +63,5 @@ export const routes = {
   visit: '/visit',
   book: '/book',
   events: '/events',
+  christmasLunch: '/christmas-lunch',
 } as const satisfies Record<string, AppPathname>;

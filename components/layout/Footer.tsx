@@ -98,6 +98,11 @@ export async function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={routes.christmasLunch} className="text-ink/75 hover:text-ink">
+                  {nav('christmasLunch')}
+                </Link>
+              </li>
+              <li>
                 <Link href={routes.book} className="text-ink/75 hover:text-ink">
                   {nav('book')}
                 </Link>

@@ -99,7 +99,7 @@ export default async function HomePage({ params }: Props) {
         <HeroSlider slides={heroSlides} className="mt-12 md:mt-16" />
       </section>
 
-      {/* Seasonal banner — points at the Christmas lunch menu on the events page */}
+      {/* Seasonal banner: points at the Christmas lunch page */}
       <section className="border-t border-ink/10 bg-ink text-bone">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-14 md:flex-row md:items-center md:justify-between md:px-10 md:py-16 lg:px-16">
           <div>
@@ -118,7 +118,7 @@ export default async function HomePage({ params }: Props) {
             </p>
           </div>
           <Link
-            href={routes.events}
+            href={routes.christmasLunch}
             className="group inline-flex items-center gap-2 border border-bone/25 px-5 py-3 font-mono text-xs uppercase tracking-[0.25em] text-bone transition-colors hover:border-ember/60 hover:text-ember"
           >
             {locale === 'da' ? 'Se menu og book' : 'See menu and book'}

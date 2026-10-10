@@ -2,7 +2,6 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { Masthead } from '@/components/layout/Masthead';
 import { MobileNav } from '@/components/layout/MobileNav';
 import { BookingButton } from '@/components/ui/BookingButton';
-import { LocaleToggle } from '@/components/ui/LocaleToggle';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import { Link } from '@/i18n/navigation';
 import { routes } from '@/i18n/routing';
@@ -17,7 +16,7 @@ export async function Header() {
     { href: routes.wine, label: t('wine') },
     { href: routes.cocktails, label: t('cocktails') },
     { href: routes.drinks, label: t('drinks') },
-    { href: routes.story, label: t('story') },
+    { href: routes.christmasLunch, label: t('christmasLunch') },
     { href: routes.visit, label: t('visit') },
   ] as const;
 
@@ -47,7 +46,6 @@ export async function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <LocaleToggle />
             <div className="hidden lg:block">
               <SocialLinks linkClassName="text-ink/60 hover:text-ink" />
             </div>
