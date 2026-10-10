@@ -10,7 +10,8 @@
   --color-ink: oklch(23% 0.02 50); /* primary text, warm near-black */
   --color-ink-soft: oklch(42% 0.022 55); /* secondary text */
   --color-parchment: oklch(97.5% 0.01 88); /* light type over imagery */
-  --color-ember: oklch(50% 0.125 45); /* muted rust — accent, links */
+  --color-ember: oklch(50% 0.125 45); /* muted rust: accent, links */
+  --color-ember-glow: oklch(74% 0.1 50); /* ember lifted for small type on ink */
   --color-brass: oklch(56% 0.085 80);
   --color-moss: oklch(42% 0.06 150);
   --color-stone: oklch(46% 0.02 75); /* warm gray — hairlines, meta */

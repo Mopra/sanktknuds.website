@@ -74,6 +74,7 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
                 alt={slide.alt}
                 fill
                 priority={i === 0}
+                fetchPriority={i === 0 ? 'high' : undefined}
                 loading={i === 0 ? undefined : 'lazy'}
                 quality={90}
                 sizes="100vw"
@@ -96,7 +97,7 @@ export function HeroSlider({ slides, className }: HeroSliderProps) {
                 aria-label={t('dot', { n: i + 1 })}
                 aria-current={active}
                 onClick={() => setIndex(i)}
-                className="group flex h-8 items-center focus-visible:outline-none"
+                className="group flex h-8 min-w-6 items-center justify-center focus-visible:outline-none"
               >
                 <span
                   className={cn(

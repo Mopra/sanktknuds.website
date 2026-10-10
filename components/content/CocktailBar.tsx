@@ -29,7 +29,7 @@ export function CocktailBar({ locale }: { locale: Locale }) {
 
         <div className="px-6 py-24 md:px-10 md:py-32 lg:py-36 lg:pl-16">
           {card.home.eyebrow ? (
-            <p className="text-xs uppercase tracking-[0.3em] text-ember">
+            <p className="text-xs uppercase tracking-[0.3em] text-ember-glow">
               {card.home.eyebrow[locale]}
             </p>
           ) : null}
@@ -50,7 +50,7 @@ export function CocktailBar({ locale }: { locale: Locale }) {
                     {cocktail.name}
                   </p>
                   {cocktail.notes ? (
-                    <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.12em] text-ember/80">
+                    <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.12em] text-ember-glow">
                       {cocktail.notes[locale]}
                     </p>
                   ) : null}
@@ -61,7 +61,7 @@ export function CocktailBar({ locale }: { locale: Locale }) {
 
           <Link
             href={routes.cocktails}
-            className="group mt-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ember transition-colors hover:text-bone"
+            className="group mt-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ember-glow transition-colors hover:text-bone"
           >
             {t('viewAll')}
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">

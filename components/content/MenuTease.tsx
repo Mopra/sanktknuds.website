@@ -45,7 +45,7 @@ export function MenuTease({ locale }: { locale: Locale }) {
         <TastingGroups groups={tasting.groups} className="mt-16 md:mt-24" />
 
         <div className="mt-8 flex flex-col gap-6 border-t border-ink/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          {tasting.note ? <p className="max-w-md text-sm text-ink/55">{tasting.note}</p> : <span />}
+          {tasting.note ? <p className="max-w-md text-sm text-ink-soft">{tasting.note}</p> : <span />}
           <Link
             href={routes.menu}
             className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ember transition-colors hover:text-ink"

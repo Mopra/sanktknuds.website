@@ -198,7 +198,7 @@ export function FoodSlider({ locale }: { locale: 'da' | 'en' }) {
         // scroll-pl keeps a snapped card aligned with the gutter, not the viewport edge
         className="hide-scrollbar mt-14 flex snap-x snap-mandatory scroll-pl-6 gap-5 overflow-x-auto scroll-smooth px-6 pb-2 md:mt-20 md:scroll-pl-10 md:gap-8 md:px-10 lg:scroll-pl-16 lg:px-16"
       >
-        {DISHES.map((dish, i) => (
+        {DISHES.map((dish) => (
           <li
             key={dish.src}
             className="w-[78vw] max-w-[26rem] shrink-0 snap-start sm:w-[46vw] lg:w-[30vw]"
@@ -209,7 +209,7 @@ export function FoodSlider({ locale }: { locale: 'da' | 'en' }) {
                   src={dish.src}
                   alt={dish.alt[locale]}
                   fill
-                  loading={i < 2 ? 'eager' : 'lazy'}
+                  loading="lazy"
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 46vw, 78vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none"
                 />
