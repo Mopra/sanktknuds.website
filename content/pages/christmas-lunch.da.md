@@ -4,7 +4,7 @@ locale: da
 title: Julefrokost 2026
 seoTitle: Julefrokost i Aarhus C 2026 | Firmajulefrokost hos Sankt Knuds
 description: Klassisk dansk julefrokost i fem serveringer for 495 kr. pr. person hos Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C. Perfekt til firmajulefrokost, afdelingsfest eller foreningen. Bestilles på forhånd.
-eyebrow: Julefrokost 2026
+eyebrow: Selskaber
 ---
 
 Sankt Knuds er et sted at mødes! Så saml kolleger, venner eller familien til en stemningsfuld julefrokost hos Sankt Knuds Brasseri & Bar.

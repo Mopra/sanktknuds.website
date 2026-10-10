@@ -4,7 +4,7 @@ locale: en
 title: Christmas Lunch 2026
 seoTitle: Christmas Lunch in Aarhus C 2026 | Company Christmas Party at Sankt Knuds
 description: A classic five-course Danish Christmas lunch for DKK 495 per person at Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C. Perfect for company and department Christmas parties. Order in advance.
-eyebrow: Christmas Lunch 2026
+eyebrow: Private events
 ---
 
 Sankt Knuds is a place to gather! So bring colleagues, friends or family together for a festive Christmas lunch at Sankt Knuds Brasseri & Bar.

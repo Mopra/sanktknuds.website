@@ -3,10 +3,11 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReviewCard } from '@/components/content/GoogleReviews';
 import { HubLinks } from '@/components/content/HubLinks';
+import { BackLink } from '@/components/ui/BackLink';
 import { BookingCta } from '@/components/ui/BookingCta';
 import { Figure } from '@/components/ui/Figure';
 import { InquiryCta } from '@/components/ui/InquiryCta';
-import { getPathname, Link } from '@/i18n/navigation';
+import { getPathname } from '@/i18n/navigation';
 import { hubs, type Locale, routing } from '@/i18n/routing';
 import { getLanding, getLandingSlugs, getQuotesMatching, type LandingHub } from '@/lib/content';
 import { buildPageMetadata, getSiteUrl } from '@/lib/seo';
@@ -66,15 +67,7 @@ export async function LandingTemplate({ hub, params }: { hub: LandingHub } & Lan
         // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD needs raw injection
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
-      <Link
-        href={hubs[hub].href}
-        className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ink/50 transition-colors hover:text-ember"
-      >
-        <span aria-hidden="true" className="transition-transform group-hover:-translate-x-1">
-          ←
-        </span>
-        {hubLabel}
-      </Link>
+      <BackLink href={hubs[hub].href} label={hubLabel} />
 
       <div className="mt-10 h-px w-16 bg-ember" />
       {page.eyebrow ? (
