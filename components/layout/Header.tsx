@@ -38,7 +38,7 @@ export async function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/60 transition-colors hover:text-ink"
+                className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
               >
                 {link.label}
               </Link>
@@ -47,7 +47,7 @@ export async function Header() {
 
           <div className="flex items-center gap-3 lg:gap-4">
             <div className="hidden lg:block">
-              <SocialLinks linkClassName="text-ink/60 hover:text-ink" />
+              <SocialLinks linkClassName="text-ink/65 hover:text-ink" />
             </div>
             <div className="hidden lg:block">
               <BookingButton />

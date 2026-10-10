@@ -126,14 +126,14 @@ export default async function DrinksPage({ params }: Props) {
               <h2 className="font-display text-3xl tracking-tight md:text-4xl">
                 {chapter.label[locale]}
               </h2>
-              {chapter.note ? <p className="mt-3 text-ink/60">{chapter.note[locale]}</p> : null}
+              {chapter.note ? <p className="mt-3 text-ink/65">{chapter.note[locale]}</p> : null}
             </div>
 
             <div className="mt-10 space-y-12">
               {chapter.sections.map((section) => (
                 <section key={section.id}>
                   <div className="flex items-center gap-4">
-                    <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                    <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
                       {section.label[locale]}
                     </h3>
                     <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
@@ -150,7 +150,7 @@ export default async function DrinksPage({ params }: Props) {
                             {item.name[locale]}
                           </p>
                           {item.description ? (
-                            <p className="mt-1 text-sm text-ink/55">{item.description[locale]}</p>
+                            <p className="mt-1 text-sm text-ink/65">{item.description[locale]}</p>
                           ) : null}
                         </div>
                         {item.price !== undefined ? (
@@ -182,13 +182,13 @@ export default async function DrinksPage({ params }: Props) {
           {barSnacksGroups.map((group) => (
             <div key={group.id}>
               <div className="flex items-center gap-4">
-                <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
                   {group.label[locale]}
                 </h3>
                 <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
               </div>
               {group.note ? (
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/55">
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/65">
                   {group.note[locale]}
                 </p>
               ) : null}

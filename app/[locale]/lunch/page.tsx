@@ -390,7 +390,7 @@ export default async function LunchPage({ params }: Props) {
     <article className="mx-auto max-w-3xl px-6 py-24">
       <div className="h-px w-16 bg-ember" />
       {page.eyebrow ? (
-        <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+        <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
           {page.eyebrow}
         </p>
       ) : null}
@@ -449,14 +449,14 @@ export default async function LunchPage({ params }: Props) {
                 <section key={section.id}>
                   {section.label ? (
                     <div className="flex items-center gap-4">
-                      <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                      <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
                         {section.label[locale]}
                       </h3>
                       <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
                     </div>
                   ) : null}
                   {section.note ? (
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/55">
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/65">
                       {section.note[locale]}
                     </p>
                   ) : null}
@@ -486,14 +486,14 @@ export default async function LunchPage({ params }: Props) {
           </div>
         ))}
 
-        <p className="mt-8 text-sm text-ink/50">{tMenu('allergens')}</p>
+        <p className="mt-8 text-sm text-ink/65">{tMenu('allergens')}</p>
       </div>
 
       {quotes.length > 0 ? (
         <section className="mt-16" aria-labelledby="lunch-quotes">
           <h2
             id="lunch-quotes"
-            className="font-mono text-xs uppercase tracking-[0.3em] text-ember/80"
+            className="font-mono text-xs uppercase tracking-[0.3em] text-ember/90"
           >
             {t('quotesTitle')}
           </h2>

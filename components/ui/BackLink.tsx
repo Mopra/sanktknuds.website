@@ -7,7 +7,7 @@ export function BackLink({ href, label }: { href: AppPathname; label: string }) 
     <Link
       // biome-ignore lint/suspicious/noExplicitAny: href is one of the typed static app pathnames
       href={href as any}
-      className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ink/50 transition-colors hover:text-ember"
+      className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ink/65 transition-colors hover:text-ember"
     >
       <span aria-hidden="true" className="transition-transform group-hover:-translate-x-1">
         ←

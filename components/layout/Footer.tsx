@@ -29,7 +29,7 @@ export async function Footer() {
             <SocialLinks
               showLabel
               className="mt-6"
-              linkClassName="text-xs uppercase tracking-[0.2em] text-ink/60 hover:text-ink"
+              linkClassName="text-xs uppercase tracking-[0.2em] text-ink/65 hover:text-ink"
               iconClassName="h-4 w-4"
             />
           </div>
@@ -133,7 +133,7 @@ export async function Footer() {
 
         <FooterMarque className="mt-20" />
 
-        <div className="mt-12 text-[0.625rem] uppercase tracking-[0.3em] text-ink/40">
+        <div className="mt-12 text-[0.625rem] uppercase tracking-[0.3em] text-ink/65">
           <p>
             © {year} {site.name}
             {site.cvr ? ` · CVR ${site.cvr}` : ''}

@@ -57,7 +57,7 @@ export default async function VisitPage({ params }: Props) {
 
       <div className="mt-16 grid gap-16 md:grid-cols-2">
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+          <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
             {locale === 'da' ? 'Adresse' : 'Address'}
           </h2>
           <address className="mt-4 not-italic text-lg leading-relaxed">
@@ -80,12 +80,12 @@ export default async function VisitPage({ params }: Props) {
             {site.cvr ? (
               <>
                 <br />
-                <span className="text-ink/50">CVR {site.cvr}</span>
+                <span className="text-ink/65">CVR {site.cvr}</span>
               </>
             ) : null}
           </address>
 
-          <p className="mt-8 font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+          <p className="mt-8 font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
             {locale === 'da' ? 'Rutevejledning' : 'Directions'}
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -113,7 +113,7 @@ export default async function VisitPage({ params }: Props) {
         </section>
 
         <section>
-          <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+          <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
             {locale === 'da' ? 'Åbningstider' : 'Hours'}
           </h2>
           <HoursList locale={locale} className="mt-4" />

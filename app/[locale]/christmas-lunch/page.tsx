@@ -29,7 +29,7 @@ export default async function ChristmasLunchPage({ params }: Props) {
 
       <div className="mt-10 h-px w-16 bg-ember" />
       {page.eyebrow ? (
-        <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+        <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
           {page.eyebrow}
         </p>
       ) : null}

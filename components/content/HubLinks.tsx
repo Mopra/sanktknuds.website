@@ -49,7 +49,7 @@ export async function HubLinks({
 
   return (
     <section className={cn('border-t border-ink/10 pt-10', className)} aria-label={t('related')}>
-      <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/80">{t('related')}</h2>
+      <h2 className="font-mono text-xs uppercase tracking-[0.3em] text-ember/90">{t('related')}</h2>
       <ul className="mt-6 grid gap-4 md:grid-cols-2">
         {cards.map((card) => (
           <li key={card.key}>
@@ -59,7 +59,7 @@ export async function HubLinks({
               className="group flex h-full flex-col border border-ink/15 p-6 transition-colors hover:border-ember/60"
             >
               {card.eyebrow ? (
-                <span className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                <span className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
                   {card.eyebrow}
                 </span>
               ) : null}

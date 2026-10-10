@@ -24,7 +24,7 @@ export function HoursList({ locale, className }: { locale: Locale; className?: s
           <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
             {service.schedule.map((row) => (
               <div key={row.days.join('-')} className="contents">
-                <dt className="text-ink/55">{dayRange(row.days as Day[], label)}</dt>
+                <dt className="text-ink/65">{dayRange(row.days as Day[], label)}</dt>
                 <dd className="tabular-nums text-ink">
                   {row.ranges.map((r) => `${r.opens} – ${r.closes}`).join(', ')}
                 </dd>
@@ -34,7 +34,7 @@ export function HoursList({ locale, className }: { locale: Locale; className?: s
         </section>
       ))}
       {hours.notes?.[locale] ? (
-        <p className="mt-4 text-xs text-ink/50">{hours.notes[locale]}</p>
+        <p className="mt-4 text-xs text-ink/65">{hours.notes[locale]}</p>
       ) : null}
     </div>
   );

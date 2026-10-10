@@ -56,21 +56,21 @@ export default async function WinePage({ params }: Props) {
         {sections.map((section, i) => (
           <section key={section.id} id={section.id} className="scroll-mt-28">
             <div className="flex items-baseline gap-4">
-              <span aria-hidden="true" className="font-mono text-xs tracking-[0.3em] text-ember/70">
+              <span aria-hidden="true" className="font-mono text-xs tracking-[0.3em] text-ember/90">
                 {ROMAN[i]}
               </span>
               <h2 className="font-display text-3xl tracking-tight md:text-4xl">
                 {section.label[locale]}
               </h2>
             </div>
-            {section.note ? <p className="mt-3 text-ink/60">{section.note[locale]}</p> : null}
+            {section.note ? <p className="mt-3 text-ink/65">{section.note[locale]}</p> : null}
 
             <div className="mt-8 space-y-10">
               {section.groups.map((group) => (
                 <div key={group.label?.en ?? group.wines[0]?.name}>
                   {group.label ? (
                     <div className="flex items-center gap-4">
-                      <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+                      <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
                         {group.label[locale]}
                       </h3>
                       <span aria-hidden="true" className="h-px flex-1 bg-stone/15" />
@@ -85,7 +85,7 @@ export default async function WinePage({ params }: Props) {
                         <span className="text-[0.95rem] leading-snug text-ink/85">
                           {wine.name}
                           {wine.limited ? (
-                            <sup className="ml-0.5 text-ember/70" title={t('limitedNote')}>
+                            <sup className="ml-0.5 text-ember/90" title={t('limitedNote')}>
                               *
                             </sup>
                           ) : null}
@@ -103,9 +103,9 @@ export default async function WinePage({ params }: Props) {
         ))}
       </div>
 
-      <div className="mt-20 space-y-1.5 border-t border-ink/10 pt-8 text-sm text-ink/50">
+      <div className="mt-20 space-y-1.5 border-t border-ink/10 pt-8 text-sm text-ink/65">
         <p>
-          <span aria-hidden="true" className="text-ember/70">
+          <span aria-hidden="true" className="text-ember/90">
             *
           </span>{' '}
           {t('limitedNote')}

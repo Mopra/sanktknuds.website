@@ -36,10 +36,10 @@ export function CurrentPour({ locale, wines }: { locale: string; wines: Recommen
     <section className="border-l-2 border-ember/70 pl-6">
       <p className="text-xs uppercase tracking-[0.3em] text-ember">{t('label')}</p>
       <p className="mt-2 font-display text-2xl italic leading-snug text-ink/90">{wine.name}</p>
-      {meta ? <p className="mt-1.5 font-mono text-xs tracking-wide text-ink/50">{meta}</p> : null}
+      {meta ? <p className="mt-1.5 font-mono text-xs tracking-wide text-ink/65">{meta}</p> : null}
       <Link
         href={routes.wine}
-        className="group mt-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink/60 hover:text-ink"
+        className="group mt-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink/65 hover:text-ink"
       >
         {tWine('fromMenu')}
         <span

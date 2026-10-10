@@ -23,7 +23,7 @@ export function TastingGroups({
             <ul className="mt-3 space-y-1.5">
               {group.items.map((item) => (
                 <li key={item} className="flex gap-3 text-[0.95rem] leading-relaxed">
-                  <span aria-hidden="true" className="select-none text-ember/70">
+                  <span aria-hidden="true" className="select-none text-ember/90">
                     —
                   </span>
                   <span className="text-ink/70">{item}</span>

@@ -28,7 +28,7 @@ export function LocaleToggle() {
             aria-current={current === locale ? 'true' : undefined}
             className={cn(
               'transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bone',
-              current === locale ? 'text-ink' : 'text-ink/40 hover:text-ink/70',
+              current === locale ? 'text-ink' : 'text-ink/65 hover:text-ink/70',
             )}
           >
             {locale.toUpperCase()}

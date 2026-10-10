@@ -57,16 +57,16 @@ export async function ReviewCard({ quote }: { quote: ReviewQuote }) {
 
       {showOriginal ? (
         <details className="mt-4">
-          <summary className="cursor-pointer font-mono text-[0.65rem] uppercase tracking-[0.2em] text-ember/80 transition-colors hover:text-ember">
+          <summary className="cursor-pointer font-mono text-[0.65rem] uppercase tracking-[0.2em] text-ember/90 transition-colors hover:text-ember">
             {t('seeOriginal', { lang: t(`langNames.${quote.lang}`) })}
           </summary>
-          <p lang={quote.lang} className="mt-3 text-[0.9rem] leading-relaxed text-ink/60">
+          <p lang={quote.lang} className="mt-3 text-[0.9rem] leading-relaxed text-ink/65">
             “{quote.original}”
           </p>
         </details>
       ) : null}
 
-      <figcaption className="mt-6 font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/45">
+      <figcaption className="mt-6 font-mono text-[0.7rem] uppercase tracking-[0.25em] text-ink/65">
         {quote.author}
       </figcaption>
     </figure>
@@ -129,7 +129,7 @@ export async function GoogleReviews({ className }: { className?: string }) {
   return (
     <section className={cn('mx-auto max-w-5xl px-6', className)} aria-labelledby="reviews-heading">
       <div className="h-px w-16 bg-ember" />
-      <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/80">
+      <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-ember/90">
         {t('eyebrow')}
       </p>
       <h2 id="reviews-heading" className="mt-4 font-display text-4xl tracking-tight md:text-5xl">
@@ -166,7 +166,7 @@ export async function GoogleReviews({ className }: { className?: string }) {
             href={reviews.writeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ink/50 transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-ink/65 transition-colors hover:text-ink"
           >
             {t('write')}
           </a>
