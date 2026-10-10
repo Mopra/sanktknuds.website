@@ -114,6 +114,18 @@ export default async function LocaleLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        {/* sigtil: click-to-edit text. Loads only when the site is shown inside a
+            frame, i.e. the sigtil editor's preview; visitors never fetch it */}
+        <Script id="sigtil-inline-edit" strategy="afterInteractive">
+          {`
+            if (window.self !== window.top) {
+              var s = document.createElement('script');
+              s.src = 'https://sigtil-app.vercel.app/inline-edit.js';
+              s.async = true;
+              document.head.appendChild(s);
+            }
+          `}
+        </Script>
         <noscript>
           {/* biome-ignore lint/performance/noImgElement: Meta Pixel no-JS fallback beacon */}
           <img
