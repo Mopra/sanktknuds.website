@@ -110,12 +110,6 @@ sections:
           - name: 2017 Dom Pérignon
             bottle: 2995
             limited: true
-          - name: 2016 Louis Roederer Cristal
-            bottle: 4295
-            limited: true
-          - name: 2018 Pol Roger Sir Winston Churchill
-            bottle: 3495
-            limited: true
           - name: NV Krug Rosé 29th Edition
             bottle: 4995
             limited: true
@@ -144,26 +138,11 @@ sections:
           - name: 2006 Charles Heidsieck Brut Magnum
             bottle: 1995
             limited: true
-          - name: 2009 Deutz Brut Magnum
-            bottle: 2495
-            limited: true
-          - name: 2013 Amour de Deutz Rosé
-            bottle: 1995
-            limited: true
           - name: 2006 Amour de Deutz Rosé
             bottle: 2995
             limited: true
           - name: 2006 Deutz, William Deutz
             bottle: 2495
-            limited: true
-          - name: 2008 Deutz, William Deutz
-            bottle: 1995
-            limited: true
-          - name: 2009 Deutz, William Deutz
-            bottle: 2395
-            limited: true
-          - name: 2016 Deutz, Blanc de Blancs
-            bottle: 1195
             limited: true
           - name: 2008 Piper-Heidsieck Champagne Cuvée Rare Brut
             bottle: 2795
@@ -204,7 +183,7 @@ sections:
           - name: 2023 Pouilly-Fuissé, Domaine Sylvaine et Alain Normand
             bottle: 895
           - name: 2024 Chablis, Domaine Jean Collet
-            bottle: 645
+            bottle: 665
           - name: 2024 Mâcon-Villages, Maison Joseph Drouhin
             bottle: 595
           - name: 2023 Saint-Véran, Maison Joseph Drouhin
@@ -228,7 +207,7 @@ sections:
           en: France · Loire
         wines:
           - name: 2025 Sancerre Blanc, Les Caillottes, Dom. De La Garenne
-            bottle: 495
+            bottle: 565
       - label:
           da: Frankrig · Gascogne
           en: France · Gascogne
@@ -307,7 +286,7 @@ sections:
           - name: 2023 Pommard 1. Cru Les Poutures, Domaine Lejeune
             bottle: 1495
           - name: 2023 Bourgogne Rouge, Boyer de Bar
-            bottle: 645
+            bottle: 665
           - name: 2022 Chambertin Clos de Bèze Grand Cru, Faiveley
             bottle: 5495
             limited: true
@@ -389,9 +368,6 @@ sections:
           - name: 2022 Flor de Pingus, Ribera del Duero
             bottle: 2195
             limited: true
-          - name: 2023 La Nieta, Rioja
-            bottle: 2195
-            limited: true
           - name: 2023 Hacienda Monasterio, Ribera del Duero
             bottle: 995
           - name: 2022 Macán Clásico, BR & VS, Rioja
@@ -406,17 +382,12 @@ sections:
           - name: 2019 Opus One, Napa Valley
             bottle: 5995
             limited: true
-          - name: 2016 Dominus, Napa Valley
-            bottle: 3495
-            limited: true
       - label:
           da: Italien · Toscana
           en: Italy · Toscana
         wines:
           - name: 2023 Chianti Colli Senesi, Silvio Nardi
             bottle: 385
-          - name: 2023 Rosso di Montalcino, Tenuta Pian Delle Vigne
-            bottle: 795
           - name: 2023 Il Bruciato, Bolgheri, Tenuta Guado al Tasso
             bottle: 795
           - name: 2019 Brunello di Montalcino, Silvio Nardi
@@ -429,9 +400,6 @@ sections:
             limited: true
           - name: 2018 Chianti Classico, Castellare di Castellina Magnum
             bottle: 1195
-            limited: true
-          - name: 2010 Brunello di Montalcino, Fattoria dei Barbi Magnum
-            bottle: 2495
             limited: true
           - name: 2015 Brunello di Montalcino, Fattoria dei Barbi Magnum
             bottle: 2495
@@ -480,12 +448,6 @@ sections:
             bottle: 595
             limited: true
       - label:
-          da: Italien · Puglia
-          en: Italy · Puglia
-        wines:
-          - name: NV Itinera Primitivo Premium Salento
-            bottle: 395
-      - label:
           da: Italien · Sicilien
           en: Italy · Sicily
         wines:
@@ -531,9 +493,6 @@ sections:
             bottle: 1895
             limited: true
           - name: 1973 Helenenhof Beerenauslese Traminer/Bouvier
-            bottle: 695
-            limited: true
-          - name: 1992 Weingut Hildegardishof Beerenauslese Scheurebe
             bottle: 695
             limited: true
           - name: 2018 Klein Constantia Vin de Constance
