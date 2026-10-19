@@ -72,15 +72,6 @@ chapters:
               da: Rimmet, med agurk, urtemayo og dild
               en: Cured, with cucumber, herb mayo and dill
             price: 59
-      - id: makrel
-        label:
-          da: Makrel
-          en: Mackerel
-        items:
-          - name:
-              da: Varmrøget, med peber mayo, radiser, karse og sprødt brød
-              en: Hot-smoked, with pepper mayo, radishes, cress and crisp bread
-            price: 75
       - id: kartoffel
         label:
           da: Kartoffel
