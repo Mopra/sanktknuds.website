@@ -145,9 +145,6 @@ sections:
           - name: 2006 Deutz, William Deutz
             bottle: 2495
             limited: true
-          - name: 2016 Deutz, Blanc de Blancs
-            bottle: 1195
-            limited: true
           - name: 2008 Piper-Heidsieck Champagne Cuvée Rare Brut
             bottle: 2795
             limited: true
