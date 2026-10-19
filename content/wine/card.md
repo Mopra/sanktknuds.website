@@ -55,7 +55,7 @@ sections:
             glass: 90
             bottle: 445
           - name: 2024 Cabernet Sauvignon, Les Esperons
-            glass: 80
+            glass: 75
             bottle: 395
           - name: 2023 Beychevelle Grand Bateau, Bordeaux, Frankrig
             glass: 110
