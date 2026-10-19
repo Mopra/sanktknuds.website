@@ -92,19 +92,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         ],
       },
       {
-        id: 'lunch-makrel',
-        label: { da: 'Makrel', en: 'Mackerel' },
-        items: [
-          {
-            name: {
-              da: 'Varmrøget, med peber mayo, radiser, karse og sprødt brød',
-              en: 'Hot-smoked, with pepper mayo, radishes, cress and crisp bread',
-            },
-            price: 75,
-          },
-        ],
-      },
-      {
         id: 'lunch-kartoffel',
         label: { da: 'Kartoffel', en: 'Potato' },
         items: [
