@@ -382,9 +382,6 @@ sections:
           - name: 2019 Opus One, Napa Valley
             bottle: 5995
             limited: true
-          - name: 2016 Dominus, Napa Valley
-            bottle: 3495
-            limited: true
       - label:
           da: Italien · Toscana
           en: Italy · Toscana
