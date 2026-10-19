@@ -388,8 +388,6 @@ sections:
         wines:
           - name: 2023 Chianti Colli Senesi, Silvio Nardi
             bottle: 385
-          - name: 2023 Rosso di Montalcino, Tenuta Pian Delle Vigne
-            bottle: 795
           - name: 2023 Il Bruciato, Bolgheri, Tenuta Guado al Tasso
             bottle: 795
           - name: 2019 Brunello di Montalcino, Silvio Nardi
