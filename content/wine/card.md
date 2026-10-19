@@ -183,7 +183,7 @@ sections:
           - name: 2023 Pouilly-Fuissé, Domaine Sylvaine et Alain Normand
             bottle: 895
           - name: 2024 Chablis, Domaine Jean Collet
-            bottle: 645
+            bottle: 665
           - name: 2024 Mâcon-Villages, Maison Joseph Drouhin
             bottle: 595
           - name: 2023 Saint-Véran, Maison Joseph Drouhin
