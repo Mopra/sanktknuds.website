@@ -9,13 +9,16 @@ import type { AppPathname } from '@/i18n/routing';
 
 // Nav links are static pages only; dynamic routes like /menu/[slug] need params.
 type NavLink = { href: Exclude<AppPathname, `${string}[${string}`>; label: string };
+type PlainLink = { href: string; label: string };
 
 export function MobileNav({
   links,
+  plainLinks,
   locale,
   giftCardLink,
 }: {
   links: readonly NavLink[];
+  plainLinks?: readonly PlainLink[];
   locale: string;
   giftCardLink?: { href: string; label: string };
 }) {
