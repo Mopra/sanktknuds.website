@@ -145,12 +145,6 @@ sections:
           - name: 2006 Deutz, William Deutz
             bottle: 2495
             limited: true
-          - name: 2008 Deutz, William Deutz
-            bottle: 1995
-            limited: true
-          - name: 2009 Deutz, William Deutz
-            bottle: 2395
-            limited: true
           - name: 2016 Deutz, Blanc de Blancs
             bottle: 1195
             limited: true
