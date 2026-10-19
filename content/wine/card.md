@@ -24,16 +24,16 @@ sections:
         wines:
           - name: 2024 Erste Neue Pinot Grigio, Alto Adige, Italien
             glass: 85
-            bottle: 465
+            bottle: 475
           - name: 2025 De La Garenne Sancerre, Loire, Frankrig
-            glass: 110
-            bottle: 495
+            glass: 115
+            bottle: 565
           - name: 2025 Gaumenspiel Riesling, Pfalz, Tyskland
-            glass: 70
-            bottle: 365
+            glass: 75
+            bottle: 375
           - name: 2024 Jean Collet, Chablis, Bourgogne, Frankrig
-            glass: 135
-            bottle: 645
+            glass: 140
+            bottle: 665
       - label:
           da: Rosé
           en: Rosé
