@@ -54,7 +54,7 @@ chapters:
           - name:
               da: Tuborg Classic 0,40 l
               en: Tuborg Classic 0.40 l
-            price: 58
+            price: 60
           - name:
               da: Kronenbourg Blanc 0,50 l
               en: Kronenbourg Blanc 0.50 l
