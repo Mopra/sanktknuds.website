@@ -39,7 +39,7 @@ export default async function WinePage({ params }: Props) {
       {page.description ? <p className="mt-6 text-lg text-ink/80">{page.description}</p> : null}
 
       <a
-        href="/uploads/mtua25w1-vinkort-september.pdf"
+        href="/uploads/mvf1hmtx-vinkort-oktober.pdf"
         download
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
       >
