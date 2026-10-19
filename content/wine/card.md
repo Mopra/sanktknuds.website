@@ -110,9 +110,6 @@ sections:
           - name: 2017 Dom Pérignon
             bottle: 2995
             limited: true
-          - name: 2016 Louis Roederer Cristal
-            bottle: 4295
-            limited: true
           - name: 2018 Pol Roger Sir Winston Churchill
             bottle: 3495
             limited: true
