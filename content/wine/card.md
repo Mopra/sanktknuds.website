@@ -50,7 +50,7 @@ sections:
         wines:
           - name: 2025 Boyer de Bar Bourgogne Rouge, Frankrig
             glass: 140
-            bottle: 645
+            bottle: 665
           - name: 2025 Bel Colle Langhe Nebbiolo, Piemonte, Italien
             glass: 90
             bottle: 445
