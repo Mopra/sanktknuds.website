@@ -207,7 +207,7 @@ sections:
           en: France · Loire
         wines:
           - name: 2025 Sancerre Blanc, Les Caillottes, Dom. De La Garenne
-            bottle: 495
+            bottle: 565
       - label:
           da: Frankrig · Gascogne
           en: France · Gascogne
