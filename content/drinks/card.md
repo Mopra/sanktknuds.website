@@ -58,7 +58,7 @@ chapters:
           - name:
               da: Kronenbourg Blanc 0,50 l
               en: Kronenbourg Blanc 0.50 l
-            price: 65
+            price: 68
           - name:
               da: Yakima IPA 0,50 l
               en: Yakima IPA 0.50 l
