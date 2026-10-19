@@ -448,12 +448,6 @@ sections:
             bottle: 595
             limited: true
       - label:
-          da: Italien · Puglia
-          en: Italy · Puglia
-        wines:
-          - name: NV Itinera Primitivo Premium Salento
-            bottle: 395
-      - label:
           da: Italien · Sicilien
           en: Italy · Sicily
         wines:
