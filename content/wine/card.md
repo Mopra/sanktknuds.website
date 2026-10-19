@@ -26,8 +26,8 @@ sections:
             glass: 85
             bottle: 475
           - name: 2025 De La Garenne Sancerre, Loire, Frankrig
-            glass: 110
-            bottle: 495
+            glass: 115
+            bottle: 565
           - name: 2025 Gaumenspiel Riesling, Pfalz, Tyskland
             glass: 70
             bottle: 365
