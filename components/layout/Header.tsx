@@ -20,6 +20,8 @@ export async function Header() {
     { href: routes.visit, label: t('visit') },
   ] as const;
 
+  const brunchLink = { href: `/${locale}/brunch`, label: t('brunch') };
+
   return (
     <>
       <Masthead />
@@ -43,6 +45,12 @@ export async function Header() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={brunchLink.href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {brunchLink.label}
+            </a>
           </nav>
 
           <div className="flex items-center gap-3 lg:gap-4">
@@ -55,7 +63,7 @@ export async function Header() {
             <div className="lg:hidden">
               <BookingButton size="xs" />
             </div>
-            <MobileNav links={links} locale={locale} />
+            <MobileNav links={links} plainLinks={[brunchLink]} locale={locale} />
           </div>
         </div>
       </header>
