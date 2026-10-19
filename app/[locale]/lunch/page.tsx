@@ -92,19 +92,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         ],
       },
       {
-        id: 'lunch-makrel',
-        label: { da: 'Makrel', en: 'Mackerel' },
-        items: [
-          {
-            name: {
-              da: 'Varmrøget, med peber mayo, radiser, karse og sprødt brød',
-              en: 'Hot-smoked, with pepper mayo, radishes, cress and crisp bread',
-            },
-            price: 75,
-          },
-        ],
-      },
-      {
         id: 'lunch-kartoffel',
         label: { da: 'Kartoffel', en: 'Potato' },
         items: [
@@ -401,7 +388,7 @@ export default async function LunchPage({ params }: Props) {
 
       <TrackedLink
         event="lunch_menu_pdf_download"
-        href="/uploads/mtubr5nx-menu-frokost-september.pdf"
+        href="/uploads/mvf7i0pl-frokost-oktober.pdf"
         download
         target="_blank"
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
