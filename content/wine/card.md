@@ -368,9 +368,6 @@ sections:
           - name: 2022 Flor de Pingus, Ribera del Duero
             bottle: 2195
             limited: true
-          - name: 2023 La Nieta, Rioja
-            bottle: 2195
-            limited: true
           - name: 2023 Hacienda Monasterio, Ribera del Duero
             bottle: 995
           - name: 2022 Macán Clásico, BR & VS, Rioja
