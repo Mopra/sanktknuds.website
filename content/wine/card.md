@@ -401,9 +401,6 @@ sections:
           - name: 2018 Chianti Classico, Castellare di Castellina Magnum
             bottle: 1195
             limited: true
-          - name: 2010 Brunello di Montalcino, Fattoria dei Barbi Magnum
-            bottle: 2495
-            limited: true
           - name: 2015 Brunello di Montalcino, Fattoria dei Barbi Magnum
             bottle: 2495
             limited: true
