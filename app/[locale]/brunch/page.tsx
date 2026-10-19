@@ -3,7 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { BookingCta } from '@/components/ui/BookingCta';
 import type { Locale } from '@/i18n/routing';
 import { getPage } from '@/lib/content';
-import { buildPageMetadata } from '@/lib/seo';
+import { getSiteUrl } from '@/lib/seo';
 
 type BrunchItem = { name: { da: string; en: string }; description?: { da: string; en: string } };
 
