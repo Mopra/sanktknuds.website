@@ -39,7 +39,7 @@ sections:
           en: Rosé
         wines:
           - name: 2024 Villa Wolf Rosé, Pfalz, Tyskland
-            glass: 80
+            glass: 75
             bottle: 395
           - name: 2025 Minuty Prestige Rosé, Provence, Frankrig
             glass: 95
