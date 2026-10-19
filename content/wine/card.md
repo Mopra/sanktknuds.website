@@ -24,7 +24,7 @@ sections:
         wines:
           - name: 2024 Erste Neue Pinot Grigio, Alto Adige, Italien
             glass: 85
-            bottle: 465
+            bottle: 475
           - name: 2025 De La Garenne Sancerre, Loire, Frankrig
             glass: 110
             bottle: 495
