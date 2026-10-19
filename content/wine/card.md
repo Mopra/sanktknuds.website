@@ -286,7 +286,7 @@ sections:
           - name: 2023 Pommard 1. Cru Les Poutures, Domaine Lejeune
             bottle: 1495
           - name: 2023 Bourgogne Rouge, Boyer de Bar
-            bottle: 645
+            bottle: 665
           - name: 2022 Chambertin Clos de Bèze Grand Cru, Faiveley
             bottle: 5495
             limited: true
