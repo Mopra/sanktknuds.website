@@ -54,7 +54,7 @@ sections:
           - name: 2025 Bel Colle Langhe Nebbiolo, Piemonte, Italien
             glass: 90
             bottle: 445
-          - name: 2025 Itinera Primitivo, Puglia, Italien
+          - name: 2024 Cabernet Sauvignon, Les Esperons
             glass: 80
             bottle: 395
           - name: 2023 Beychevelle Grand Bateau, Bordeaux, Frankrig
