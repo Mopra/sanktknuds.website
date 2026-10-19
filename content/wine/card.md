@@ -138,8 +138,6 @@ sections:
           - name: 2006 Charles Heidsieck Brut Magnum
             bottle: 1995
             limited: true
-          - name: 2013 Amour de Deutz Rosé
-            bottle: 1995
             limited: true
           - name: 2006 Amour de Deutz Rosé
             bottle: 2995
