@@ -29,8 +29,8 @@ sections:
             glass: 115
             bottle: 565
           - name: 2025 Gaumenspiel Riesling, Pfalz, Tyskland
-            glass: 70
-            bottle: 365
+            glass: 75
+            bottle: 375
           - name: 2024 Jean Collet, Chablis, Bourgogne, Frankrig
             glass: 135
             bottle: 645
