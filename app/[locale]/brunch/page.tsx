@@ -63,7 +63,21 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const page = getPage('brunch', locale);
-  return buildPageMetadata({ page, locale, path: '/brunch' });
+  const base = getSiteUrl();
+  const canonical = `${base}/${locale}/brunch`;
+  const title = page.seoTitle ?? page.title;
+  return {
+    title,
+    description: page.description,
+    alternates: {
+      canonical,
+      languages: {
+        da: `${base}/da/brunch`,
+        en: `${base}/en/brunch`,
+        'x-default': `${base}/da/brunch`,
+      },
+    },
+  };
 }
 
 export default async function BrunchPage({ params }: Props) {
