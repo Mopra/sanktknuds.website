@@ -495,9 +495,6 @@ sections:
           - name: 1973 Helenenhof Beerenauslese Traminer/Bouvier
             bottle: 695
             limited: true
-          - name: 1992 Weingut Hildegardishof Beerenauslese Scheurebe
-            bottle: 695
-            limited: true
           - name: 2018 Klein Constantia Vin de Constance
             bottle: 995
             limited: true
