@@ -33,7 +33,7 @@ chapters:
             description:
               da: hyldeblomst · lemon/lime · rabarber
               en: elderflower · lemon/lime · rhubarb
-            price: 39
+            price: 42
       - id: draught
         label:
           da: Fadøl
@@ -46,7 +46,7 @@ chapters:
           - name:
               da: Carlsberg 0,40 l
               en: Carlsberg 0.40 l
-            price: 55
+            price: 57
           - name:
               da: Tuborg Classic 0,25 l
               en: Tuborg Classic 0.25 l
@@ -54,19 +54,19 @@ chapters:
           - name:
               da: Tuborg Classic 0,40 l
               en: Tuborg Classic 0.40 l
-            price: 58
+            price: 60
           - name:
               da: Kronenbourg Blanc 0,50 l
               en: Kronenbourg Blanc 0.50 l
-            price: 65
+            price: 68
           - name:
               da: Yakima IPA 0,50 l
               en: Yakima IPA 0.50 l
-            price: 65
+            price: 68
           - name:
               da: Grimbergen Double Ambrée 0,50 l
               en: Grimbergen Double Ambrée 0.50 l
-            price: 65
+            price: 68
       - id: non-alcoholic-beer
         label:
           da: Alkoholfri øl
