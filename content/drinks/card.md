@@ -33,7 +33,7 @@ chapters:
             description:
               da: hyldeblomst · lemon/lime · rabarber
               en: elderflower · lemon/lime · rhubarb
-            price: 39
+            price: 42
       - id: draught
         label:
           da: Fadøl
