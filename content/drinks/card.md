@@ -62,7 +62,7 @@ chapters:
           - name:
               da: Yakima IPA 0,50 l
               en: Yakima IPA 0.50 l
-            price: 65
+            price: 68
           - name:
               da: Grimbergen Double Ambrée 0,50 l
               en: Grimbergen Double Ambrée 0.50 l
