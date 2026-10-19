@@ -65,6 +65,16 @@ export function MobileNav({
                   {link.label}
                 </Link>
               ))}
+              {plainLinks?.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+                >
+                  {link.label}
+                </a>
+              ))}
               {giftCardLink && (
                 <a
                   href={giftCardLink.href}
