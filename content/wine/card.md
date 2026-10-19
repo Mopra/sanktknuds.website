@@ -39,7 +39,7 @@ sections:
           en: Rosé
         wines:
           - name: 2024 Villa Wolf Rosé, Pfalz, Tyskland
-            glass: 80
+            glass: 75
             bottle: 395
           - name: 2025 Minuty Prestige Rosé, Provence, Frankrig
             glass: 95
@@ -50,11 +50,11 @@ sections:
         wines:
           - name: 2025 Boyer de Bar Bourgogne Rouge, Frankrig
             glass: 140
-            bottle: 645
+            bottle: 665
           - name: 2025 Bel Colle Langhe Nebbiolo, Piemonte, Italien
             glass: 90
             bottle: 445
-          - name: 2025 Itinera Primitivo, Puglia, Italien
+          - name: 2024 Cabernet Sauvignon, Les Esperons
             glass: 80
             bottle: 395
           - name: 2023 Beychevelle Grand Bateau, Bordeaux, Frankrig
