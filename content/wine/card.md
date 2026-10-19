@@ -32,8 +32,8 @@ sections:
             glass: 75
             bottle: 375
           - name: 2024 Jean Collet, Chablis, Bourgogne, Frankrig
-            glass: 135
-            bottle: 645
+            glass: 140
+            bottle: 665
       - label:
           da: Rosé
           en: Rosé
