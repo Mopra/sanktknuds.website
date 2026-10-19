@@ -66,7 +66,7 @@ chapters:
           - name:
               da: Grimbergen Double Ambrée 0,50 l
               en: Grimbergen Double Ambrée 0.50 l
-            price: 65
+            price: 68
       - id: non-alcoholic-beer
         label:
           da: Alkoholfri øl
