@@ -161,7 +161,7 @@ export default async function CocktailsPage({ params }: Props) {
               {locale === 'da' ? 'Housebrand spiritus' : 'Housebrand spirits'}
             </h3>
             <p className="mt-1.5 font-mono text-sm tabular-nums text-ember">
-              {locale === 'da' ? 'Pris: 650 kr.' : 'Price: DKK 650'}
+              {locale === 'da' ? 'Pris: 750 kr.' : 'Price: DKK 750'}
             </p>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
@@ -170,8 +170,8 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
             <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
-                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
-                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
+                ? 'Inkluderer 5 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 5 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
             </p>
           </div>
           <div>
@@ -179,7 +179,7 @@ export default async function CocktailsPage({ params }: Props) {
               {locale === 'da' ? 'Luksus spiritus' : 'Premium spirits'}
             </h3>
             <p className="mt-1.5 font-mono text-sm tabular-nums text-ember">
-              {locale === 'da' ? 'Pris: 950 kr.' : 'Price: DKK 950'}
+              {locale === 'da' ? 'Pris: 1095 kr.' : 'Price: DKK 1095'}
             </p>
             <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
@@ -188,8 +188,8 @@ export default async function CocktailsPage({ params }: Props) {
             </p>
             <p className="mt-1.5 text-[0.95rem] leading-relaxed text-ink/80">
               {locale === 'da'
-                ? 'Inkluderer 6 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
-                : 'Includes 6 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
+                ? 'Inkluderer 5 flasker mixer efter eget valg (sodavand, energidrik eller juice).'
+                : 'Includes 5 bottles of mixer of your choice (soft drinks, energy drink or juice).'}
             </p>
           </div>
         </div>
