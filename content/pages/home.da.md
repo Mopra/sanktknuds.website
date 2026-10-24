@@ -3,12 +3,14 @@ slug: home
 locale: da
 title: Sankt Knuds Brasseri & Bar
 seoTitle: Brasseri & Bar i Aarhus C | Sankt Knuds
-description: Håndværk, historie og gode stunder — midt i Aarhus, på Ryesgade 29.
+description: Spis før Musikhuset og Aarhus Teater
 eyebrow: Aarhus · Ryesgade 29
 ---
 
-I hjertet af Aarhus, hvor rejsende engang fandt hvile og tilbageholdenhed, står i dag et sted skabt til det modsatte.
+Skal I i Musikhuset eller Aarhus Teater, er Sankt Knuds et oplagt sted at starte aftenen. Vi ligger på Ryesgade 29 midt i Aarhus C, så I kan spise i ro og gå det sidste stykke.
 
-Her byder vi på velbrygget øl, ærlig mad og gode stunder — i rammer hvor historien møder nutiden. Et sted hvor du må blive lidt længere.
+Aftenkøkkenet åbner kl. 17.30 mandag til lørdag. Starter forestillingen kl. 19.30, er et bord kl. 17.30 eller 18.00 det mest afslappede.
+
+Baren har åbent til 22 mandag til torsdag og til 01 fredag og lørdag. Kom tilbage til en cocktail eller et glas fra vinkortet, når tæppet er gået ned.
 
 Sankt Knuds er et sted at mødes
