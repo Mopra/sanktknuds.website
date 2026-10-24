@@ -29,6 +29,6 @@ services:
         ranges:
           - { opens: "10:00", closes: "14:00" }
 notes:
-  da:
-  en:
+  da: ""
+  en: ""
 ---
