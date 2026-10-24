@@ -17,8 +17,6 @@ Celebrate the last night of the year at Sankt Knuds Brasseri & Bar! We open our 
 
 ## What to expect
 
-More details on menu, price and timing for the New Year's Eve party 2026 are coming soon. Feel free to write to us if you'd like to reserve a spot or hear more.
-
 [New Year's menu (PDF)](/uploads/mvm9r63a-ny-nytarsmenu-uden-baggrund.pdf)
 
 ## How to book
