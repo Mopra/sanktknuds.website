@@ -28,6 +28,6 @@ Vil I spise let, kan I dele et par snacks og forretter fra [aftenmenuen](/da/men
 
 ## Efter forestillingen
 
-Baren har åbent til 23 mandag til torsdag og til 02 fredag og lørdag. Kom tilbage til en [cocktail](/da/cocktailkort) eller et glas fra [vinkortet](/da/vinkort), når tæppet er gået ned.
+Baren har åbent til 22 mandag til torsdag og til 01 fredag og lørdag. Kom tilbage til en [cocktail](/da/cocktailkort) eller et glas fra [vinkortet](/da/vinkort), når tæppet er gået ned.
 
 Book bord i god tid på aftener med store forestillinger.
