@@ -21,6 +21,9 @@ export async function Header() {
   ] as const;
 
   const brunchLink = { href: `/${locale}/brunch`, label: t('brunch') };
+  const newYearHref =
+    locale === 'da' ? `/${locale}/selskaber/nytaar-2026` : `/${locale}/events/nytaar-2026`;
+  const newYearLink = { href: newYearHref, label: t('newYear') };
 
   return (
     <>
