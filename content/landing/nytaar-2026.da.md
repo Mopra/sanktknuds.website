@@ -59,3 +59,5 @@ Mulighed for tilkøb af caviar ved booking
 ## Sådan booker I
 
 Send os en mail med antal gæster, så vender vi tilbage hurtigst muligt: [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk).
+
+Book via [Book bord](/da/book).
