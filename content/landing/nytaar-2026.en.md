@@ -17,6 +17,42 @@ Celebrate the last night of the year at Sankt Knuds Brasseri & Bar! We open our 
 
 ## What to expect
 
+**SANKT KNUDS BRASSERI & BAR**
+**NEW YEAR'S MENU**
+
+**SNACKS**
+Crispy rillette
+Pepper cream
+
+Argentine tiger prawns
+Crisp croustade · spiced tiger prawns · fresh herbs
+
+Warm smoked mackerel
+Butter-toasted sourdough · pepper mayonnaise · radish
+
+Cured scallop
+Cucumber
+
+Pain soufflé
+Hand-stirred scallop · lemon · herbs
+
+**CREAMY FISH FUMET**
+Poached white fish · slow-braised fennel · tart blackcurrants · radish crudité · crisp coral tuile
+Served with freshly baked sourdough
+
+**BEEF TENDERLOIN**
+Confit garlic · parsnip in several textures · caramelised onions
+Fondant potatoes · rich port wine sauce
+
+**BROWNIE**
+Whipped chocolate ganache · raw-marinated blackberries · vanilla cream · Baileys ice cream · oat crumble
+
+**AT MIDNIGHT**
+Marzipan ring cake & champagne
+
+**995.00 DKK PER PERSON**
+Option to add caviar when booking
+
 [New Year's menu (PDF)](/uploads/mvm9r63a-ny-nytarsmenu-uden-baggrund.pdf)
 
 ## How to book
