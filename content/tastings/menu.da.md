@@ -26,9 +26,6 @@ groups:
     items:
       - Serranoskinke af kastanjefodret gris, frisk mozzarella og olivenolie
       - Diavola
-  - name: Knickerbocker glory
-    items:
-      - Vaniljeis, frugt, crème anglaise og flødeskum
   - name: Æblekompot
     items:
       - Med bagt havre og hvid chokoladeskum
