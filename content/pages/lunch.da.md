@@ -11,7 +11,7 @@ Sankt Knuds ligger på Ryesgade 29 — kort gang op ad gaden fra Aarhus H, og f�
 
 ## Åbningstider til frokost
 
-Køkkenet serverer frokost fra **11.30 til 16.00, mandag til lørdag**. Søndag holder vi lukket. Restauranten og baren har åbent videre ind i aftenen — så bliver frokosten lang, er der ingen, der skynder på dig.
+Køkkenet serverer frokost fra **11.30 til 16.00, mandag til lørdag**. Søndag har vi åbent fra 10.00 til 14.00. Restauranten og baren har åbent videre ind i aftenen — så bliver frokosten lang, er der ingen, der skynder på dig.
 
 ## Frokost for firmaet
 
