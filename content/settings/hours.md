@@ -29,6 +29,6 @@ services:
         ranges:
           - { opens: "10:00", closes: "14:00" }
 notes:
-  da: Søndag åbent 10.00-14.00.
-  en: Open on Sundays 10:00-14:00.
+  da:
+  en:
 ---
