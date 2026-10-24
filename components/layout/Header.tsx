@@ -39,7 +39,25 @@ export async function Header() {
           </Link>
 
           <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
-            {links.map((link) => (
+            <Link
+              href={links[0].href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {links[0].label}
+            </Link>
+            <Link
+              href={links[1].href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {links[1].label}
+            </Link>
+            <a
+              href={brunchLink.href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {brunchLink.label}
+            </a>
+            {links.slice(2, 6).map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -49,17 +67,17 @@ export async function Header() {
               </Link>
             ))}
             <a
-              href={brunchLink.href}
-              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
-            >
-              {brunchLink.label}
-            </a>
-            <a
               href={newYearLink.href}
               className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
             >
               {newYearLink.label}
             </a>
+            <Link
+              href={links[6].href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {links[6].label}
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3 lg:gap-4">
