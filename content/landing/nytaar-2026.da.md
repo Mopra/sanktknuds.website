@@ -8,7 +8,7 @@ title: Nytår 2026
 seoTitle: Nytårsfest 2026 i Aarhus C | Sankt Knuds
 description: Fejr nytåret hos Sankt Knuds Brasseri & Bar på Ryesgade 29, Aarhus C. Skriv til os for datoer, menu og priser.
 teaser: Fejr nytåret med god mad, drinks og fest hos Sankt Knuds.
-image: /uploads/mvm9x6s3-nytar-samlet-ny.webp
+image: /uploads/mvmah1xh-nytar-samlet-a5-lig.webp
 imageAlt: Nytårsmad hos Sankt Knuds
 cta: inquiry
 ---
