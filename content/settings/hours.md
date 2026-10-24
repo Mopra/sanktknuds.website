@@ -12,6 +12,9 @@ services:
         ranges:
           - { opens: "11:30", closes: "16:00" }
           - { opens: "17:30", closes: "21:30" }
+      - days: [Sun]
+        ranges:
+          - { opens: "10:00", closes: "14:00" }
   - name:
       da: Restaurant & bar
       en: Restaurant & bar
@@ -22,7 +25,10 @@ services:
       - days: [Fri, Sat]
         ranges:
           - { opens: "11:30", closes: "02:00" }
+      - days: [Sun]
+        ranges:
+          - { opens: "10:00", closes: "14:00" }
 notes:
-  da: Søndag holder vi lukket.
-  en: Closed on Sundays.
+  da: Søndag åbent 10.00-14.00.
+  en: Open on Sundays 10:00-14:00.
 ---
