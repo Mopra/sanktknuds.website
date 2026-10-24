@@ -17,8 +17,6 @@ Fejr årets sidste aften hos Sankt Knuds Brasseri & Bar! Vi åbner dørene for e
 
 ## Hvad kan I forvente
 
-Mere information om menu, pris og tidspunkt for nytårsfesten 2026 følger snart. Skriv endelig til os, hvis I vil reservere plads eller høre nærmere.
-
 [Nytårsmenu (PDF)](/uploads/mvm9r63a-ny-nytarsmenu-uden-baggrund.pdf)
 
 ## Sådan booker I
