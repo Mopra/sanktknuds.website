@@ -8,8 +8,8 @@ title: New Year's Eve 2026
 seoTitle: New Year's Eve Party 2026 in Aarhus C | Sankt Knuds
 description: Celebrate New Year's Eve at Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C. Write to us for dates, menu and prices.
 teaser: Celebrate New Year's Eve with great food, drinks and festivities at Sankt Knuds.
-image: /images/VIC00002.webp
-imageAlt: New Year's mood at Sankt Knuds
+image: /uploads/mvm9x6s3-nytar-samlet-ny.webp
+imageAlt: New Year's Eve food at Sankt Knuds
 cta: inquiry
 ---
 
@@ -17,7 +17,44 @@ Celebrate the last night of the year at Sankt Knuds Brasseri & Bar! We open our 
 
 ## What to expect
 
-More details on menu, price and timing for the New Year's Eve party 2026 are coming soon. Feel free to write to us if you'd like to reserve a spot or hear more.
+**SANKT KNUDS BRASSERI & BAR**
+**NEW YEAR'S MENU**
+
+**SNACKS**
+
+Crispy rillette
+Pepper cream
+
+Argentine tiger prawns
+Crisp croustade · spiced tiger prawns · fresh herbs
+
+Warm smoked mackerel
+Butter-toasted sourdough · pepper mayonnaise · radish
+
+Cured scallop
+Cucumber
+
+Pain soufflé
+Hand-stirred scallop · lemon · herbs
+
+**CREAMY FISH FUMET**
+Poached white fish · slow-braised fennel · tart blackcurrants · radish crudité · crisp coral tuile
+Served with freshly baked sourdough
+
+**BEEF TENDERLOIN**
+Confit garlic · parsnip in several textures · caramelised onions
+Fondant potatoes · rich port wine sauce
+
+**BROWNIE**
+Whipped chocolate ganache · raw-marinated blackberries · vanilla cream · Baileys ice cream · oat crumble
+
+**AT MIDNIGHT**
+Marzipan ring cake & champagne
+
+**995.00 DKK PER PERSON**
+Option to add caviar when booking
+
+[New Year's menu (PDF)](/uploads/mvm9r63a-ny-nytarsmenu-uden-baggrund.pdf)
 
 ## How to book
 

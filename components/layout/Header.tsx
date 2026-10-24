@@ -21,6 +21,9 @@ export async function Header() {
   ] as const;
 
   const brunchLink = { href: `/${locale}/brunch`, label: t('brunch') };
+  const newYearHref =
+    locale === 'da' ? `/${locale}/selskaber/nytaar-2026` : `/${locale}/events/nytaar-2026`;
+  const newYearLink = { href: newYearHref, label: t('newYear') };
 
   return (
     <>
@@ -51,6 +54,12 @@ export async function Header() {
             >
               {brunchLink.label}
             </a>
+            <a
+              href={newYearLink.href}
+              className="text-[0.7rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:text-ink"
+            >
+              {newYearLink.label}
+            </a>
           </nav>
 
           <div className="flex items-center gap-3 lg:gap-4">
@@ -63,7 +72,7 @@ export async function Header() {
             <div className="lg:hidden">
               <BookingButton size="xs" />
             </div>
-            <MobileNav links={links} plainLinks={[brunchLink]} locale={locale} />
+            <MobileNav links={links} plainLinks={[brunchLink, newYearLink]} locale={locale} />
           </div>
         </div>
       </header>

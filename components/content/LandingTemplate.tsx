@@ -87,6 +87,7 @@ export async function LandingTemplate({ hub, params }: { hub: LandingHub } & Lan
           aspect="aspect-[16/9]"
           sizes="(min-width: 768px) 48rem, 100vw"
           priority
+          fit="contain"
           className="mt-12"
         />
       ) : null}

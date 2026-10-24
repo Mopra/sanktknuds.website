@@ -26,9 +26,6 @@ groups:
     items:
       - Serrano ham from chestnut-fed pork, fresh mozzarella and olive oil
       - Diavola
-  - name: Knickerbocker glory
-    items:
-      - Vanilla ice cream, fruit, crème anglaise and whipped cream
   - name: Apple compote
     items:
       - With baked oats and white-chocolate foam
