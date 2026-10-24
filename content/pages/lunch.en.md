@@ -11,7 +11,7 @@ Sankt Knuds sits at Ryesgade 29 — a short walk up the street from Aarhus Centr
 
 ## Lunch hours
 
-The kitchen serves lunch from **11.30 to 16.00, Monday to Saturday**. We're closed on Sundays. The restaurant and bar stay open into the evening — so if lunch runs long, nobody will rush you.
+The kitchen serves lunch from **11.30 to 16.00, Monday to Saturday**. On Sundays we're open from 10.00 to 14.00. The restaurant and bar stay open into the evening — so if lunch runs long, nobody will rush you.
 
 ## Lunch for your company
 
