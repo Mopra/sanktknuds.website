@@ -21,6 +21,7 @@ Celebrate the last night of the year at Sankt Knuds Brasseri & Bar! We open our 
 **NEW YEAR'S MENU**
 
 **SNACKS**
+
 Crispy rillette
 Pepper cream
 
