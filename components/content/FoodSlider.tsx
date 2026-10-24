@@ -44,18 +44,6 @@ const DISHES: Dish[] = [
     },
   },
   {
-    src: '/images/Blåmuslinger.jpg',
-    name: { da: 'Blåmuslinger', en: 'Blue mussels' },
-    note: {
-      da: 'Dampet i hvidvin og ingefær med urter',
-      en: 'Steamed in white wine and ginger with herbs',
-    },
-    alt: {
-      da: 'En skål dampede blåmuslinger med pommes frites ved vinduesbordet',
-      en: 'A bowl of steamed blue mussels with fries at the window table',
-    },
-  },
-  {
     src: '/images/Pizza 1.jpg',
     name: { da: 'Pizza Diavola', en: 'Pizza Diavola' },
     note: {
