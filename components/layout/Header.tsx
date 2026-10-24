@@ -90,7 +90,17 @@ export async function Header() {
             <div className="lg:hidden">
               <BookingButton size="xs" />
             </div>
-            <MobileNav links={links} plainLinks={[brunchLink, newYearLink]} locale={locale} />
+            <MobileNav
+              items={[
+                { kind: 'route', ...links[0] },
+                { kind: 'route', ...links[1] },
+                { kind: 'plain', ...brunchLink },
+                ...links.slice(2, 6).map((link) => ({ kind: 'route' as const, ...link })),
+                { kind: 'plain', ...newYearLink },
+                { kind: 'route', ...links[6] },
+              ]}
+              locale={locale}
+            />
           </div>
         </div>
       </header>
