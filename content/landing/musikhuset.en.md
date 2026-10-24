@@ -28,6 +28,6 @@ For something lighter, share a few snacks and starters from the [evening menu](/
 
 ## After the show
 
-The bar is open until 23:00 Monday to Thursday and until 02:00 on Fridays and Saturdays. Come back for a [cocktail](/en/cocktails) or a glass from the [wine list](/en/wine) once the curtain falls.
+The bar is open until 22:00 Monday to Thursday and until 01:00 on Fridays and Saturdays. Come back for a [cocktail](/en/cocktails) or a glass from the [wine list](/en/wine) once the curtain falls.
 
 Book early on nights with big shows.
