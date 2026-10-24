@@ -10,19 +10,31 @@ import type { AppPathname } from '@/i18n/routing';
 // Nav links are static pages only; dynamic routes like /menu/[slug] need params.
 type NavLink = { href: Exclude<AppPathname, `${string}[${string}`>; label: string };
 type PlainLink = { href: string; label: string };
+type NavItem =
+  | ({ kind: 'route' } & NavLink)
+  | ({ kind: 'plain' } & PlainLink);
 
 export function MobileNav({
   links,
   plainLinks,
+  items,
   locale,
   giftCardLink,
 }: {
-  links: readonly NavLink[];
+  links?: readonly NavLink[];
   plainLinks?: readonly PlainLink[];
+  items?: readonly NavItem[];
   locale: string;
   giftCardLink?: { href: string; label: string };
 }) {
   const [open, setOpen] = useState(false);
+
+  const navItems: readonly NavItem[] =
+    items ??
+    [
+      ...(links ?? []).map((link) => ({ kind: 'route' as const, ...link })),
+      ...(plainLinks ?? []).map((link) => ({ kind: 'plain' as const, ...link })),
+    ];
 
   return (
     <Drawer.Root open={open} onOpenChange={setOpen} direction="right">
@@ -55,26 +67,27 @@ export function MobileNav({
           {/* vaul sets touch-action: none on the drawer, so this area opts back into vertical panning */}
           <div className="flex min-h-0 flex-1 touch-pan-y flex-col overflow-y-auto overscroll-contain">
             <nav className="flex flex-1 flex-col gap-1 p-6">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              {plainLinks?.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.kind === 'route' ? (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="border-b border-ink/10 py-4 font-display text-2xl tracking-tight text-ink hover:text-ember"
+                  >
+                    {item.label}
+                  </a>
+                ),
+              )}
               {giftCardLink && (
                 <a
                   href={giftCardLink.href}
