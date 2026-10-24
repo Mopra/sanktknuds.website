@@ -8,8 +8,8 @@ title: New Year's Eve 2026
 seoTitle: New Year's Eve Party 2026 in Aarhus C | Sankt Knuds
 description: Celebrate New Year's Eve at Sankt Knuds Brasseri & Bar, Ryesgade 29, Aarhus C. Write to us for dates, menu and prices.
 teaser: Celebrate New Year's Eve with great food, drinks and festivities at Sankt Knuds.
-image: /images/VIC00002.webp
-imageAlt: New Year's mood at Sankt Knuds
+image: /uploads/mvm9x6s3-nytar-samlet-ny.webp
+imageAlt: New Year's Eve food at Sankt Knuds
 cta: inquiry
 ---
 
