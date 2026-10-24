@@ -58,6 +58,4 @@ Option to add caviar when booking
 
 ## How to book
 
-Send us an email with the number of guests, and we'll get back to you as soon as possible: [kontakt@sanktknuds.dk](mailto:kontakt@sanktknuds.dk).
-
 Book via [Reserve a table](/en/book).
