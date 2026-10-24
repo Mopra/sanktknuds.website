@@ -13,6 +13,8 @@ type FigureProps = {
   position?: string;
   /** Classes for the frame (margins, aspect overrides, ordering). */
   className?: string;
+  /** Use 'contain' to show the whole image uncropped instead of filling the frame. */
+  fit?: 'cover' | 'contain';
 };
 
 /**
@@ -27,6 +29,7 @@ export function Figure({
   priority = false,
   position,
   className,
+  fit = 'cover',
 }: FigureProps) {
   return (
     <div className={cn('relative overflow-hidden bg-bone-dim', aspect, className)}>
@@ -37,7 +40,7 @@ export function Figure({
         sizes={sizes}
         priority={priority}
         fetchPriority={priority ? 'high' : undefined}
-        className="object-cover"
+        className={fit === 'contain' ? 'object-contain' : 'object-cover'}
         style={position ? { objectPosition: position } : undefined}
       />
     </div>
