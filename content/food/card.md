@@ -148,7 +148,7 @@ chapters:
           - name:
               da: Mørbrad med køkkenets udvalgte tilbehør
               en: Tenderloin with pumpkin, bean purée and sesame
-            price: 375
+            price: 395
           - name:
               da: Burger af okse, applewood cheddar, cornichoner, snittet kål og pommes frites
               en: Burger of beef, applewood cheddar, cornichons, shaved cabbage and French fries
