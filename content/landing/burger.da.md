@@ -16,8 +16,6 @@ quoteMatch: burger
 - Syrlig løgcreme og applewood cheddar
 - Pommes frites
 
-**Pris: 225 kr.**
-
 ## Hvornår kan du få den
 
 Burgeren står på både [frokostmenuen](/da/frokost), der serveres mandag til lørdag fra 11.30 til 16.00, og på [aftenmenuen](/da/menukort) fra kl. 17.30. Den passer godt til en kold fadøl eller et glas rødvin fra [vinkortet](/da/vinkort).
