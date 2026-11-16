@@ -192,7 +192,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Cæsarsalat på hjertesalat, med croutoner og dressing',
               en: 'Caesar salad on romaine hearts, with croutons and dressing',
             },
-            price: 135,
+            price: 125,
           },
           {
             name: {
