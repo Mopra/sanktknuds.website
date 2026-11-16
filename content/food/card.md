@@ -150,14 +150,8 @@ chapters:
               en: Tenderloin with pumpkin, bean purée and sesame
             price: 375
           - name:
-              da: >-
-                Burger med okse og lam, friske løg, karamelliseret løg,
-                ristede løg, syrlig løgcreme, applewood cheddar, cornichoner,
-                snittet kål og pommes frites
-              en: >-
-                Burger of beef and lamb, fresh onions, caramelised onions,
-                fried onions, tangy onion cream, applewood cheddar,
-                cornichons, shaved cabbage and French fries
+              da: Burger af okse, applewood cheddar, cornichoner, snittet kål og pommes frites
+              en: Burger of beef, applewood cheddar, cornichons, shaved cabbage and French fries
             price: 225
       - id: tilbehoer
         label:
