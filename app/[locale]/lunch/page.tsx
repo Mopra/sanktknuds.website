@@ -195,22 +195,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
             price: 125,
           },
           {
-            name: {
-              da: 'Bulgursalat vendt i yoghurt-mynte dressing, salat, bagt græskar, oliven og saltet ost',
-              en: 'Bulgur salad tossed in yoghurt-mint dressing, salad, baked pumpkin, olives and salted cheese',
-            },
-            price: 159,
-          },
-          {
             name: { da: 'Tilkøb kylling', en: 'Add chicken' },
             price: 50,
-          },
-          {
-            name: {
-              da: 'Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven',
-              en: 'Seared tuna, potato, quail egg, red onion, romaine hearts and olives',
-            },
-            price: 180,
           },
         ],
       },
