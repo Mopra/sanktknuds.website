@@ -56,7 +56,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Urtemayo, citron, spidskål, brombær og tuile',
               en: 'Herb mayo, lemon, pointed cabbage, blackberry and tuile',
             },
-            price: 125,
+            price: 135,
           },
         ],
       },
