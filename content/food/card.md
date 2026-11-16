@@ -216,31 +216,6 @@ chapters:
           - name:
               da: Saucer — bearnaisesauce, pebersauce, cremet svampesauce
               en: Sauces — béarnaise, pepper sauce, creamy mushroom sauce
-      - id: pizza
-        label:
-          da: Pizza
-          en: Pizza
-        items:
-          - name:
-              da: Margherita
-              en: Margherita
-            price: 125
-          - name:
-              da: Kartoffel, ricotta, mozzarella, rosmarin, karamelliseret løg og trøffelolie
-              en: Potato, ricotta, mozzarella, rosemary, caramelised onion and truffle oil
-            price: 145
-          - name:
-              da: Serranoskinke af kastanjefodret gris, frisk mozzarella og rapsolie
-              en: Serrano ham from chestnut-fed pork, fresh mozzarella and rapeseed oil
-            price: 165
-          - name:
-              da: Diavola med salami Ventricina, dehydreret tomat, frisk mozzarella og citron
-              en: Diavola with Ventricina salami, dehydrated tomato, fresh mozzarella and lemon
-            price: 149
-          - name:
-              da: Oksemørbrad, gorgonzola, svampe og syltede løg
-              en: Beef tenderloin, gorgonzola, mushrooms and pickled onions
-            price: 189
       - id: salat
         label:
           da: Salat
@@ -275,18 +250,11 @@ chapters:
       - id: desserter-liste
         items:
           - name:
-              da: Sandkage
-              en: Sand cake
+              da: Brownie
+              en: Brownie
             description:
-              da: Med limemousse og krydret mango
-              en: With lime mousse and spiced mango
-            price: 95
-          - name:
-              da: Ølkage
-              en: Beer cake
-            description:
-              da: Med kardemommecreme og appelsin
-              en: With cardamom cream and orange
+              da: Med brombær og saltkaramel
+              en: With blackberries and salted caramel
             price: 95
           - name:
               da: Affogato

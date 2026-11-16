@@ -28,24 +28,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
     label: { da: 'Snacks', en: 'Snacks' },
     sections: [
       {
-        id: 'lunch-oesters',
-        label: { da: 'Østers', en: 'Oysters' },
-        items: [
-          { name: { da: 'Natural', en: 'Natural' }, price: 40 },
-          {
-            name: { da: 'Champagnecreme og purløg', en: 'Champagne cream and chives' },
-            price: 45,
-          },
-          {
-            name: {
-              da: 'Tigermælk, urteolie og timian',
-              en: "Tiger's milk, herb oil and thyme",
-            },
-            price: 45,
-          },
-        ],
-      },
-      {
         id: 'lunch-caviar',
         label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
         note: {
@@ -67,27 +49,14 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Chili, hvidløg og varmt smør',
               en: 'Chilli, garlic and warm butter',
             },
-            price: 125,
+            price: 135,
           },
           {
             name: {
               da: 'Urtemayo, citron, spidskål, brombær og tuile',
               en: 'Herb mayo, lemon, pointed cabbage, blackberry and tuile',
             },
-            price: 125,
-          },
-        ],
-      },
-      {
-        id: 'lunch-kammusling',
-        label: { da: 'Kammusling', en: 'Scallop' },
-        items: [
-          {
-            name: {
-              da: 'Rimmet, med agurk, urtemayo og dild',
-              en: 'Cured, with cucumber, herb mayo and dill',
-            },
-            price: 59,
+            price: 135,
           },
         ],
       },
@@ -117,7 +86,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Friterede underlår i øldej med buffalosauce',
               en: 'Fried chicken thighs in beer batter with buffalo sauce',
             },
-            price: 65,
+            price: 72,
           },
         ],
       },
@@ -125,11 +94,46 @@ const lunchMenuChapters: LunchMenuChapter[] = [
   },
   {
     id: 'lunch-sandwiches',
-    label: { da: 'Sandwiches og varme retter', en: 'Sandwiches and hot dishes' },
+    label: { da: 'Frokost', en: 'Lunch' },
     sections: [
       {
         id: 'lunch-sandwiches-liste',
         items: [
+          {
+            name: {
+              da: 'Fiskefilet — med remoulade, citron, hvidt brød',
+              en: 'Fish fillet — with remoulade, lemon, white bread',
+            },
+            price: 135,
+          },
+          {
+            name: {
+              da: 'Havets perle — rejer, fiskefilet, rød dressing, hvidt brød',
+              en: 'Pearl of the sea — prawns, fish fillet, red dressing, white bread',
+            },
+            price: 165,
+          },
+          {
+            name: {
+              da: 'Sankt Knuds frokosttallerken — dagens udvalgte små lækkerier fra køkkenet',
+              en: "Sankt Knuds lunch platter — today's selection of small delights from the kitchen",
+            },
+            price: 195,
+          },
+          {
+            name: {
+              da: 'Rejer — med mayonnaise, citron, hvidt brød',
+              en: 'Prawns — with mayonnaise, lemon, white bread',
+            },
+            price: 149,
+          },
+          {
+            name: {
+              da: 'Kyllingesandwich — med kyllingesalat med svampe, cornichoner og løg',
+              en: 'Chicken sandwich — with chicken salad, mushrooms, gherkins and onion',
+            },
+            price: 125,
+          },
           {
             name: {
               da: 'Croque madame — med ålerøget skinke, applewood cheddar, spejlæg, salat og sennepsvinaigrette',
@@ -139,38 +143,10 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Kyllinge sandwich — med kyllingesalat med svampe, cornichoner og løg',
-              en: 'Chicken sandwich — with chicken salad, mushrooms, gherkins and onion',
-            },
-            price: 125,
-          },
-          {
-            name: {
-              da: 'Pizza sandwich — med fennikel salami, stracciatella, pesto og salat',
-              en: 'Pizza sandwich — with fennel salami, stracciatella, pesto and salad',
-            },
-            price: 155,
-          },
-          {
-            name: {
-              da: 'Rørt oksetatar — med dehydrerede tomater, sprød jordskokke og svampemayo',
-              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo',
-            },
-            price: 155,
-          },
-          {
-            name: {
-              da: 'Burger — med okse og lam, friske løg, karamelliseret løg, ristede løg, syrlig løgcreme, applewood cheddar, cornichoner, snittet kål og pommes frites',
-              en: 'Burger — with beef and lamb, fresh onions, caramelised onions, fried onions, tangy onion cream, applewood cheddar, cornichons, shaved cabbage and fries',
+              da: 'Burger — af okse, applewood cheddar, cornichoner, snittet kål og pommes frites',
+              en: 'Burger — beef, applewood cheddar, cornichons, shaved cabbage and fries',
             },
             price: 225,
-          },
-          {
-            name: {
-              da: 'Fettuccine — med cremet tomatsauce, salami ventricina, chili og lime',
-              en: 'Fettuccine — with creamy tomato sauce, ventricina salami, chilli and lime',
-            },
-            price: 179,
           },
           {
             name: {
@@ -181,71 +157,24 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Suppe — italiensk bondesuppe med salsiccia, squash og cannellini bønner',
-              en: 'Soup — Italian farmhouse soup with salsiccia, squash and cannellini beans',
-            },
-            price: 115,
-          },
-          {
-            name: {
-              da: 'Froutalia — græsk æggekage med salami ventricina, salat ost, mynte og marineret salat',
-              en: 'Froutalia — Greek-style omelette with ventricina salami, salad cheese, mint and marinated salad',
-            },
-            price: 120,
-          },
-          {
-            name: {
-              da: 'Risotto — med jordskokker, citron og sprødt kyllingeskind',
-              en: 'Risotto — with Jerusalem artichoke, lemon and crisp chicken skin',
+              da: 'Risotto — med kylling, jordskokker, citron og sprødt kyllingeskind',
+              en: 'Risotto — with chicken, Jerusalem artichoke, lemon and crisp chicken skin',
             },
             price: 220,
+          },
+          {
+            name: {
+              da: 'Pariserbøf — æggeblomme, rødbeder, hakkede rå løg, kapers, høvlet peberrod',
+              en: 'Pariser steak — egg yolk, beetroot, chopped raw onion, capers, shaved horseradish',
+            },
+            price: 225,
           },
           {
             name: {
               da: 'Tun — lynstegt med syltet knoldselleri, cashewnødder og solbærsauce',
               en: 'Tuna — seared with pickled celeriac, cashew nuts and blackcurrant sauce',
             },
-            price: 135,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'lunch-pizza',
-    label: { da: 'Pizza', en: 'Pizza' },
-    sections: [
-      {
-        id: 'lunch-pizza-liste',
-        items: [
-          { name: { da: 'Margherita', en: 'Margherita' }, price: 125 },
-          {
-            name: {
-              da: 'Kartoffel, ricotta, mozzarella, rosmarin, karamelliseret løg og trøffelolie',
-              en: 'Potato, ricotta, mozzarella, rosemary, caramelised onion and truffle oil',
-            },
-            price: 145,
-          },
-          {
-            name: {
-              da: 'Serranoskinke af kastanjefodret gris, frisk mozzarella og rapsolie',
-              en: 'Serrano ham from chestnut-fed pork, fresh mozzarella and rapeseed oil',
-            },
-            price: 165,
-          },
-          {
-            name: {
-              da: 'Diavola med salami Ventricina, dehydreret tomat, frisk mozzarella og citron',
-              en: 'Diavola with Ventricina salami, dehydrated tomato, fresh mozzarella and lemon',
-            },
-            price: 149,
-          },
-          {
-            name: {
-              da: 'Oksemørbrad, gorgonzola, svampe og syltede løg',
-              en: 'Beef tenderloin, gorgonzola, mushrooms and pickled onions',
-            },
-            price: 189,
+            price: 139,
           },
         ],
       },
@@ -263,25 +192,11 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Cæsarsalat på hjertesalat, med croutoner og dressing',
               en: 'Caesar salad on romaine hearts, with croutons and dressing',
             },
-            price: 135,
-          },
-          {
-            name: {
-              da: 'Bulgursalat vendt i yoghurt-mynte dressing, salat, bagt græskar, oliven og saltet ost',
-              en: 'Bulgur salad tossed in yoghurt-mint dressing, salad, baked pumpkin, olives and salted cheese',
-            },
-            price: 159,
+            price: 125,
           },
           {
             name: { da: 'Tilkøb kylling', en: 'Add chicken' },
             price: 50,
-          },
-          {
-            name: {
-              da: 'Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven',
-              en: 'Seared tuna, potato, quail egg, red onion, romaine hearts and olives',
-            },
-            price: 180,
           },
         ],
       },
@@ -296,15 +211,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
-              da: 'Sandkage — med limemousse og krydret mango',
+              da: 'Brownie med brombær og saltkaramel',
               en: 'Sand cake — with lime mousse and spiced mango',
-            },
-            price: 95,
-          },
-          {
-            name: {
-              da: 'Ølkage — med kardemommecreme og appelsin',
-              en: 'Beer cake — with cardamom cream and orange',
             },
             price: 95,
           },
@@ -388,7 +296,7 @@ export default async function LunchPage({ params }: Props) {
 
       <TrackedLink
         event="lunch_menu_pdf_download"
-        href="/uploads/mvf7i0pl-frokost-oktober.pdf"
+        href="/uploads/mwj5au07-frokost-november.pdf"
         download
         target="_blank"
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
