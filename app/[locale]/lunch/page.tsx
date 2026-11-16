@@ -28,24 +28,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
     label: { da: 'Snacks', en: 'Snacks' },
     sections: [
       {
-        id: 'lunch-oesters',
-        label: { da: 'Østers', en: 'Oysters' },
-        items: [
-          { name: { da: 'Natural', en: 'Natural' }, price: 40 },
-          {
-            name: { da: 'Champagnecreme og purløg', en: 'Champagne cream and chives' },
-            price: 45,
-          },
-          {
-            name: {
-              da: 'Tigermælk, urteolie og timian',
-              en: "Tiger's milk, herb oil and thyme",
-            },
-            price: 45,
-          },
-        ],
-      },
-      {
         id: 'lunch-caviar',
         label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
         note: {
