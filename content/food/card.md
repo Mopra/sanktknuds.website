@@ -110,15 +110,6 @@ chapters:
               da: Serrano fra kastanjefodrede grise, frisk burrata, rapsolie og citronsmør
               en: Serrano from chestnut-fed pigs, fresh burrata, rapeseed oil and lemon butter
             price: 149
-      - id: forret-okse
-        label:
-          da: Okse
-          en: Beef
-        items:
-          - name:
-              da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
-              en: Hand-stirred tartare with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo
-            price: 155
 
   - id: hovedretter
     label:
