@@ -99,7 +99,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Friterede underlår i øldej med buffalosauce',
               en: 'Fried chicken thighs in beer batter with buffalo sauce',
             },
-            price: 65,
+            price: 72,
           },
         ],
       },
