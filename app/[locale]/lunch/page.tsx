@@ -211,7 +211,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
-              da: 'Sandkage — med limemousse og krydret mango',
+              da: 'Brownie med brombær og slatkaramel',
               en: 'Sand cake — with lime mousse and spiced mango',
             },
             price: 95,
