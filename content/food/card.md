@@ -45,7 +45,7 @@ chapters:
           - name:
               da: Urtemayo, citron, spidskål, brombær og tuile
               en: Herb mayo, lemon, pointed cabbage, blackberry and tuile
-            price: 135
+            price: 125
       - id: kartoffel
         label:
           da: Kartoffel
