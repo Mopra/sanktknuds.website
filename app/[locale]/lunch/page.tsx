@@ -218,13 +218,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Ølkage — med kardemommecreme og appelsin',
-              en: 'Beer cake — with cardamom cream and orange',
-            },
-            price: 95,
-          },
-          {
-            name: {
               da: 'Affogato — med baileys is, nougatine og espresso',
               en: 'Affogato — with Baileys ice cream, nougatine and espresso',
             },
