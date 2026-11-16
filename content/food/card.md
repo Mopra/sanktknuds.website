@@ -136,7 +136,7 @@ chapters:
               en: >-
                 Havets fristelse — the chef's selection, prepared with the
                 kitchen's selected accompaniments
-            price:
+            description:
               da: Dagspris
               en: Daily price
       - id: hoved-kylling
