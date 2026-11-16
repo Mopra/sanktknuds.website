@@ -11,8 +11,6 @@ teaser: Okse og lam, tre slags løg, applewood cheddar og sprøde pommes frites.
 quoteMatch: burger
 ---
 
-Det er en af de retter, gæsterne oftest nævner, når de skriver om os bagefter. Bøffen er hakket af okse og lam, og løget får lov at spille hovedrollen.
-
 ## Det får du
 
 - Bøf af okse og lam
