@@ -370,7 +370,7 @@ export default async function LunchPage({ params }: Props) {
 
       <TrackedLink
         event="lunch_menu_pdf_download"
-        href="/uploads/mvf7i0pl-frokost-oktober.pdf"
+        href="/uploads/mwj5au07-frokost-november.pdf"
         download
         target="_blank"
         className="group mt-8 inline-flex items-center gap-2 border border-ink/20 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.25em] text-ink/80 transition-colors hover:border-ember/60 hover:text-ink"
