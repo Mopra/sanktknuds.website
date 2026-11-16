@@ -143,8 +143,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Burger — af okse, applewood cheddar, cornichoner, snittet kål og pommes frites',
-              en: 'Burger — beef, applewood cheddar, cornichons, shaved cabbage and fries',
+              da: 'Burger af okse, applewood cheddar, cornichoner, snittet kål og pommes frites',
+              en: 'Burger of beef, applewood cheddar, cornichons, shaved cabbage and fries',
             },
             price: 225,
           },

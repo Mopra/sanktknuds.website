@@ -5,23 +5,6 @@ chapters:
       da: Snacks
       en: Snacks
     sections:
-      - id: oesters
-        label:
-          da: Østers
-          en: Oysters
-        items:
-          - name:
-              da: Natural
-              en: Natural
-            price: 40
-          - name:
-              da: Champagnecreme og purløg
-              en: Champagne cream and chives
-            price: 45
-          - name:
-              da: Tigermælk, urteolie og timian
-              en: Tiger's milk, herb oil and thyme
-            price: 45
       - id: caviar
         label:
           da: Caviar fra Stokkebye
@@ -58,20 +41,11 @@ chapters:
           - name:
               da: Chili, hvidløg og varmt smør
               en: Chilli, garlic and warm butter
-            price: 125
+            price: 135
           - name:
               da: Urtemayo, citron, spidskål, brombær og tuile
               en: Herb mayo, lemon, pointed cabbage, blackberry and tuile
             price: 125
-      - id: kammusling
-        label:
-          da: Kammusling
-          en: Scallop
-        items:
-          - name:
-              da: Rimmet, med agurk, urtemayo og dild
-              en: Cured, with cucumber, herb mayo and dill
-            price: 59
       - id: kartoffel
         label:
           da: Kartoffel
@@ -93,7 +67,7 @@ chapters:
           - name:
               da: Friterede underlår i øldej med buffalosauce
               en: Fried chicken thighs in beer batter with buffalo sauce
-            price: 65
+            price: 72
 
   - id: forretter
     label:
@@ -117,7 +91,7 @@ chapters:
           - name:
               da: Italiensk bondesuppe med salsiccia, squash og cannellinibønner
               en: Italian farmhouse soup with salsiccia, squash and cannellini beans
-            price: 115
+            price: 125
       - id: forret-tun
         label:
           da: Tun
@@ -126,7 +100,7 @@ chapters:
           - name:
               da: Lynstegt med syltet knoldselleri, cashewnødder og solbærsauce
               en: Seared with pickled celeriac, cashew nuts and blackcurrant sauce
-            price: 120
+            price: 139
       - id: forret-gris
         label:
           da: Gris
@@ -136,15 +110,6 @@ chapters:
               da: Serrano fra kastanjefodrede grise, frisk burrata, rapsolie og citronsmør
               en: Serrano from chestnut-fed pigs, fresh burrata, rapeseed oil and lemon butter
             price: 149
-      - id: forret-okse
-        label:
-          da: Okse
-          en: Beef
-        items:
-          - name:
-              da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
-              en: Hand-stirred tartare with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo
-            price: 155
 
   - id: hovedretter
     label:
@@ -158,12 +123,14 @@ chapters:
         items:
           - name:
               da: >-
-                Pandestegt skrubbe med rosmarin, sauté af spinat, løg, svampe
-                og kapers — serveres med husets kartoffel
+                Havets fristelse — kokkens udvalgte, tilberedt med køkkenets
+                udvalgte tilbehør
               en: >-
-                Pan-fried flounder with rosemary, sauté of spinach, onion,
-                mushrooms and capers — served with the house potato
-            price: 225
+                Havets fristelse — the chef's selection, prepared with the
+                kitchen's selected accompaniments
+            description:
+              da: Dagspris
+              en: Daily price
       - id: hoved-kylling
         label:
           da: Kylling
@@ -173,38 +140,19 @@ chapters:
               da: Risotto med jordskokker, citron og sprødt kyllingeskind
               en: Risotto with Jerusalem artichoke, lemon and crisp chicken skin
             price: 220
-      - id: hoved-gris
-        label:
-          da: Gris
-          en: Pork
-        items:
-          - name:
-              da: Fettuccine med cremet tomatsauce, salami ventricina, chili og lime
-              en: Fettuccine with creamy tomato sauce, Ventricina salami, chilli and lime
-            price: 179
       - id: hoved-okse
         label:
           da: Okse
           en: Beef
         items:
           - name:
-              da: Mørbrad med græskar, bønnepuré og sesam
+              da: Mørbrad med køkkenets udvalgte tilbehør
               en: Tenderloin with pumpkin, bean purée and sesame
-            price: 375
+            price: 395
           - name:
-              da: >-
-                Burger med okse og lam, friske løg, karamelliseret løg,
-                ristede løg, syrlig løgcreme, applewood cheddar, cornichoner,
-                snittet kål og pommes frites
-              en: >-
-                Burger of beef and lamb, fresh onions, caramelised onions,
-                fried onions, tangy onion cream, applewood cheddar,
-                cornichons, shaved cabbage and French fries
+              da: Burger af okse, applewood cheddar, cornichoner, snittet kål og pommes frites
+              en: Burger of beef, applewood cheddar, cornichons, shaved cabbage and French fries
             price: 225
-          - name:
-              da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
-              en: Hand-stirred tartare with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo
-            price: 255
       - id: tilbehoer
         label:
           da: Tilbehør
@@ -226,21 +174,9 @@ chapters:
               en: Caesar salad on romaine hearts with croutons and dressing
             price: 135
           - name:
-              da: >-
-                Bulgursalat vendt i yoghurt-mynte dressing, salat, bagt
-                græskar, oliven og saltet ost
-              en: >-
-                Bulgur salad tossed in yoghurt-mint dressing, salad, baked
-                pumpkin, olives and salted cheese
-            price: 125
-          - name:
               da: Tilkøb kylling
               en: Add chicken
             price: 50
-          - name:
-              da: Lynstegt tun, kartoffel, vagtelæg, rødløg, hjertesalat og oliven
-              en: Seared tuna, potato, quail egg, red onion, romaine hearts and olives
-            price: 180
 
   - id: desserter
     label:
