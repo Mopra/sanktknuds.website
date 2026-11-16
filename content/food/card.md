@@ -257,13 +257,6 @@ chapters:
               en: With lime mousse and spiced mango
             price: 95
           - name:
-              da: Ølkage
-              en: Beer cake
-            description:
-              da: Med kardemommecreme og appelsin
-              en: With cardamom cream and orange
-            price: 95
-          - name:
               da: Affogato
               en: Affogato
             description:
