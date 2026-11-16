@@ -250,11 +250,11 @@ chapters:
       - id: desserter-liste
         items:
           - name:
-              da: Sandkage
-              en: Sand cake
+              da: Brownie
+              en: Brownie
             description:
-              da: Med limemousse og krydret mango
-              en: With lime mousse and spiced mango
+              da: Med brombær og slatkaramel
+              en: With blackberries and salted caramel
             price: 95
           - name:
               da: Affogato
