@@ -162,7 +162,7 @@ chapters:
               da: Kartoffel — pommes frites eller husets kartoffel
               en: Potato — French fries or the house potato
           - name:
-              da: Saucer — bearnaisesauce, pebersauce, cremet svampesauce
+              da: Saucer — bearnaisesauce, pebersauce
               en: Sauces — béarnaise, pepper sauce, creamy mushroom sauce
       - id: salat
         label:
