@@ -100,7 +100,7 @@ chapters:
           - name:
               da: Lynstegt med syltet knoldselleri, cashewnødder og solbærsauce
               en: Seared with pickled celeriac, cashew nuts and blackcurrant sauce
-            price: 120
+            price: 139
       - id: forret-gris
         label:
           da: Gris
