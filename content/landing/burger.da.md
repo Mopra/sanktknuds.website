@@ -14,7 +14,6 @@ quoteMatch: burger
 - Bøf af okse og lam
 - Friske løg, karamelliseret løg og ristede løg
 - Syrlig løgcreme og applewood cheddar
-- Cornichoner og snittet kål
 - Pommes frites
 
 **Pris: 225 kr.**
