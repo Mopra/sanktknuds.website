@@ -181,46 +181,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
     ],
   },
   {
-    id: 'lunch-pizza',
-    label: { da: 'Pizza', en: 'Pizza' },
-    sections: [
-      {
-        id: 'lunch-pizza-liste',
-        items: [
-          { name: { da: 'Margherita', en: 'Margherita' }, price: 125 },
-          {
-            name: {
-              da: 'Kartoffel, ricotta, mozzarella, rosmarin, karamelliseret løg og trøffelolie',
-              en: 'Potato, ricotta, mozzarella, rosemary, caramelised onion and truffle oil',
-            },
-            price: 145,
-          },
-          {
-            name: {
-              da: 'Serranoskinke af kastanjefodret gris, frisk mozzarella og rapsolie',
-              en: 'Serrano ham from chestnut-fed pork, fresh mozzarella and rapeseed oil',
-            },
-            price: 165,
-          },
-          {
-            name: {
-              da: 'Diavola med salami Ventricina, dehydreret tomat, frisk mozzarella og citron',
-              en: 'Diavola with Ventricina salami, dehydrated tomato, fresh mozzarella and lemon',
-            },
-            price: 149,
-          },
-          {
-            name: {
-              da: 'Oksemørbrad, gorgonzola, svampe og syltede løg',
-              en: 'Beef tenderloin, gorgonzola, mushrooms and pickled onions',
-            },
-            price: 189,
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: 'lunch-salat',
     label: { da: 'Salat', en: 'Salad' },
     sections: [
