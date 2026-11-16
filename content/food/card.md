@@ -253,7 +253,7 @@ chapters:
               da: Brownie
               en: Brownie
             description:
-              da: Med brombær og slatkaramel
+              da: Med brombær og saltkaramel
               en: With blackberries and salted caramel
             price: 95
           - name:
