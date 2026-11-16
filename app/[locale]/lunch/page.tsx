@@ -174,7 +174,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Tun — lynstegt med syltet knoldselleri, cashewnødder og solbærsauce',
               en: 'Tuna — seared with pickled celeriac, cashew nuts and blackcurrant sauce',
             },
-            price: 135,
+            price: 139,
           },
         ],
       },
