@@ -94,7 +94,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
   },
   {
     id: 'lunch-sandwiches',
-    label: { da: 'Sandwiches og varme retter', en: 'Sandwiches and hot dishes' },
+    label: { da: 'Frokost', en: 'Lunch' },
     sections: [
       {
         id: 'lunch-sandwiches-liste',
