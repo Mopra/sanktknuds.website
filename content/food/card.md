@@ -180,14 +180,6 @@ chapters:
               en: Caesar salad on romaine hearts with croutons and dressing
             price: 135
           - name:
-              da: >-
-                Bulgursalat vendt i yoghurt-mynte dressing, salat, bagt
-                græskar, oliven og saltet ost
-              en: >-
-                Bulgur salad tossed in yoghurt-mint dressing, salad, baked
-                pumpkin, olives and salted cheese
-            price: 125
-          - name:
               da: Tilkøb kylling
               en: Add chicken
             price: 50
