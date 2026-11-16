@@ -146,7 +146,7 @@ chapters:
           en: Beef
         items:
           - name:
-              da: Mørbrad med græskar, bønnepuré og sesam
+              da: Mørbrad med køkkenets udvalgte tilbehør
               en: Tenderloin with pumpkin, bean purée and sesame
             price: 375
           - name:
