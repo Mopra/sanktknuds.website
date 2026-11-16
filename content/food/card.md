@@ -118,8 +118,8 @@ chapters:
     sections:
       - id: hoved-fisk
         label:
-          da: Fisk
-          en: Fish
+          da: Havets fristelse
+          en: Havets fristelse
         items:
           - name:
               da: >-
