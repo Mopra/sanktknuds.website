@@ -41,7 +41,7 @@ chapters:
           - name:
               da: Chili, hvidløg og varmt smør
               en: Chilli, garlic and warm butter
-            price: 125
+            price: 135
           - name:
               da: Urtemayo, citron, spidskål, brombær og tuile
               en: Herb mayo, lemon, pointed cabbage, blackberry and tuile
