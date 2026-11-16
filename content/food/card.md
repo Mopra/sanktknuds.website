@@ -5,23 +5,6 @@ chapters:
       da: Snacks
       en: Snacks
     sections:
-      - id: oesters
-        label:
-          da: Østers
-          en: Oysters
-        items:
-          - name:
-              da: Natural
-              en: Natural
-            price: 40
-          - name:
-              da: Champagnecreme og purløg
-              en: Champagne cream and chives
-            price: 45
-          - name:
-              da: Tigermælk, urteolie og timian
-              en: Tiger's milk, herb oil and thyme
-            price: 45
       - id: caviar
         label:
           da: Caviar fra Stokkebye
