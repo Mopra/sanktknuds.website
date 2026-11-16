@@ -46,15 +46,6 @@ chapters:
               da: Urtemayo, citron, spidskål, brombær og tuile
               en: Herb mayo, lemon, pointed cabbage, blackberry and tuile
             price: 125
-      - id: kammusling
-        label:
-          da: Kammusling
-          en: Scallop
-        items:
-          - name:
-              da: Rimmet, med agurk, urtemayo og dild
-              en: Cured, with cucumber, herb mayo and dill
-            price: 59
       - id: kartoffel
         label:
           da: Kartoffel
