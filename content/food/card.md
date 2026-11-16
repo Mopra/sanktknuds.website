@@ -129,6 +129,16 @@ chapters:
                 Pan-fried flounder with rosemary, sauté of spinach, onion,
                 mushrooms and capers — served with the house potato
             price: 225
+          - name:
+              da: >-
+                Havets fristelse — kokkens udvalgte, tilberedt med køkkenets
+                udvalgte tilbehør
+              en: >-
+                Havets fristelse — the chef's selection, prepared with the
+                kitchen's selected accompaniments
+            price:
+              da: Dagspris
+              en: Daily price
       - id: hoved-kylling
         label:
           da: Kylling
