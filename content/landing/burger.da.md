@@ -6,7 +6,7 @@ order: 10
 eyebrow: Fra køkkenet
 title: Burger i Aarhus C
 seoTitle: Burger i Aarhus C med okse og lam | Sankt Knuds
-description: Vores burger med okse og lam, tre slags løg, applewood cheddar og pommes frites. Serveres til frokost og aften på Ryesgade 29, Aarhus C, for 225 kr.
+description: Burger af okse, applewood cheddar, cornichoner, snittet kål og pommes frites. Serveres til frokost og aften på Ryesgade 29, Aarhus C, for 225 kr.
 teaser: Okse og lam, tre slags løg, applewood cheddar og sprøde pommes frites. Til frokost og aften.
 quoteMatch: burger
 ---
