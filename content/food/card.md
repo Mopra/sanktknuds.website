@@ -123,14 +123,6 @@ chapters:
         items:
           - name:
               da: >-
-                Pandestegt skrubbe med rosmarin, sauté af spinat, løg, svampe
-                og kapers — serveres med husets kartoffel
-              en: >-
-                Pan-fried flounder with rosemary, sauté of spinach, onion,
-                mushrooms and capers — served with the house potato
-            price: 225
-          - name:
-              da: >-
                 Havets fristelse — kokkens udvalgte, tilberedt med køkkenets
                 udvalgte tilbehør
               en: >-
