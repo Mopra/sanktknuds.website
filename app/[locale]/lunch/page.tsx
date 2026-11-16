@@ -114,6 +114,41 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         items: [
           {
             name: {
+              da: 'Fiskefilet — med remoulade, citron, hvidt brød',
+              en: 'Fish fillet — with remoulade, lemon, white bread',
+            },
+            price: 135,
+          },
+          {
+            name: {
+              da: 'Havets perle — rejer, fiskefilet, rød dressing, hvidt brød',
+              en: 'Pearl of the sea — prawns, fish fillet, red dressing, white bread',
+            },
+            price: 165,
+          },
+          {
+            name: {
+              da: 'Sankt Knuds frokosttallerken — dagens udvalgte små lækkerier fra køkkenet',
+              en: "Sankt Knuds lunch platter — today's selection of small delights from the kitchen",
+            },
+            price: 195,
+          },
+          {
+            name: {
+              da: 'Rejer — med mayonnaise, citron, hvidt brød',
+              en: 'Prawns — with mayonnaise, lemon, white bread',
+            },
+            price: 149,
+          },
+          {
+            name: {
+              da: 'Kyllingesandwich — med kyllingesalat med svampe, cornichoner og løg',
+              en: 'Chicken sandwich — with chicken salad, mushrooms, gherkins and onion',
+            },
+            price: 125,
+          },
+          {
+            name: {
               da: 'Croque madame — med ålerøget skinke, applewood cheddar, spejlæg, salat og sennepsvinaigrette',
               en: 'Croque madame — with smoked ham, applewood cheddar, fried egg, lettuce and mustard vinaigrette',
             },
@@ -121,38 +156,10 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Kyllinge sandwich — med kyllingesalat med svampe, cornichoner og løg',
-              en: 'Chicken sandwich — with chicken salad, mushrooms, gherkins and onion',
-            },
-            price: 125,
-          },
-          {
-            name: {
-              da: 'Pizza sandwich — med fennikel salami, stracciatella, pesto og salat',
-              en: 'Pizza sandwich — with fennel salami, stracciatella, pesto and salad',
-            },
-            price: 155,
-          },
-          {
-            name: {
-              da: 'Rørt oksetatar — med dehydrerede tomater, sprød jordskokke og svampemayo',
-              en: 'Hand-stirred beef tartare — with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo',
-            },
-            price: 155,
-          },
-          {
-            name: {
-              da: 'Burger — med okse og lam, friske løg, karamelliseret løg, ristede løg, syrlig løgcreme, applewood cheddar, cornichoner, snittet kål og pommes frites',
-              en: 'Burger — with beef and lamb, fresh onions, caramelised onions, fried onions, tangy onion cream, applewood cheddar, cornichons, shaved cabbage and fries',
+              da: 'Burger — af okse, applewood cheddar, cornichoner, snittet kål og pommes frites',
+              en: 'Burger — beef, applewood cheddar, cornichons, shaved cabbage and fries',
             },
             price: 225,
-          },
-          {
-            name: {
-              da: 'Fettuccine — med cremet tomatsauce, salami ventricina, chili og lime',
-              en: 'Fettuccine — with creamy tomato sauce, ventricina salami, chilli and lime',
-            },
-            price: 179,
           },
           {
             name: {
@@ -163,24 +170,17 @@ const lunchMenuChapters: LunchMenuChapter[] = [
           },
           {
             name: {
-              da: 'Suppe — italiensk bondesuppe med salsiccia, squash og cannellini bønner',
-              en: 'Soup — Italian farmhouse soup with salsiccia, squash and cannellini beans',
-            },
-            price: 115,
-          },
-          {
-            name: {
-              da: 'Froutalia — græsk æggekage med salami ventricina, salat ost, mynte og marineret salat',
-              en: 'Froutalia — Greek-style omelette with ventricina salami, salad cheese, mint and marinated salad',
-            },
-            price: 120,
-          },
-          {
-            name: {
-              da: 'Risotto — med jordskokker, citron og sprødt kyllingeskind',
-              en: 'Risotto — with Jerusalem artichoke, lemon and crisp chicken skin',
+              da: 'Risotto — med kylling, jordskokker, citron og sprødt kyllingeskind',
+              en: 'Risotto — with chicken, Jerusalem artichoke, lemon and crisp chicken skin',
             },
             price: 220,
+          },
+          {
+            name: {
+              da: 'Pariserbøf — æggeblomme, rødbeder, hakkede rå løg, kapers, høvlet peberrod',
+              en: 'Pariser steak — egg yolk, beetroot, chopped raw onion, capers, shaved horseradish',
+            },
+            price: 225,
           },
           {
             name: {
