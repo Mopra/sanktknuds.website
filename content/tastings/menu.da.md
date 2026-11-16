@@ -21,7 +21,6 @@ groups:
     items:
       - Mørbrad med broccolini, bønnepuré og sesamolie
       - Burger med okse og lam, grillet ananas, bbq-sauce, bacon, applewood-cheddar og snittet kål
-      - Rørt tatar med dehydrerede tomater, stegte svampe og svampemayo
   - name: Pizza
     items:
       - Serranoskinke af kastanjefodret gris, frisk mozzarella og olivenolie
