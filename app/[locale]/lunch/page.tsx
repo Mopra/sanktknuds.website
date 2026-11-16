@@ -49,7 +49,7 @@ const lunchMenuChapters: LunchMenuChapter[] = [
               da: 'Chili, hvidløg og varmt smør',
               en: 'Chilli, garlic and warm butter',
             },
-            price: 125,
+            price: 135,
           },
           {
             name: {
