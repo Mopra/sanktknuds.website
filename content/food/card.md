@@ -45,7 +45,7 @@ chapters:
           - name:
               da: Urtemayo, citron, spidskål, brombær og tuile
               en: Herb mayo, lemon, pointed cabbage, blackberry and tuile
-            price: 125
+            price: 135
       - id: kartoffel
         label:
           da: Kartoffel
@@ -118,8 +118,8 @@ chapters:
     sections:
       - id: hoved-fisk
         label:
-          da: Fisk
-          en: Fish
+          da: Havets fristelse
+          en: Havets fristelse
         items:
           - name:
               da: >-
@@ -172,7 +172,7 @@ chapters:
           - name:
               da: Cæsarsalat på hjertesalat med croutoner og dressing
               en: Caesar salad on romaine hearts with croutons and dressing
-            price: 135
+            price: 125
           - name:
               da: Tilkøb kylling
               en: Add chicken
