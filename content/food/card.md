@@ -91,7 +91,7 @@ chapters:
           - name:
               da: Italiensk bondesuppe med salsiccia, squash og cannellinibønner
               en: Italian farmhouse soup with salsiccia, squash and cannellini beans
-            price: 115
+            price: 125
       - id: forret-tun
         label:
           da: Tun
