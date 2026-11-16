@@ -11,8 +11,6 @@ teaser: Okse og lam, tre slags løg, applewood cheddar og sprøde pommes frites.
 quoteMatch: burger
 ---
 
-## Det får du
-
 - Bøf af okse og lam
 - Friske løg, karamelliseret løg og ristede løg
 - Syrlig løgcreme og applewood cheddar
