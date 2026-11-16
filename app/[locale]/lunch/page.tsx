@@ -61,19 +61,6 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         ],
       },
       {
-        id: 'lunch-kammusling',
-        label: { da: 'Kammusling', en: 'Scallop' },
-        items: [
-          {
-            name: {
-              da: 'Rimmet, med agurk, urtemayo og dild',
-              en: 'Cured, with cucumber, herb mayo and dill',
-            },
-            price: 59,
-          },
-        ],
-      },
-      {
         id: 'lunch-kartoffel',
         label: { da: 'Kartoffel', en: 'Potato' },
         items: [
