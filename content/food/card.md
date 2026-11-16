@@ -148,15 +148,6 @@ chapters:
               da: Risotto med jordskokker, citron og sprødt kyllingeskind
               en: Risotto with Jerusalem artichoke, lemon and crisp chicken skin
             price: 220
-      - id: hoved-gris
-        label:
-          da: Gris
-          en: Pork
-        items:
-          - name:
-              da: Fettuccine med cremet tomatsauce, salami ventricina, chili og lime
-              en: Fettuccine with creamy tomato sauce, Ventricina salami, chilli and lime
-            price: 179
       - id: hoved-okse
         label:
           da: Okse
