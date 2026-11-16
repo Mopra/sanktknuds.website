@@ -159,10 +159,6 @@ chapters:
                 fried onions, tangy onion cream, applewood cheddar,
                 cornichons, shaved cabbage and French fries
             price: 225
-          - name:
-              da: Rørt tatar med dehydrerede tomater, sprød jordskokke og svampemayo
-              en: Hand-stirred tartare with dehydrated tomatoes, crisp Jerusalem artichoke and mushroom mayo
-            price: 255
       - id: tilbehoer
         label:
           da: Tilbehør
