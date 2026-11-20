@@ -31,8 +31,8 @@ const lunchMenuChapters: LunchMenuChapter[] = [
         id: 'lunch-caviar',
         label: { da: 'Caviar fra Stokkebye', en: 'Caviar from Stokkebye' },
         note: {
-          da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Fås enten med cremefraiche, purløg og løg-/kartoffelchips — eller dild, cremefraiche og vaffel.',
-          en: 'Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps — or dill, crème fraîche and waffle.',
+          da: 'Stokkebye i Nyborg opdrætter selv deres stør i store, naturlige søer i Slesvig-Holsten, i fællesskab med naturen. Serveres med cremefraiche, purløg og løg-/kartoffelchips.',
+          en: 'Stokkebye in Nyborg raise their own sturgeon in large natural lakes in Schleswig-Holstein, in harmony with nature. Served with crème fraîche, chives and onion/potato crisps.',
         },
         items: [
           { name: { da: 'Baerii 30 g', en: 'Baerii 30 g' }, price: 465 },
