@@ -16,9 +16,8 @@ chapters:
             fraîche, purløg og løg-/kartoffelchips.
           en: >-
             Stokkebye in Nyborg raise their own sturgeon in large natural lakes
-            in Schleswig-Holstein, in harmony with nature. Served either with
-            crème fraîche, chives and onion/potato crisps — or dill, crème
-            fraîche and waffle.
+            in Schleswig-Holstein, in harmony with nature. Served with crème
+            fraîche, chives and onion/potato crisps.
         items:
           - name:
               da: Baerii 30 g
